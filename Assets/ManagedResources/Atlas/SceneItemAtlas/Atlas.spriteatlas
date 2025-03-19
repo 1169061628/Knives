@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 33
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 31fc9629b65313346bc21dbcf55ccfe8, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - ab53f3320a3bc3a4ab6282687c93e614: 21300000
+    - bcdf5d424fdc04247b88a224b8996e33: 21300000
+    - fa24f883fb5394d40a1fe815774d5899: 21300000
+    - 641711c35d70d874fa0ae3e8cc348e7c: 21300000
+    - 16b64e54cb539774cae21dabf76b8c63: 21300000
+    - fcaa3aa4c4d75d3429f730c97dbe5755: 21300000
+    - cc1446b4eb90ef846abc4470dbc1d23e: 21300000
+    - 0fb5b695d6d7b8c4d80f5504700ca3f2: 21300000
+    - cb8817463a47fc044b36a63d2cd00720: 21300000
+    - 6e9a0796d1818d74abc0da31e14658d2: 21300000
+    - 71046987e7bcf064db1d1ddf49fe9aa7: 21300000
+    - 4c60fa87ebd97f8489e279a4fe48ad3f: 21300000
+    - da1d974887694654ab71a447e3ce7314: 21300000
+    - 49aba36877f3ae8488676823358a8bf8: 21300000
+    - fc129b88f12d34542b04703e161583dd: 21300000
+    - 143fa2f8e1c11194ab38c96afb25b527: 21300000
+    - bc402759b63e92044bfc62dfecf72d51: 21300000
+    - b84a3169f7c8c264e82b4178ad2ab8a3: 21300000
+    - 70bdccd92ae672442a2b6ce6fe8dae3a: 21300000
+    - 6797051a9aaf5ab4fafe5e4df8de9713: 21300000
+    - 3cceb98a73082ab47973124bfe97bc6d: 21300000
+    - f22876aa982692142b3109393d5afd65: 21300000
+    - 26a649baee769f040bc63b21e933e645: 21300000
+    - 6271c20bf7a49f540a1ac644f02ba928: 21300000
+    - 8198fbbbc9530ea43854f00707d8d7d3: 21300000
+    - 356620ebdf317294499df287c586eafe: 21300000
+    - 3ee66bac41180d6488f51b36ba34b20c: 21300000
+    - bee4d9fc45645bc48b9700940e6ff3a7: 21300000
+    - 6643fd6d075b5b841b05f248236a78b9: 21300000
+    - 654cd68d513c8b44faef1e7d87959dc4: 21300000
+    - 97ba305e2bffed4478660298b71a760b: 21300000
+    - 21345b7ee1ea0fe4aace2202ac403b8c: 21300000
+    - fd3d84de7dadef546a570945d75323c6: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ab53f3320a3bc3a4ab6282687c93e614, type: 3}
+  - {fileID: 21300000, guid: bcdf5d424fdc04247b88a224b8996e33, type: 3}
+  - {fileID: 21300000, guid: fa24f883fb5394d40a1fe815774d5899, type: 3}
+  - {fileID: 21300000, guid: 641711c35d70d874fa0ae3e8cc348e7c, type: 3}
+  - {fileID: 21300000, guid: 16b64e54cb539774cae21dabf76b8c63, type: 3}
+  - {fileID: 21300000, guid: fcaa3aa4c4d75d3429f730c97dbe5755, type: 3}
+  - {fileID: 21300000, guid: cc1446b4eb90ef846abc4470dbc1d23e, type: 3}
+  - {fileID: 21300000, guid: 0fb5b695d6d7b8c4d80f5504700ca3f2, type: 3}
+  - {fileID: 21300000, guid: cb8817463a47fc044b36a63d2cd00720, type: 3}
+  - {fileID: 21300000, guid: 6e9a0796d1818d74abc0da31e14658d2, type: 3}
+  - {fileID: 21300000, guid: 71046987e7bcf064db1d1ddf49fe9aa7, type: 3}
+  - {fileID: 21300000, guid: 4c60fa87ebd97f8489e279a4fe48ad3f, type: 3}
+  - {fileID: 21300000, guid: da1d974887694654ab71a447e3ce7314, type: 3}
+  - {fileID: 21300000, guid: 49aba36877f3ae8488676823358a8bf8, type: 3}
+  - {fileID: 21300000, guid: fc129b88f12d34542b04703e161583dd, type: 3}
+  - {fileID: 21300000, guid: 143fa2f8e1c11194ab38c96afb25b527, type: 3}
+  - {fileID: 21300000, guid: bc402759b63e92044bfc62dfecf72d51, type: 3}
+  - {fileID: 21300000, guid: b84a3169f7c8c264e82b4178ad2ab8a3, type: 3}
+  - {fileID: 21300000, guid: 70bdccd92ae672442a2b6ce6fe8dae3a, type: 3}
+  - {fileID: 21300000, guid: 6797051a9aaf5ab4fafe5e4df8de9713, type: 3}
+  - {fileID: 21300000, guid: 3cceb98a73082ab47973124bfe97bc6d, type: 3}
+  - {fileID: 21300000, guid: f22876aa982692142b3109393d5afd65, type: 3}
+  - {fileID: 21300000, guid: 26a649baee769f040bc63b21e933e645, type: 3}
+  - {fileID: 21300000, guid: 6271c20bf7a49f540a1ac644f02ba928, type: 3}
+  - {fileID: 21300000, guid: 8198fbbbc9530ea43854f00707d8d7d3, type: 3}
+  - {fileID: 21300000, guid: 356620ebdf317294499df287c586eafe, type: 3}
+  - {fileID: 21300000, guid: 3ee66bac41180d6488f51b36ba34b20c, type: 3}
+  - {fileID: 21300000, guid: bee4d9fc45645bc48b9700940e6ff3a7, type: 3}
+  - {fileID: 21300000, guid: 6643fd6d075b5b841b05f248236a78b9, type: 3}
+  - {fileID: 21300000, guid: 654cd68d513c8b44faef1e7d87959dc4, type: 3}
+  - {fileID: 21300000, guid: 97ba305e2bffed4478660298b71a760b, type: 3}
+  - {fileID: 21300000, guid: 21345b7ee1ea0fe4aace2202ac403b8c, type: 3}
+  - {fileID: 21300000, guid: fd3d84de7dadef546a570945d75323c6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - block_grassland1
+  - mountain_desert
+  - stone_canyon3
+  - wood_grassland2
+  - stone_desert1
+  - spar_snow2
+  - cactus_desert
+  - spar_snow
+  - mountain_canyon
+  - stone_desert5
+  - wood_grassland1
+  - stone_desert2
+  - mountain_snow
+  - crystal_canyon2
+  - stone_desert4
+  - crystal_canyon
+  - stone_grassland3
+  - trunk_desert
+  - stone_snow2
+  - stone_canyon2
+  - block_grassland3
+  - stone_grassland1
+  - stone_snow1
+  - stone_desert3
+  - block_grassland2
+  - stone_canyon1
+  - stone_grassland2
+  - pine_snow
+  - stone_canyon4
+  - wood_grassland3
+  - magma_canyon
+  - stone_snow3
+  - mountain_grassland
+  m_RenderDataMap: {}
+  m_Tag: Atlas
+  m_IsVariant: 0

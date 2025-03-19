@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 48
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b86db668794c9aa4fa6ad51ac6b4a49f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - ccd3e6a065e5a164fa2038a38613957c: 21300000
+    - 64633102f21f00d43b0ee33fc3030099: 21300000
+    - f401b8525232eaa42b067e2978e0c38c: 21300000
+    - 8ef7c082436394d44b6e1dd7879bdfe2: 21300000
+    - b6a37265cbfb96944b4d9b3edcce7ecb: 21300000
+    - f423fa75ab1810b4da4459b3eb96478e: 21300000
+    - 695675c50770c744e97a0548139f4c3d: 21300000
+    - e40c520652d2370428c302c7cc9c6f51: 21300000
+    - b6764226d355b5f4d88082840b8462a5: 21300000
+    - 6ed104e622b80c84cb5ffd76bb353bda: 21300000
+    - 4e28cb77f5d1fc04284072963c96a041: 21300000
+    - 3286ec6ada1fc6a4ba4827b9b8d43d8b: 21300000
+    - 849a56ca869d64b4a89d0f058b94fe57: 21300000
+    - 9788d97b088e7b1469521f901174e2fa: 21300000
+    - f16eb74dfb24d684cb43a8e37d457862: 21300000
+    - 0bd20b4d15ace6a42a36458fcdb92ff1: 21300000
+    - 1354566d6d4430149999ed6e2f7af416: 21300000
+    - 29ca5b0e3c9cbac40881e0d5dc80da24: 21300000
+    - de29dfbeb78d82f458fb30a461416d89: 21300000
+    - c555d1fe83ebeeb4bb0e628706888046: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ccd3e6a065e5a164fa2038a38613957c, type: 3}
+  - {fileID: 21300000, guid: 64633102f21f00d43b0ee33fc3030099, type: 3}
+  - {fileID: 21300000, guid: f401b8525232eaa42b067e2978e0c38c, type: 3}
+  - {fileID: 21300000, guid: 8ef7c082436394d44b6e1dd7879bdfe2, type: 3}
+  - {fileID: 21300000, guid: b6a37265cbfb96944b4d9b3edcce7ecb, type: 3}
+  - {fileID: 21300000, guid: f423fa75ab1810b4da4459b3eb96478e, type: 3}
+  - {fileID: 21300000, guid: 695675c50770c744e97a0548139f4c3d, type: 3}
+  - {fileID: 21300000, guid: e40c520652d2370428c302c7cc9c6f51, type: 3}
+  - {fileID: 21300000, guid: b6764226d355b5f4d88082840b8462a5, type: 3}
+  - {fileID: 21300000, guid: 6ed104e622b80c84cb5ffd76bb353bda, type: 3}
+  - {fileID: 21300000, guid: 4e28cb77f5d1fc04284072963c96a041, type: 3}
+  - {fileID: 21300000, guid: 3286ec6ada1fc6a4ba4827b9b8d43d8b, type: 3}
+  - {fileID: 21300000, guid: 849a56ca869d64b4a89d0f058b94fe57, type: 3}
+  - {fileID: 21300000, guid: 9788d97b088e7b1469521f901174e2fa, type: 3}
+  - {fileID: 21300000, guid: f16eb74dfb24d684cb43a8e37d457862, type: 3}
+  - {fileID: 21300000, guid: 0bd20b4d15ace6a42a36458fcdb92ff1, type: 3}
+  - {fileID: 21300000, guid: 1354566d6d4430149999ed6e2f7af416, type: 3}
+  - {fileID: 21300000, guid: 29ca5b0e3c9cbac40881e0d5dc80da24, type: 3}
+  - {fileID: 21300000, guid: de29dfbeb78d82f458fb30a461416d89, type: 3}
+  - {fileID: 21300000, guid: c555d1fe83ebeeb4bb0e628706888046, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - wckt_guanqia_di
+  - xyx_ymbd_jdt
+  - debuff_bomb 1
+  - xyx_ymbd_jdtBG
+  - xyx_ymbd_xt_gr
+  - xyx_ymbd_icon_boss
+  - jsbm_di
+  - ymbd_tsk_bai
+  - xyx_ymbd_bossBG
+  - ymbd_tsk_hei
+  - yaogan
+  - xyx_ymbd_xt_red
+  - debuff_spikes2 1
+  - yaogan_di
+  - cube4x4
+  - xyx_ymbd_xtBG
+  - ico_nodeArrow
+  - xyx_ymbd_xszyicon
+  - debuff_spikes1 1
+  - tutorial
+  m_RenderDataMap: {}
+  m_Tag: UIAtlas
+  m_IsVariant: 0

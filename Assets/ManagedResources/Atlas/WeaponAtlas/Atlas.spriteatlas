@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: cf2c3077e3b48d94da846ed5731924f8, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 8d65fe82828c01544aeb3b28c3904a8e: 21300000
+    - 1dfe5864d835f0b46884bdcca7771d83: 21300000
+    - 03a0f6a570b8a1140b2847ed0d7578cf: 21300000
+    - 7692fe3abf52bc04a8f7d8cc0560c86b: 21300000
+    - 9e81398c0effe7c429a049b8f8aa6632: 21300000
+    - b5076ecc8a0b5f843aeb426c1ddce65c: 21300000
+    - 310c168d9a0453648b79640abc2155f1: 21300000
+    - 7b24336f981d88043be7805bacb5e5fe: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8d65fe82828c01544aeb3b28c3904a8e, type: 3}
+  - {fileID: 21300000, guid: 1dfe5864d835f0b46884bdcca7771d83, type: 3}
+  - {fileID: 21300000, guid: 03a0f6a570b8a1140b2847ed0d7578cf, type: 3}
+  - {fileID: 21300000, guid: 7692fe3abf52bc04a8f7d8cc0560c86b, type: 3}
+  - {fileID: 21300000, guid: 9e81398c0effe7c429a049b8f8aa6632, type: 3}
+  - {fileID: 21300000, guid: b5076ecc8a0b5f843aeb426c1ddce65c, type: 3}
+  - {fileID: 21300000, guid: 310c168d9a0453648b79640abc2155f1, type: 3}
+  - {fileID: 21300000, guid: 7b24336f981d88043be7805bacb5e5fe, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - huge
+  - craze
+  - iron
+  - fire
+  - snow
+  - default
+  - miasma
+  - lightning
+  m_RenderDataMap: {}
+  m_Tag: Atlas
+  m_IsVariant: 0
