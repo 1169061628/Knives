@@ -29100,7 +29100,7 @@ GameObject:
   - component: {fileID: 8537587086968899149}
   - component: {fileID: 8537587086968899138}
   m_Layer: 14
-  m_Name: fx_lightning01
+  m_Name: fxx_lightning01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

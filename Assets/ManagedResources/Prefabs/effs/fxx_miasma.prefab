@@ -9696,7 +9696,7 @@ GameObject:
   - component: {fileID: 3372053866478453248}
   - component: {fileID: 3372053866478453251}
   m_Layer: 14
-  m_Name: fx_miasma
+  m_Name: fxx_miasma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
