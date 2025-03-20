@@ -14,8 +14,7 @@ public class Util
 
     public static GameObject NewObjToParent(GameObject go, GameObject parent, string name = null)
     {
-        var obj = GameObject.Instantiate(go);
-        obj.transform.SetParent(parent.transform);
+        var obj = Object.Instantiate(go, parent.transform, true);
         obj.transform.localPosition = Vector3.zero;
         obj.transform.localScale = Vector3.one;
         obj.SetActive(true);
