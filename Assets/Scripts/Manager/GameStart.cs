@@ -1,13 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameStart : MonoBehaviour
 {
+    GameObject canvas;
+    GameObject content;
     // Start is called before the first frame update
     void Start()
     {
         ResManager.InitALlResPath();
+        canvas = GameObject.Find("Canvas");
+        content = Util.GetGameObject(canvas, "scroll/content");
+
+        var pre = Util.GetGameObject(content, "pre");
+        for (int i = 1; i <= 80; i++)
+        {
+            int iii = i;
+            var go = Util.NewObjToParent(pre, content);
+            go.name = "item" + i;
+            Util.GetComponent<Text>(go, "index").text = i.ToString();
+            go.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                Debug.LogError($"进战斗关卡{iii}");
+            });
+        }
     }
 
     // Update is called once per frame

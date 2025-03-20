@@ -7,7 +7,7 @@ public static class ResManager
 {
     static readonly Dictionary<string, string> resName2resPath = new();
     public static string resTxtPath = Application.dataPath + "/ManagedResources/Configs/ResRecord.txt";
-    public static T LoadRes<T>(string name) where T : UnityEngine.Object
+    public static T LoadRes<T>(string name) where T : Object
     {
         if (resName2resPath.TryGetValue(name, out var path))
         {
