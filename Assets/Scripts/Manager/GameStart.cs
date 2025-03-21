@@ -4,16 +4,18 @@ using UnityEngine.UI;
 public class GameStart : MonoBehaviour
 {
     GameObject canvas;
-    GameObject content;
+    GameObject content, levelSelect;
     GamePanel panel = null;
     // Start is called before the first frame update
     void Start()
     {
         ResManager.InitALlResPath();
         canvas = GameObject.Find("Canvas");
-        content = Util.GetGameObject(canvas, "levelSelect/content");
+        levelSelect = Util.GetGameObject(canvas, "levelSelect");
+        content = Util.GetGameObject(levelSelect, "content");
 
-
+        panel ??= new(Util.GetGameObject(canvas, "GamePanel"));
+        panel.Start();
         var pre = Util.GetGameObject(content, "pre");
         for (int i = 1; i <= 80; i++)
         {
@@ -23,9 +25,11 @@ public class GameStart : MonoBehaviour
             Util.GetComponent<Text>(go, "index").text = i.ToString();
             go.GetComponent<Button>().onClick.AddListener(() =>
             {
+                levelSelect.SetActive(false);
                 Debug.LogError($"进战斗关卡{iii}");
-                panel ??= new(Util.GetGameObject(canvas, "GamePanel"));
-                panel.Start();
+
+
+                panel.OnOpen(iii);
             });
         }
     }

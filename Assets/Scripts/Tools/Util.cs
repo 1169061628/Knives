@@ -7,6 +7,11 @@ public class Util
         return go.transform.Find(name).gameObject;
     }
 
+    public static Transform GetTransform(GameObject go, string name)
+    {
+        return GetGameObject(go, name).transform;
+    }
+
     public static T GetComponent<T>(GameObject go, string name) where T : Component
     {
         return GetGameObject(go, name).GetComponent<T>();

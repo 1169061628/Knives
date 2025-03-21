@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GamePanel
@@ -17,6 +15,7 @@ public class GamePanel
     public void OnOpen(int levelId)
     {
         curLevel = levelId;
+        bgGo = ResManager.LoadPrefab("level" + levelId, Util.GetTransform(gameObject, "bgRoot"), Vector3.one, Vector3.zero);
     }
 
     public void Start()

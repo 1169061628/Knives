@@ -23,11 +23,11 @@ public class ResManager
     }
 
     // 加载预设
-    public GameObject LoadPrefab(string name, Transform parent, Vector3 scale, Vector3 pos)
+    public static GameObject LoadPrefab(string name, Transform parent, Vector3 scale, Vector3 pos)
     {
         GameObject go;
         if (loadedPrefabs.ContainsKey(name) && loadedPrefabs[name].Count > 0) go = loadedPrefabs[name].Pop();
-        else go = LoadRes<GameObject>(name);
+        else go = Object.Instantiate(LoadRes<GameObject>(name));
         go.SetActive(true);
         go.transform.SetParent(parent);
         go.transform.localPosition = pos;
