@@ -145,7 +145,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4133461030894858098}
@@ -561,6 +561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 222
@@ -634,6 +638,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -761,6 +769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -827,6 +839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -888,6 +904,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -967,6 +987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -988,6 +1012,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -1115,6 +1143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1181,6 +1213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1202,6 +1238,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -1321,6 +1361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1342,6 +1386,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -1457,6 +1505,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (31)
@@ -1527,6 +1579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1548,6 +1604,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -1623,6 +1683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal_canyon2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
       value: 224
@@ -1685,6 +1749,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (22)
@@ -1766,6 +1834,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -1877,6 +1949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1942,6 +2018,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2017,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2079,6 +2163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (35)
@@ -2104,6 +2192,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -2211,6 +2303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (36)
@@ -2236,6 +2332,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -2351,6 +2451,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (24)
@@ -2429,6 +2533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2503,6 +2611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2564,6 +2676,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -2635,6 +2751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2656,6 +2776,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -2730,6 +2854,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -2837,6 +2965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (38)
@@ -2862,6 +2994,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -2989,6 +3125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3055,6 +3195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3076,6 +3220,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -3199,6 +3347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (3)
@@ -3221,6 +3373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (16)
@@ -3343,6 +3499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (43)
@@ -3368,6 +3528,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -3435,6 +3599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal_canyon2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
       value: 236
@@ -3497,6 +3665,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (19)
@@ -3619,6 +3791,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (29)
@@ -3644,6 +3820,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -3710,6 +3890,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -3821,6 +4005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3882,6 +4070,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -3961,6 +4153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3982,6 +4178,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -4048,6 +4248,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -4167,6 +4371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4228,6 +4436,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -4299,6 +4511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4360,6 +4576,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -4439,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4460,6 +4684,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -4534,6 +4762,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -4649,6 +4881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (28)
@@ -4674,6 +4910,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -4785,6 +5025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4847,6 +5091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (39)
@@ -4872,6 +5120,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -4938,6 +5190,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -5009,6 +5265,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (15)
@@ -5143,6 +5403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5164,6 +5428,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -5283,6 +5551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5356,6 +5628,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5431,6 +5707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5493,6 +5773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (25)
@@ -5515,6 +5799,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (23)
@@ -5597,6 +5885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 202
@@ -5670,6 +5962,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -5785,6 +6081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (34)
@@ -5810,6 +6110,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -5885,6 +6189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 213
@@ -5959,6 +6267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 190
@@ -6032,6 +6344,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -6147,6 +6463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (30)
@@ -6225,6 +6545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6246,6 +6570,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -6309,6 +6637,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (18)
@@ -6443,6 +6775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6513,6 +6849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (2)
@@ -6579,6 +6919,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (33)
@@ -6604,6 +6948,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -6670,6 +7018,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -6741,6 +7093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (17)
@@ -6823,6 +7179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 282
@@ -6889,6 +7249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 283
@@ -6951,6 +7315,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (20)
@@ -7085,6 +7453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7159,6 +7531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7180,6 +7556,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -7246,6 +7626,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -7317,6 +7701,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (21)
@@ -7439,6 +7827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (40)
@@ -7464,6 +7856,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -7571,6 +7967,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (38)
@@ -7596,6 +7996,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -7662,6 +8066,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -7769,6 +8177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (27)
@@ -7835,6 +8247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (37)
@@ -7860,6 +8276,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -7975,6 +8395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (4)
@@ -8000,6 +8424,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -8115,6 +8543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (9)
@@ -8137,6 +8569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (11)
@@ -8259,6 +8695,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (56)
@@ -8329,6 +8769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8394,6 +8838,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8469,6 +8917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8487,6 +8939,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (3)
@@ -8565,6 +9021,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (26)
@@ -8646,6 +9106,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -8753,6 +9217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (16)
@@ -8819,6 +9287,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (57)
@@ -8844,6 +9316,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -8971,6 +9447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9044,6 +9524,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9181,6 +9665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9202,6 +9690,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -9329,6 +9821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9394,6 +9890,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9461,6 +9961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9482,6 +9986,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -9601,6 +10109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9622,6 +10134,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -9689,6 +10205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal_canyon2 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
       value: 378
@@ -9751,6 +10271,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (29)
@@ -9885,6 +10409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9906,6 +10434,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -10017,6 +10549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10038,6 +10574,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -10112,6 +10652,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -10230,6 +10774,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10371,6 +10919,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (64)
@@ -10441,6 +10993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10462,6 +11018,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -10577,6 +11137,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (44)
@@ -10655,6 +11219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10676,6 +11244,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -10787,6 +11359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10853,6 +11429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10874,6 +11454,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -10993,6 +11577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11067,6 +11655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (128)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11088,6 +11680,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -11215,6 +11811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11236,6 +11836,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -11299,6 +11903,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (8)
@@ -11381,6 +11989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 161
@@ -11447,6 +12059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -11509,6 +12125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (30)
@@ -11643,6 +12263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (126)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11705,6 +12329,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (17)
@@ -11730,6 +12358,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -11841,6 +12473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (129)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11862,6 +12498,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -11925,6 +12565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (1)
@@ -12047,6 +12691,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (52)
@@ -12112,6 +12760,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -12183,6 +12835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12204,6 +12860,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -12323,6 +12983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12344,6 +13008,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -12455,6 +13123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (133)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12529,6 +13201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12550,6 +13226,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -12669,6 +13349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12743,6 +13427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12808,6 +13496,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12879,6 +13571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon
@@ -12904,6 +13600,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -13019,6 +13719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (9)
@@ -13085,6 +13789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (61)
@@ -13110,6 +13818,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -13177,6 +13889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 302
@@ -13242,6 +13958,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -13361,6 +14081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13382,6 +14106,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -13509,6 +14237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13571,6 +14303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (2)
@@ -13596,6 +14332,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -13715,6 +14455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (134)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13777,6 +14521,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (3)
@@ -13802,6 +14550,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -13917,6 +14669,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (11)
@@ -13942,6 +14698,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -14053,6 +14813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14074,6 +14838,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -14148,6 +14916,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -14337,6 +15109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14402,6 +15178,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14473,6 +15253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (13)
@@ -14543,6 +15327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14564,6 +15352,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -14630,6 +15422,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -14827,6 +15623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14900,6 +15700,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15045,6 +15849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15107,6 +15915,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (23)
@@ -15132,6 +15944,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -15251,6 +16067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15312,6 +16132,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -15383,6 +16207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15404,6 +16232,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -15470,6 +16302,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -15589,6 +16425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15650,6 +16490,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -15720,6 +16564,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15795,6 +16643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (122)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15816,6 +16668,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -15927,6 +16783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15948,6 +16808,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -16011,6 +16875,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (25)
@@ -16092,6 +16960,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -16203,6 +17075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16264,6 +17140,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -16342,6 +17222,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16483,6 +17367,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (10)
@@ -16508,6 +17396,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -16615,6 +17507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (49)
@@ -16693,6 +17589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16759,6 +17659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16780,6 +17684,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -16895,6 +17803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (13)
@@ -16920,6 +17832,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17043,6 +17959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (12)
@@ -17068,6 +17988,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17134,6 +18058,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17208,6 +18136,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17323,6 +18255,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (51)
@@ -17348,6 +18284,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17422,6 +18362,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17537,6 +18481,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (5)
@@ -17562,6 +18510,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17677,6 +18629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (47)
@@ -17702,6 +18658,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17821,6 +18781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17842,6 +18806,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -17949,6 +18917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon
@@ -18027,6 +18999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18101,6 +19077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18119,6 +19099,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (2)
@@ -18253,6 +19237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18319,6 +19307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18380,6 +19372,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -18447,6 +19443,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (6)
@@ -18513,6 +19513,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (10)
@@ -18578,6 +19582,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -18649,6 +19657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18670,6 +19682,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -18777,6 +19793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (21)
@@ -18851,6 +19871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (1)
@@ -18876,6 +19900,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -18995,6 +20023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19016,6 +20048,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -19131,6 +20167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (7)
@@ -19197,6 +20237,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (45)
@@ -19222,6 +20266,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -19341,6 +20389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19407,6 +20459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19428,6 +20484,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -19495,6 +20555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 320
@@ -19561,6 +20625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 312
@@ -19626,6 +20694,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -19753,6 +20825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19815,6 +20891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (65)
@@ -19837,6 +20917,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (4)
@@ -19919,6 +21003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -19993,6 +21081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -20055,6 +21147,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (27)
@@ -20181,6 +21277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20202,6 +21302,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -20268,6 +21372,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -20375,6 +21483,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (11)
@@ -20400,6 +21512,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -20475,6 +21591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -20537,6 +21657,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (6)
@@ -20610,6 +21734,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -20721,6 +21849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (8)
@@ -20791,6 +21923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20857,6 +21993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20875,6 +22015,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (28)
@@ -20997,6 +22141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (62)
@@ -21022,6 +22170,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (116)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -21089,6 +22241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 367
@@ -21154,6 +22310,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -21261,6 +22421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (59)
@@ -21331,6 +22495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21393,6 +22561,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (22)
@@ -21418,6 +22590,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -21529,6 +22705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21603,6 +22783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21624,6 +22808,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -21731,6 +22919,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (66)
@@ -21800,6 +22992,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21875,6 +23071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21893,6 +23093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (10)
@@ -21975,6 +23179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 364
@@ -22040,6 +23248,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -22163,6 +23375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (5)
@@ -22232,6 +23448,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22307,6 +23527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22372,6 +23596,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22439,6 +23667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22460,6 +23692,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -22526,6 +23762,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -22633,6 +23873,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (55)
@@ -22699,6 +23943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (20)
@@ -22724,6 +23972,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -22843,6 +24095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22917,6 +24173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22982,6 +24242,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23053,6 +24317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (6)
@@ -23086,6 +24354,10 @@ PrefabInstance:
     - target: {fileID: 5654572982159247851, guid: d76fe463de4fcda43868ad901854d525, type: 3}
       propertyPath: m_Size.y
       value: 98.67125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654572982159247851, guid: d76fe463de4fcda43868ad901854d525, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375014159753660440, guid: d76fe463de4fcda43868ad901854d525, type: 3}
       propertyPath: m_RootOrder
@@ -23197,6 +24469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23271,6 +24547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23340,6 +24620,10 @@ PrefabInstance:
     - target: {fileID: 918580516081509281, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
@@ -23411,6 +24695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23432,6 +24720,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -23547,6 +24839,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (46)
@@ -23625,6 +24921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23646,6 +24946,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -23765,6 +25069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23786,6 +25094,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -23901,6 +25213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (7)
@@ -23926,6 +25242,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (106)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -24037,6 +25357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24110,6 +25434,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24185,6 +25513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24250,6 +25582,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24325,6 +25661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24395,6 +25735,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793354163698202745, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 2197654642762690948, guid: 54f59f8f2114b4f409fcf9bb5687f87e, type: 3}
       propertyPath: m_Name
       value: magma_canyon (8)
@@ -24461,6 +25805,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (15)
@@ -24486,6 +25834,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -24552,6 +25904,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -24627,6 +25983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 155
@@ -24697,6 +26057,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5685114180591170133, guid: dd2240b289902f94fa57e03b541bf163, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6537440197842102669, guid: dd2240b289902f94fa57e03b541bf163, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -24762,6 +26126,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -24873,6 +26241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24894,6 +26266,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -24960,6 +26336,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -25079,6 +26459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25144,6 +26528,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25219,6 +26607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (131)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25280,6 +26672,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -25359,6 +26755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25433,6 +26833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25499,6 +26903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25520,6 +26928,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -25586,6 +26998,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -25705,6 +27121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25726,6 +27146,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -25792,6 +27216,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -25907,6 +27335,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (19)
@@ -25985,6 +27417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26046,6 +27482,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -26125,6 +27565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26146,6 +27590,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -26265,6 +27713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26339,6 +27791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26360,6 +27816,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -26467,6 +27927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (53)
@@ -26492,6 +27956,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -26563,6 +28031,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (31)
@@ -26697,6 +28169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (132)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26758,6 +28234,10 @@ PrefabInstance:
     - target: {fileID: 7974641409163139003, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
@@ -26837,6 +28317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26902,6 +28386,10 @@ PrefabInstance:
     - target: {fileID: 3562383078296224070, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
       propertyPath: m_Name
       value: stone_canyon2 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26977,6 +28465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26995,6 +28487,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (14)
@@ -27109,6 +28605,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (1)
@@ -27175,6 +28675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860740031377755235, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8965340030930486686, guid: f48db451b6c6f5546a4a234a2f53a761, type: 3}
       propertyPath: m_Name
       value: crystal_canyon (4)
@@ -27200,6 +28704,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -27266,6 +28774,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -27377,6 +28889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27451,6 +28967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27469,6 +28989,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (12)
@@ -27542,6 +29066,10 @@ PrefabInstance:
     - target: {fileID: 858006802294867546, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_Name
       value: crystal_canyon2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 969582309509353383, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1812865949072495743, guid: 169ef77b29ce45b4683592a922cbd413, type: 3}
       propertyPath: m_RootOrder
@@ -27661,6 +29189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27679,6 +29211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3
@@ -27749,6 +29285,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (13)
@@ -27819,6 +29359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (24)
@@ -27901,6 +29445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon1 (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
       value: 375
@@ -27963,6 +29511,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (9)
@@ -28033,6 +29585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 6938190447554316365, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7409971898287817136, guid: c6e415f23d074644dbdd89d7ee952693, type: 3}
       propertyPath: m_Name
       value: stone_canyon3 (7)
@@ -28159,6 +29715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_canyon2 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4029813281800374459, guid: 21100d2d0f6ebf84ea859abe12af3b52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28180,6 +29740,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder
@@ -28254,6 +29818,10 @@ PrefabInstance:
     - target: {fileID: 2889310484915743847, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_Name
       value: stone_canyon1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351806010441311642, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4240196009651568194, guid: 3b7364f957fc2674ab78ddeade7cbb9e, type: 3}
       propertyPath: m_RootOrder

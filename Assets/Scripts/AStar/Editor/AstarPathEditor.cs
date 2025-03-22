@@ -793,10 +793,10 @@ namespace Pathfinding {
 					var serializationSettings = new Pathfinding.Serialization.SerializeSettings();
 					serializationSettings.nodes = true;
 
-					if (EditorUtility.DisplayDialog("Scan before generating cache?", "Do you want to scan the graphs before saving the cache.\n" +
-						"If the graphs have not been scanned then the cache may not contain node data and then the graphs will have to be scanned at startup anyway.", "Scan", "Don't scan")) {
+					//if (EditorUtility.DisplayDialog("Scan before generating cache?", "Do you want to scan the graphs before saving the cache.\n" +
+						//"If the graphs have not been scanned then the cache may not contain node data and then the graphs will have to be scanned at startup anyway.", "Scan", "Don't scan")) {
 						MenuScan();
-					}
+					//}
 
 					// Save graphs
 					var bytes = script.data.SerializeGraphs(serializationSettings);

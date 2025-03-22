@@ -114,7 +114,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4133461030894858098}
@@ -626,6 +626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -647,6 +651,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -754,6 +762,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (14)
@@ -824,6 +836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -842,6 +858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (48)
@@ -964,6 +984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1030,6 +1054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1095,6 +1123,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1170,6 +1202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1231,6 +1267,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -1310,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1384,6 +1428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1446,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (36)
@@ -1471,6 +1523,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -1590,6 +1646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1664,6 +1724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1729,6 +1793,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1796,6 +1864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1862,6 +1934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1923,6 +1999,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -2002,6 +2082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2075,6 +2159,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2150,6 +2238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2224,6 +2316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2242,6 +2338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (60)
@@ -2360,6 +2460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (50)
@@ -2430,6 +2534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2496,6 +2604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2561,6 +2673,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2636,6 +2752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2697,6 +2817,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -2776,6 +2900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2794,6 +2922,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (66)
@@ -2868,6 +3000,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (10)
@@ -2998,6 +3134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3086,6 +3226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (36)
@@ -3208,6 +3352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3282,6 +3430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3300,6 +3452,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (42)
@@ -3374,6 +3530,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (50)
@@ -3496,6 +3656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3557,6 +3721,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -3628,6 +3796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3649,6 +3821,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -3756,6 +3932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (19)
@@ -3834,6 +4014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3895,6 +4079,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -3965,6 +4153,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4040,6 +4232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4114,6 +4310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4132,6 +4332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (2)
@@ -4254,6 +4458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4275,6 +4483,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -4394,6 +4606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4467,6 +4683,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4542,6 +4762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4560,6 +4784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (43)
@@ -4690,6 +4918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4763,6 +4995,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4838,6 +5074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4903,6 +5143,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4978,6 +5222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5051,6 +5299,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5126,6 +5378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5187,6 +5443,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -5254,6 +5514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (38)
@@ -5279,6 +5543,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -5397,6 +5665,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5542,6 +5814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5611,6 +5887,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5686,6 +5966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5752,6 +6036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5770,6 +6058,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (64)
@@ -5900,6 +6192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5918,6 +6214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (54)
@@ -6048,6 +6348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6113,6 +6417,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6188,6 +6496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6262,6 +6574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6328,6 +6644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6393,6 +6713,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6468,6 +6792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6542,6 +6870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6560,6 +6892,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (47)
@@ -6634,6 +6970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (58)
@@ -6764,6 +7104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6830,6 +7174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6848,6 +7196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (55)
@@ -6978,6 +7330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7052,6 +7408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7073,6 +7433,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -7136,6 +7500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (32)
@@ -7254,6 +7622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (16)
@@ -7276,6 +7648,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (68)
@@ -7398,6 +7774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7416,6 +7796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (13)
@@ -7534,6 +7918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (27)
@@ -7612,6 +8000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7686,6 +8078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7704,6 +8100,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (28)
@@ -7834,6 +8234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7908,6 +8312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7926,6 +8334,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (11)
@@ -8000,6 +8412,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (59)
@@ -8130,6 +8546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8204,6 +8624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8269,6 +8693,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8344,6 +8772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8409,6 +8841,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8476,6 +8912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8537,6 +8977,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -8607,6 +9051,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8682,6 +9130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8756,6 +9208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8822,6 +9278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8883,6 +9343,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -8949,6 +9413,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -9028,6 +9496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9093,6 +9565,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9160,6 +9636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9178,6 +9658,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (30)
@@ -9252,6 +9736,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (18)
@@ -9370,6 +9858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (57)
@@ -9435,6 +9927,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -9506,6 +10002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9524,6 +10024,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (53)
@@ -9654,6 +10158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9715,6 +10223,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -9794,6 +10306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9860,6 +10376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9878,6 +10398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (17)
@@ -9956,6 +10480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert3 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
       value: 316
@@ -10018,6 +10546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (16)
@@ -10136,6 +10668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (21)
@@ -10158,6 +10694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (63)
@@ -10280,6 +10820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10346,6 +10890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10411,6 +10959,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10486,6 +11038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10547,6 +11103,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -10617,6 +11177,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10692,6 +11256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10757,6 +11325,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10832,6 +11404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10893,6 +11469,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -10964,6 +11544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11025,6 +11609,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -11104,6 +11692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11122,6 +11714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (38)
@@ -11244,6 +11840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11262,6 +11862,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2
@@ -11339,6 +11943,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -11445,6 +12053,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -11590,6 +12202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (35)
@@ -11612,6 +12228,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (51)
@@ -11812,6 +12432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11885,6 +12509,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11960,6 +12588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12033,6 +12665,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12108,6 +12744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12174,6 +12814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12195,6 +12839,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -12261,6 +12909,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -12380,6 +13032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12454,6 +13110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12519,6 +13179,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12594,6 +13258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12668,6 +13336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12734,6 +13406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12799,6 +13475,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12874,6 +13554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12948,6 +13632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12966,6 +13654,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (45)
@@ -13088,6 +13780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13106,6 +13802,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (62)
@@ -13228,6 +13928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13249,6 +13953,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -13356,6 +14064,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (31)
@@ -13434,6 +14146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13495,6 +14211,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -13574,6 +14294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13592,6 +14316,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (26)
@@ -13714,6 +14442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13779,6 +14511,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13854,6 +14590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13928,6 +14668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13993,6 +14737,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14126,6 +14874,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (42)
@@ -14148,6 +14900,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (19)
@@ -14278,6 +15034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14339,6 +15099,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -14406,6 +15170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (3)
@@ -14428,6 +15196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (37)
@@ -14546,6 +15318,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (51)
@@ -14624,6 +15400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14697,6 +15477,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14772,6 +15556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14837,6 +15625,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14912,6 +15704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14986,6 +15782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15004,6 +15804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (44)
@@ -15126,6 +15930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15187,6 +15995,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -15257,6 +16069,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15332,6 +16148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15406,6 +16226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15427,6 +16251,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -15538,6 +16366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15612,6 +16444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15673,6 +16509,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -15743,6 +16583,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15818,6 +16662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15879,6 +16727,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -15945,6 +16797,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -16024,6 +16880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16089,6 +16949,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -16159,6 +17023,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16312,6 +17180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16373,6 +17245,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -16444,6 +17320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16505,6 +17385,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -16584,6 +17468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16602,6 +17490,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (9)
@@ -16676,6 +17568,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (24)
@@ -16798,6 +17694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16819,6 +17719,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -16930,6 +17834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16995,6 +17903,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17070,6 +17982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17131,6 +18047,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -17232,6 +18152,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (21)
@@ -17354,6 +18278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17415,6 +18343,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -17494,6 +18426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17555,6 +18491,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -17626,6 +18566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17647,6 +18591,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -17713,6 +18661,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -17824,6 +18776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17842,6 +18798,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (8)
@@ -17972,6 +18932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18046,6 +19010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18112,6 +19080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18133,6 +19105,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -18252,6 +19228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18318,6 +19298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18379,6 +19363,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -18449,6 +19437,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18524,6 +19516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18542,6 +19538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (33)
@@ -18660,6 +19660,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (8)
@@ -18738,6 +19742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18756,6 +19764,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (29)
@@ -18878,6 +19890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18899,6 +19915,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -19018,6 +20038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19079,6 +20103,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -19146,6 +20174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (39)
@@ -19168,6 +20200,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (52)
@@ -19290,6 +20326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19308,6 +20348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (35)
@@ -19438,6 +20482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19512,6 +20560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19533,6 +20585,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -19652,6 +20708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19673,6 +20733,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -19792,6 +20856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19810,6 +20878,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (5)
@@ -19940,6 +21012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20005,6 +21081,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20080,6 +21160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20098,6 +21182,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (57)
@@ -20220,6 +21308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20285,6 +21377,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20352,6 +21448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20414,6 +21514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (20)
@@ -20436,6 +21540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (20)
@@ -20566,6 +21674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20640,6 +21752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20702,6 +21818,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (46)
@@ -20727,6 +21847,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -20838,6 +21962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20912,6 +22040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20973,6 +22105,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -21052,6 +22188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21126,6 +22266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21192,6 +22336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21257,6 +22405,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21332,6 +22484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21406,6 +22562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21468,6 +22628,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.053
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (26)
@@ -21490,6 +22654,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (67)
@@ -21612,6 +22780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21678,6 +22850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21699,6 +22875,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -21766,6 +22946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert3 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
       value: 394
@@ -21828,6 +23012,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (46)
@@ -21902,6 +23090,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (3)
@@ -22032,6 +23224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22050,6 +23246,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (1)
@@ -22180,6 +23380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22198,6 +23402,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (61)
@@ -22272,6 +23480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (14)
@@ -22390,6 +23602,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (32)
@@ -22415,6 +23631,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -22534,6 +23754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22595,6 +23819,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -22699,6 +23927,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -22818,6 +24050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22839,6 +24075,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -22958,6 +24198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22976,6 +24220,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (56)
@@ -23106,6 +24354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23172,6 +24424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23237,6 +24493,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23311,6 +24571,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23400,6 +24664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (15)
@@ -23522,6 +24790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23587,6 +24859,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23662,6 +24938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23736,6 +25016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23757,6 +25041,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -23876,6 +25164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23937,6 +25229,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -24003,6 +25299,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -24082,6 +25382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24148,6 +25452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24166,6 +25474,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (34)
@@ -24296,6 +25608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24369,6 +25685,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24444,6 +25764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24517,6 +25841,10 @@ PrefabInstance:
     - target: {fileID: 8409332959582905408, guid: b6ee559ffced0e54999b9996030a6395, type: 3}
       propertyPath: m_Size.y
       value: 80.323845
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409332959582905408, guid: b6ee559ffced0e54999b9996030a6395, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24592,6 +25920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24610,6 +25942,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (16)
@@ -24684,6 +26020,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (39)
@@ -24762,6 +26102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
       value: 224
@@ -24824,6 +26168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (41)
@@ -24946,6 +26294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25020,6 +26372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25038,6 +26394,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (27)
@@ -25168,6 +26528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25234,6 +26598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25252,6 +26620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (49)
@@ -25370,6 +26742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (4)
@@ -25440,6 +26816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25505,6 +26885,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25580,6 +26964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25598,6 +26986,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (25)
@@ -25728,6 +27120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25793,6 +27189,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25868,6 +27268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25886,6 +27290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2
@@ -26016,6 +27424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26077,6 +27489,10 @@ PrefabInstance:
     - target: {fileID: 5652046407218859783, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
@@ -26156,6 +27572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26230,6 +27650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26251,6 +27675,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -26370,6 +27798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26444,6 +27876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26465,6 +27901,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -26584,6 +28024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26658,6 +28102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26723,6 +28171,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26790,6 +28242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26808,6 +28264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (22)
@@ -26930,6 +28390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27003,6 +28467,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27078,6 +28546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27152,6 +28624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27170,6 +28646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (6)
@@ -27370,6 +28850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27388,6 +28872,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (4)
@@ -27462,6 +28950,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (12)
@@ -27584,6 +29076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27657,6 +29153,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27732,6 +29232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27753,6 +29257,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -27950,6 +29458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28023,6 +29535,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28098,6 +29614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28119,6 +29639,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -28238,6 +29762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28256,6 +29784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (65)
@@ -28333,6 +29865,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -28452,6 +29988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28517,6 +30057,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28584,6 +30128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28649,6 +30197,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28724,6 +30276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28745,6 +30301,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -28852,6 +30412,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (22)
@@ -28922,6 +30486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus_desert (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28943,6 +30511,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -29009,6 +30581,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -29128,6 +30704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29149,6 +30729,10 @@ PrefabInstance:
     - target: {fileID: 7577165973768955103, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_Name
       value: stone_desert3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051139893378002210, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8928200527294330618, guid: ec2e39bca14493f46a2bb8a7fbe79e3d, type: 3}
       propertyPath: m_RootOrder
@@ -29256,6 +30840,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (33)
@@ -29278,6 +30866,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (40)
@@ -29396,6 +30988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612626344629471, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6679063781394619682, guid: 95f36e6894d4b4946a9e7f836eb0b9dc, type: 3}
       propertyPath: m_Name
       value: trunk_desert (12)
@@ -29474,6 +31070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29547,6 +31147,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29622,6 +31226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29687,6 +31295,10 @@ PrefabInstance:
     - target: {fileID: 1395999361771891896, guid: b22b97268c3212d48b220171fc588288, type: 3}
       propertyPath: m_Name
       value: cactus_desert (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568223920446547269, guid: b22b97268c3212d48b220171fc588288, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29762,6 +31374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29835,6 +31451,10 @@ PrefabInstance:
     - target: {fileID: 6448008560326439910, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
       propertyPath: m_Name
       value: stone_desert4 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29910,6 +31530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_desert4 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910501784041962011, guid: e0d90d98e3c4a7140bebea09cf3b33b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29928,6 +31552,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7024408037663619384, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7487041663328579781, guid: 3dfdf992f0c3c4a41a76737346a0227d, type: 3}
       propertyPath: m_Name
       value: stone_desert2 (31)
@@ -30057,6 +31685,10 @@ PrefabInstance:
     - target: {fileID: 1999941400026274920, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
       propertyPath: m_Name
       value: stone_desert1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116090693913974165, guid: 6de5c321c412eea4a823c4cdc9d740cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

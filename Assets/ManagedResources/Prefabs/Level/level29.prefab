@@ -145,7 +145,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4133461030894858098}
@@ -359,6 +359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -377,6 +381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (5)
@@ -451,6 +459,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (17)
@@ -569,6 +581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow
@@ -647,6 +663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -668,6 +688,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -791,6 +815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (5)
@@ -816,6 +844,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -935,6 +967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1013,6 +1049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1031,6 +1071,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (1)
@@ -1161,6 +1205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1222,6 +1270,10 @@ PrefabInstance:
     - target: {fileID: 3321137833203327369, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
@@ -1288,6 +1340,10 @@ PrefabInstance:
     - target: {fileID: 3321137833203327369, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
@@ -1358,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 4048155493977752604, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
       propertyPath: m_Name
       value: stone_snow3 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1491,6 +1551,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (16)
@@ -1569,6 +1633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1643,6 +1711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1661,6 +1733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1
@@ -1739,6 +1815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -1809,6 +1889,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (1)
@@ -1927,6 +2011,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (4)
@@ -1952,6 +2040,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -2015,6 +2107,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (21)
@@ -2137,6 +2233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (3)
@@ -2207,6 +2307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2225,6 +2329,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (20)
@@ -2413,6 +2521,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (11)
@@ -2479,6 +2591,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (13)
@@ -2504,6 +2620,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -2578,6 +2698,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -2704,6 +2828,10 @@ PrefabInstance:
     - target: {fileID: 4048155493977752604, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
       propertyPath: m_Name
       value: stone_snow3 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2849,6 +2977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2870,6 +3002,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -2945,6 +3081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -3019,6 +3159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -3081,6 +3225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow (5)
@@ -3203,6 +3351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3221,6 +3373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (23)
@@ -3290,6 +3446,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -3417,6 +3577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3435,6 +3599,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (2)
@@ -3509,6 +3677,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (11)
@@ -3627,6 +3799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (10)
@@ -3652,6 +3828,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -3779,6 +3959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3853,6 +4037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3874,6 +4062,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -4001,6 +4193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4022,6 +4218,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -4097,6 +4297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -4159,6 +4363,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (19)
@@ -4233,6 +4441,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (3)
@@ -4310,6 +4522,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -4417,6 +4633,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (6)
@@ -4442,6 +4662,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -4508,6 +4732,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -4582,6 +4810,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -4693,6 +4925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4714,6 +4950,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -4785,6 +5025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (16)
@@ -4863,6 +5107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 123
@@ -4925,6 +5173,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (25)
@@ -4991,6 +5243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (6)
@@ -5069,6 +5325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -5142,6 +5402,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -5257,6 +5521,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (12)
@@ -5282,6 +5550,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -5357,6 +5629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -5419,6 +5695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (24)
@@ -5488,6 +5768,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -5621,6 +5905,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow (6)
@@ -5691,6 +5979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -5756,6 +6048,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -5831,6 +6127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5901,6 +6201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (15)
@@ -5967,6 +6271,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (4)
@@ -6085,6 +6393,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (8)
@@ -6110,6 +6422,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -6173,6 +6489,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (7)
@@ -6365,6 +6685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6383,6 +6707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (14)
@@ -6452,6 +6780,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -6571,6 +6903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6645,6 +6981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6710,6 +7050,10 @@ PrefabInstance:
     - target: {fileID: 4048155493977752604, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
       propertyPath: m_Name
       value: stone_snow3 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6777,6 +7121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6798,6 +7146,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -6873,6 +7225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -6935,6 +7291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (18)
@@ -7012,6 +7372,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -7127,6 +7491,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (15)
@@ -7205,6 +7573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7226,6 +7598,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -7345,6 +7721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7366,6 +7746,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -7440,6 +7824,10 @@ PrefabInstance:
     - target: {fileID: 5434973310705311731, guid: 330989837099d554588aa1b6f0f8d5bf, type: 3}
       propertyPath: m_Size.y
       value: 83.83828
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434973310705311731, guid: 330989837099d554588aa1b6f0f8d5bf, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7155273166763974144, guid: 330989837099d554588aa1b6f0f8d5bf, type: 3}
       propertyPath: m_RootOrder
@@ -7559,6 +7947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7647,6 +8039,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (22)
@@ -7721,6 +8117,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (13)
@@ -7791,6 +8191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 138
@@ -7857,6 +8261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -7919,6 +8327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (9)
@@ -8053,6 +8465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8127,6 +8543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8145,6 +8565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow (3)
@@ -8211,6 +8635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (8)
@@ -8403,6 +8831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8421,6 +8853,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (12)
@@ -8499,6 +8935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -8569,6 +9009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (10)
@@ -8699,6 +9143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8773,6 +9221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8835,6 +9287,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (14)
@@ -8857,6 +9313,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow (1)
@@ -8979,6 +9439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9000,6 +9464,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -9067,6 +9535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 125
@@ -9132,6 +9604,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -9251,6 +9727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9272,6 +9752,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -9343,6 +9827,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow (2)
@@ -9412,6 +9900,10 @@ PrefabInstance:
     - target: {fileID: 4765887864939845752, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_Name
       value: spar_snow2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
@@ -9531,6 +10023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9623,6 +10119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9697,6 +10197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -9767,6 +10271,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1 (2)
@@ -9833,6 +10341,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 7562068711926248283, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 7957077898498472614, guid: 7d76c5ae471ade44b854c079365e864f, type: 3}
       propertyPath: m_Name
       value: stone_snow1
@@ -9903,6 +10415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spar_snow2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4953731570671079813, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5828505224191150685, guid: e235c2410c8826b4a91664753995d3b4, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -9968,6 +10484,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -10075,6 +10595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (9)
@@ -10153,6 +10677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10223,6 +10751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200520637319559761, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 4384212587073008556, guid: cf99b550399f79548999b38d5930e5e7, type: 3}
       propertyPath: m_Name
       value: pine_snow (1)
@@ -10248,6 +10780,10 @@ PrefabInstance:
     - target: {fileID: 814821707491896367, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_Name
       value: stone_snow2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995912737286366674, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 1841412988363177482, guid: ec4fc132646a70c43935db7efcd300a4, type: 3}
       propertyPath: m_RootOrder
@@ -10379,6 +10915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_snow3 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517403602825661921, guid: 2b90d30d9e11f7a42b97486216f4c83b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10397,6 +10937,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4285685050842094772}
     m_Modifications:
+    - target: {fileID: 4658899295334284339, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
+      propertyPath: m_SortingOrder
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 5060736894961120718, guid: 4645af3d6f5f15d43a18652ed3cdc226, type: 3}
       propertyPath: m_Name
       value: spar_snow
