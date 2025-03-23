@@ -1,25 +1,38 @@
 using System;
 using System.Collections.Generic;
-
-public class KnifeObjectPool<T> where T : new()
+using UnityEngine;
+public class KnifeObjectPool<T> where T : ItemBase, new()
 {
     readonly Func<T> onCreate;
     readonly Stack<T> stack = new();
+    readonly Transform parent;
+    readonly string resName;
 
-    public KnifeObjectPool() { onCreate = () => new T(); }
-    public KnifeObjectPool(Func<T> onCreate = null)
+    public KnifeObjectPool() { }
+    public KnifeObjectPool(Transform parent, Func<T> onCreate = null)
     {
+        resName = typeof(T).Name;
+        this.parent = parent;
         this.onCreate = onCreate ?? (() => new T());
     }
 
     public T Get()
     {
         if (stack.Count > 0) return stack.Pop();
-        else return onCreate();
+        var t = onCreate();
+        if (t.gameObject == null)
+        {
+            t.gameObject = ResManager.LoadPrefab(resName, parent, Vector3.one, Vector3.zero);
+            t.transform = t.gameObject.transform;
+        }
+        return t;
     }
 
     public void Put(T obj)
     {
+        ResManager.UnloadPrefab(resName, obj.gameObject);
+        obj.gameObject = null;
+        obj.transform = null;
         stack.Push(obj);
     }
 }

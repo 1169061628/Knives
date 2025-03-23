@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ItemBase
 {
-    protected GameObject gameObject;
-    protected Transform transform;
+    public GameObject gameObject;
+    public Transform transform;
 
-    protected virtual void Reset()
+    public virtual void Reset()
     {
         transform.localScale = Vector3.one;
         transform.localPosition = Vector3.zero;

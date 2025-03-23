@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BladeBase
+public class BladeBase : ItemBase
 {
     RoleBase role;  // 对应的角色
     bool isValid;   // 刀刃是否可用
