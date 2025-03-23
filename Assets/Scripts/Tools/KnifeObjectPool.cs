@@ -35,4 +35,13 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
         obj.transform = null;
         stack.Push(obj);
     }
+
+    public void Clear()
+    {
+        for (int i = 0; i < stack.Count; ++i)
+        {
+            Put(stack.Pop());
+        }
+        stack.Clear();
+    }
 }

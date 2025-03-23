@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public enum BladeType
 {
@@ -12,8 +13,13 @@ public enum BladeType
     HugeBlade,
 }
 
-public class ManyKnivesDefine
+public static class ManyKnivesDefine
 {
+    public static int ToInt(this Enum e)
+    {
+        return e.GetHashCode();
+    }
+
     public readonly struct UnityAxis
     {
         public const RectTransform.Axis Horizontal = RectTransform.Axis.Horizontal;
