@@ -1,5 +1,17 @@
 ﻿using UnityEngine;
 
+public enum BladeType
+{
+    DefaultBlade,
+    SnowBlade,
+    MiasmaBlade,
+    LightingBlade,
+    FireBlade,
+    IronBlade,
+    HugeAxe,
+    HugeBlade,
+}
+
 public class ManyKnivesDefine
 {
     public readonly struct UnityAxis

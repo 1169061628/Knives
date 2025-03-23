@@ -6,5 +6,6 @@ public class BladeBase
 {
     RoleBase role;  // 对应的角色
     bool isValid;   // 刀刃是否可用
-    bool propFlag;
+    bool propFlag;  // 是否可捡起来
+    BladeType bladeType;// 刀刃类型
 }
