@@ -2,7 +2,6 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
-using System;
 
 public class EditorTools
 {
@@ -69,12 +68,37 @@ public class EditorTools
     static void ChangeAllScale()
     {
         var objs = Selection.gameObjects;
+
+        //object lockObj = new();
+        //string nowName = "默认";
+        //int count = 0;
+        //EditorUtility.DisplayProgressBar("Loading", "修改中", 0);
+        //EditorApplication.update = () =>
+        //{
+        //    if (count < objs.Length) EditorUtility.DisplayProgressBar($"修改中{count}/{objs.Length}", nowName, (float) count / objs.Length);
+        //    else
+        //    {
+        //        EditorApplication.update = null;
+        //        EditorUtility.ClearProgressBar();
+        //        AssetDatabase.Refresh();
+        //        Debug.LogError("完成");
+        //    }
+        //};
+
         for (int i = 0; i < objs.Length; i++)
         {
-            Util.GetTransform(objs[i], "map").localScale = Vector3.one * 50;
-            SetSortingLayer(objs[i]);
-            EditorUtility.SetDirty(objs[i]);
+            var go = objs[i];
+            //ThreadPool.QueueUserWorkItem(_ =>
+            //{
+            //    lock (lockObj)
+            //    {
+                    //nowName = go.name;
+                    Util.GetTransform(go, "map").localScale = Vector3.one * 50;
+                    SetSortingLayer(go);
+                    EditorUtility.SetDirty(go);
+                    //count++;
+            //    }
+            //});
         }
-        AssetDatabase.Refresh();
     }
 }
