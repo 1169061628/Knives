@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using bc.MiniGameBase;
+using DG.Tweening;
 using UnityEngine;
 
 public class RoleBase : ItemBase
@@ -59,4 +60,55 @@ public class RoleBase : ItemBase
     protected bool noInjury;
     // 不受击退控制
     protected bool uncontrolled;
+    // 移动速度
+    private EventHandler<int> moveSpBind = new();
+    // 记的当前速度
+    private int curMoveSp;
+    private EventHandler<int> aiMoveBind = new();
+    // 特殊静止状态
+    private bool fixedlyFlag;
+    // 攻击速度
+    private EventHandler<int> atkSpBind = new();
+    // 刀刃旋转速度
+    private EventHandler<int> bladeSpBind = new();
+    // bladeRotTween（这个属性没用到）
+    
+    // 真实血量
+    private EventHandler<int> hpValueBind = new();
+    // 最大血量
+    private EventHandler<int> hpMaxBind = new();
+    // 刀刃数量
+    private EventHandler<int> bladeNumBind = new();
+    // 动画控制器(后面写)
+    // AnimCtr
+    private GameObject hpSlider;
+    // 血条的位置
+    private Transform hpAnchor;
+    // 伤害数字位置
+    private float dmgOffY;
+    // 冷冻特效
+    private ParticleSystem freezeFx;
+    // 闪电特效
+    private ParticleSystem fx_Light;
+    
+    // debuff相关
+    // 减速标记
+    // private bool debuff_moveSp_Flag;
+    // private bool debuff_moveSp_Timer;
+    // private bool debuff_freeze_Flag;
+    // private bool debuff_freeze_Timer;
+    // private bool debuff_light_Flag;
+    // private bool debuff_light_Timer;
+    // private bool debuff_lightID;
+    
+    // 碰了多少个毒气
+    private Dictionary<GameObject, int> hurtByMiasmaPair;
+    // 毒气计时器
+    private int hurtByMiasmaTimer;
+    private int hurtByMiasmaCount;
+    private GameObject miasmaObj;
+    private float miasmaDmg;
+    // 死亡回收标记
+    private Sequence deadTween;
+
 }
