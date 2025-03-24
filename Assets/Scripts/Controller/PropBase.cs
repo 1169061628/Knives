@@ -1,6 +1,4 @@
-
-
-public class RoleBase : ItemBase
+public class PropBase : ItemBase
 {
     public override void InitComponent()
     {

@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class ItemBase
+public abstract class ItemBase
 {
     public GameObject gameObject;
     public Transform transform;
+
+    public abstract void InitComponent();
 
     public virtual void Reset()
     {

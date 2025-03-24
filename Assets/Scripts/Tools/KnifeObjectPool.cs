@@ -25,6 +25,7 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
             t.gameObject = ResManager.LoadPrefab(resName, parent, Vector3.one, Vector3.zero);
             t.transform = t.gameObject.transform;
         }
+        t.InitComponent();
         return t;
     }
 
