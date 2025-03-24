@@ -78,6 +78,7 @@ public class EventHandler
 public class EventHandler<T>
 {
     readonly List<Action<T>> _event;
+    public T value;
     public EventHandler(int capacity = 4)
     {
         _event = new(capacity);
@@ -111,6 +112,7 @@ public class EventHandler<T>
     int _r, _c;
     public void Send(T args)
     {
+        value = args;
         var count = _event.Count;
         var size = _c;
         _r++;
