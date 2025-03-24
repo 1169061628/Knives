@@ -7,6 +7,9 @@ public abstract class ItemBase
 
     public abstract void InitComponent();
 
+    public virtual void Update() { }
+    public virtual void FixedUpdate() { }
+    public virtual void LateUpdate() { }
     public virtual void Reset()
     {
         transform.localScale = Vector3.one;

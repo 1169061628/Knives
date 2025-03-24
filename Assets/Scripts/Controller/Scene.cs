@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -105,6 +106,14 @@ public class Scene
     // 每帧最多生成多少
     const int spawnCountPerFreme = 5;
 
+    GameMgr gameMgr;
+    UIMgr uiMgr;
+    AudioMgr audioMgr;
+
+    Tween cgTween;
+
+    readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
+
     public GameObject levelRoot;
 
     public void AddBlade()
@@ -114,8 +123,65 @@ public class Scene
 
     public void Init()
     {
-        OnPauseStateChange.Add(val => isPause = val);
+        gameMgr = new();
+        uiMgr = new();
+        audioMgr = new();
+        OnPauseStateChange.Add(val =>
+        {
+            isPause = val;
+            PauseListener(val);
+        });
+        readyFlag = false;
+    }
+    void RefreshPause()
+    {
+
     }
 
+    void PauseListener(bool pause)
+    {
+        var timeScale = pause ? 0 : 1;
+        if (cgTween != null) cgTween.timeScale = timeScale;
+    }
 
+    void Update()
+    {
+        if (isPause) return;
+        if (readyFlag)
+        {
+            foreach(var item in rolePairWithGO)
+            {
+                item.Value.Update();
+            }
+        }
+    }
+
+    void StartSpawn()
+    {
+        if (overFlag) return;
+        if (levelWaveBind.value > levelWaveMax) return;
+        if (!levelConfigTable.TryGetValue(levelWaveBind.value, out var curWaveData)) return;
+        var deltaTime = Time.deltaTime;
+        spawnTimer += deltaTime;
+        bossTimerBind.Send(bossTimerBind.value - deltaTime);
+        if (spawnTimer >= curWaveData.time)
+        {
+            // 生成道具
+            //if (curWaveData.propNum != 0) spawnProp
+        }
+    }
+
+    void SpawnPropPrefab(int num, int type, Vector3 pos)
+    {
+        var spawnPosFlag = pos == default;
+        for (int i = 0; i < num; ++i)
+        {
+            //var temGo
+        }
+    }
+
+    //PropBase PropPoolPopOne(int type)
+    //{
+
+    //}
 }
