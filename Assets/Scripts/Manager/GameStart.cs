@@ -27,8 +27,6 @@ public class GameStart : MonoBehaviour
             {
                 levelSelect.SetActive(false);
                 Debug.LogError($"进战斗关卡{iii}");
-
-
                 panel.OnOpen(iii);
             });
         }

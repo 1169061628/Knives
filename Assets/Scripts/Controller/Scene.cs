@@ -111,4 +111,11 @@ public class Scene
     {
         bladeCount++;
     }
+
+    public void Init()
+    {
+        OnPauseStateChange.Add(val => isPause = val);
+    }
+
+
 }

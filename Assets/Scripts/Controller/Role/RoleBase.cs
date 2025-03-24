@@ -1,5 +1,3 @@
-
-
 using System.Collections.Generic;
 using bc.MiniGameBase;
 using UnityEngine;
@@ -8,14 +6,15 @@ public class RoleBase : ItemBase
 {
     public override void InitComponent()
     {
-        
+
     }
-    
+
     // private var EaseTemp = DG.Tweening.Ease;
     // private var easeMove = EaseTemp.OutQuad;
     // private var easeHit = EaseTemp.OutQuad;
     // private var easeHIt2 = EaseTemp.InQuad;
-    enum ItemNames {
+    enum ItemNames
+    {
         bladeTriggerListener,
         collider,
         collision,
