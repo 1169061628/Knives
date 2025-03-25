@@ -5,5 +5,5 @@ public class PropBase : ItemBase
         
     }
 
-    public void Init(Scene scene, int type) { }
+    public virtual void Init(Scene scene, int type) { }
 }
