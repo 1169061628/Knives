@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using bc.MiniGameBase;
 using DG.Tweening;
+using Pathfinding;
 using UnityEngine;
 
 public class RoleBase : ItemBase
@@ -43,7 +44,7 @@ public class RoleBase : ItemBase
 
     protected Scene sceneMgr;
 
-    // protected UIMgr uiMgr;
+    protected UIMgr uiMgr;
     // 是否为boss
     protected bool isBoss;
     // 角色名字
@@ -110,5 +111,29 @@ public class RoleBase : ItemBase
     private float miasmaDmg;
     // 死亡回收标记
     private Sequence deadTween;
+    // 是否准备好
+    private bool readyFlag;
+    // 移动方向随机偏移
+    private Quaternion moveOffRot;
+    private float roleMoveOff;
+    // 寻路相关
+    private AIDestinationSetter AIDestinationSetter;
+    private AIPath AIPath;
+    private Vector3 lastAIPosition;
 
+    public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
+    {
+        sceneMgr = scene;
+        scene.OnPauseStateChange.Add(PauseListener);
+    }
+
+    void PauseListener(bool value)
+    {
+        
+    }
+
+    public void Recycle()
+    {
+        sceneMgr.OnPauseStateChange.Remove(PauseListener);
+    }
 }
