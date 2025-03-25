@@ -378,7 +378,7 @@ public static class ManyKnivesDefine
             }
             Debug.DrawRay(from, to * rayLength, color.Value);
         }
-        RaycastHit2D[] hitInfos = UnityEngine.Physics2D.RaycastAll(from, to, rayLength, layerMask);
+        RaycastHit2D[] hitInfos = Physics2D.RaycastAll(from, to, rayLength, layerMask);
         if (hitInfos.Length > 0)
         {
             return hitInfos[0];
@@ -389,12 +389,12 @@ public static class ManyKnivesDefine
     // 忽略两个碰撞体
     public static void Func_IgnoreCollision(Collider2D col1, Collider2D col2)
     {
-        UnityEngine.Physics2D.IgnoreCollision(col1, col2);
+        Physics2D.IgnoreCollision(col1, col2);
     }
 
     public static Collider2D Func_OverlapCircle(Vector2 pos, float radius, LayerMask layerMark)
     {
-        return UnityEngine.Physics2D.OverlapCircle(pos, radius, layerMark);
+        return Physics2D.OverlapCircle(pos, radius, layerMark);
     }
 
     public static (Vector3[], float) Func_BezierCurveWithThreePoints(Vector3 v1, Vector3 v2, Vector3 v3, int vCount = 5)

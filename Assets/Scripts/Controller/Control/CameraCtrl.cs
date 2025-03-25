@@ -26,7 +26,7 @@ public class CameraCtrl
     int maxOSize = 18;
     int camMoveSp = 8;
 
-    float mapLeftBound, mapRightBound, mapTopBound, mapBottomBound;
+    public float mapLeftBound, mapRightBound, mapTopBound, mapBottomBound;
     float orthographiSizeScale;
     float viewSizeX, viewSizeY;
 
