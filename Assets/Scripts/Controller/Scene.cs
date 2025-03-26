@@ -35,8 +35,7 @@ public struct RoleConfigArgs
 
 public class Scene
 {
-    public bool isPause;
-    public EventHandler<bool> OnPauseStateChange = new();
+    public EventHandler<bool> pauseBind = new();
 
     public AudioSource AS_BGM;
     public AudioSource AS_FX;
@@ -83,19 +82,19 @@ public class Scene
     // 记录当前关卡有哪些敌人，对象池只创建需要的敌人
     readonly List<int> curEnemyTypeList = new();
     // boss生成时间
-    float bossTimer;
+    float bossTimer = 0;
     // boss倒计时
     readonly EventHandler<float> bossTimerBind = new();
     // 演出状态下，所有角色无伤
-    public bool NoInjury;
+    public bool NoInjury = false;
     // 游戏结束标记
-    public bool overFlag;
+    public bool overFlag = false;
     // 随时间生成刀刃
-    float soawnBladeTimer;
+    float spawnBladeTimer = 0;
     int bladeCount = 0;
 
     // 记录所有自动掉落的刀刃
-    readonly List<BladeBase> autoDropBladeList = new();
+    readonly Dictionary<int, BladeBase> autoDropBladeList = new();
     (int initNum, int maxNum) autoBladeConfig;
 
     // 自动生成的刀刃回收检测CD
@@ -114,6 +113,7 @@ public class Scene
 
     readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
     readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
+    readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
 
 
     public GameObject levelRoot;
@@ -128,11 +128,7 @@ public class Scene
         gameMgr = new();
         uiMgr = new();
         audioMgr = new();
-        OnPauseStateChange.Add(val =>
-        {
-            isPause = val;
-            PauseListener(val);
-        });
+        pauseBind.Add(val => PauseListener(val));
         readyFlag = false;
     }
     void RefreshPause()
@@ -148,14 +144,139 @@ public class Scene
 
     void Update()
     {
-        if (isPause) return;
+        if (pauseBind.value) return;
         if (readyFlag)
         {
             foreach(var item in rolePairWithGO)
             {
                 item.Value.Update();
             }
+            StartSpawn();
+            AutoSpawnBlade();
         }
+        else if (readyFlag && rolePlayer != null) rolePlayer.Update();
+    }
+
+    void FixedUpdate()
+    {
+        if (pauseBind.value) return;
+        if (readyFlag) cameraCtrl.FixedUpdate();
+    }
+
+    void AutoSpawnBlade()
+    {
+        // 场上少于50个，每帧生成10个
+        if (bladeCount < autoBladeConfig.maxNum)
+        {
+            var viewMin = cameraCtrl.ViewportToWorldPoint(Vector3.zero);
+            var viewMax = cameraCtrl.ViewportToWorldPoint(Vector3.one);
+            Dictionary<int, int> sideList = new();
+            // 左边可用
+            if (viewMin.x - spawnViewMinOff > cameraCtrl.mapLeftBound + mapBound) sideList[sideList.Count + 1] = 1;
+            // 下方可用
+            if (viewMin.y - spawnViewMinOff > cameraCtrl.mapBottomBound + mapBound) sideList[sideList.Count + 1] = 2;
+            // 右方可用
+            if (viewMax.x + spawnViewMinOff < cameraCtrl.mapRightBound - mapBound) sideList[sideList.Count + 1] = 3;
+            // 上方可用
+            if (viewMax.y + spawnViewMinOff < cameraCtrl.mapTopBound - mapBound) sideList[sideList.Count + 1] = 4;
+            var num = Mathf.Min(spawnCountPerFreme, autoBladeConfig.maxNum - bladeCount);
+            var abNum = autoDropBladeList.Count;
+            var sideNum = sideList.Count;
+            if (sideNum < 1)
+            {
+                sideList = new() { [1] = 1, [2] = 2, [3] = 3, [4] = 4 };
+                sideNum = 4;
+            }
+            var random = new System.Random();
+            for (int i = 0; i < num; ++i)
+            {
+                // 随机出现在周围
+                var spawnDir = sideList[Random.Range(1, sideNum + 1)];
+                Vector3 tmpPos;
+                // 上方
+                if (spawnDir == 4) 
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMax.y + spawnViewMinOff, viewMax.y + spawnViewMaxOff, (float)random.NextDouble()));
+                else if (spawnDir == 2)
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMinOff, (float)random.NextDouble()));
+                else if (spawnDir == 1)
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMin.x + spawnViewMinOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMaxOff, (float)random.NextDouble()));
+                else
+                    tmpPos = new(Mathf.Lerp(viewMax.x - spawnViewMinOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMax.y + spawnViewMaxOff, (float)random.NextDouble()));
+                tmpPos = GetSafetyPosition(tmpPos);
+                tmpPos.z = 0;
+                var newBlade = BladePoolPopOne(1);
+                newBlade.InitWithoutRole(this, 1, false);
+                newBlade.Drop(tmpPos, false);
+                autoDropBladeList[abNum + i] = newBlade;
+            }
+        }
+        else
+        {
+            // 场上刀刃大于最大值，回收屏幕外的刀刃
+            spawnBladeTimer += Time.deltaTime;
+            var tLength = autoDropBladeList.Count;
+            if (tLength > 0 && spawnBladeTimer >= autoBladeCheckCD)
+            {
+                spawnBladeTimer = 0;
+                var viewMin = cameraCtrl.ViewportToWorldPoint(Vector2.zero);
+                var viewMax = cameraCtrl.ViewportToWorldPoint(Vector2.one);
+                Dictionary<int, int> idx = new();
+                int tmpI = 0;
+                for (int i = 1; i <= tLength; ++i)
+                {
+                    var tmpPos = autoDropBladeList[i].transform.position;
+                    if (tmpPos.x < viewMin.x - spawnViewMaxOff || tmpPos.y < viewMin.y - spawnViewMaxOff || tmpPos.x > viewMax.x + spawnViewMaxOff || tmpPos.y > viewMax.y + spawnViewMaxOff)
+                    {
+                        tmpI++;
+                        idx[tmpI] = i;
+                        // 每帧最多回收10个
+                        if (tmpI >= 10) break;
+                    }
+                }
+                if (tmpI > 0)
+                {
+                    var removeI = 0;
+                    foreach(var item in idx)
+                    {
+                        var v = item.Value;
+                        autoDropBladeList[v - removeI].PushInPool();
+                        autoDropBladeList.Remove(v - removeI);
+                        removeI++;
+                    }
+                    bladeCount -= tmpI;
+                }
+            }
+        }
+    }
+
+    public void BladePoolPushOne(int type, BladeBase item)
+    {
+        bladePairWithGO.Remove(item.gameObject);
+        GetBladePool(type).Put(item);
+    }
+
+    BladeBase BladePoolPopOne(int type)
+    {
+        var obj = GetBladePool(type).Get();
+        obj.gameObject.name = ManyKnivesDefine.TriggerType.blade + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Blade;
+        bladePairWithGO[obj.gameObject] = obj;
+        return obj;
+    }
+
+    KnifeObjectPool<BladeBase> GetBladePool(int type)
+    {
+        return type switch
+        {
+            1 => bladePool[ManyKnivesDefine.BladeNames.defaultblade],
+            2 => bladePool[ManyKnivesDefine.BladeNames.snowblade],
+            3 => bladePool[ManyKnivesDefine.BladeNames.fireblade],
+            4 => bladePool[ManyKnivesDefine.BladeNames.miasmablade],
+            5 => bladePool[ManyKnivesDefine.BladeNames.lightningblade],
+            6 => bladePool[ManyKnivesDefine.BladeNames.ironblade],
+            7 => bladePool[ManyKnivesDefine.BladeNames.hugeAxe],
+            8 => bladePool[ManyKnivesDefine.BladeNames.hugeblade],
+            _ => null
+        };
     }
 
     void StartSpawn()

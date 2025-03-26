@@ -1,18 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-public enum BladeType
-{
-    DefaultBlade,
-    SnowBlade,
-    MiasmaBlade,
-    LightingBlade,
-    FireBlade,
-    IronBlade,
-    HugeAxe,
-    HugeBlade,
-}
-
 public static class ManyKnivesDefine
 {
     public static int ToInt(this Enum e)

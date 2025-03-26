@@ -145,7 +145,7 @@ public class RoleBase : ItemBase
     public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
     {
         sceneMgr = scene;
-        scene.OnPauseStateChange.Add(PauseListener);
+        scene.pauseBind.Add(PauseListener);
     }
 
     void PauseListener(bool value)
@@ -155,6 +155,6 @@ public class RoleBase : ItemBase
 
     public void Recycle()
     {
-        sceneMgr.OnPauseStateChange.Remove(PauseListener);
+        sceneMgr.pauseBind.Remove(PauseListener);
     }
 }

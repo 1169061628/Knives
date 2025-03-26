@@ -41,7 +41,7 @@ public class CameraCtrl
         camera.transparencySortMode = TransparencySortMode.CustomAxis;
         camera.transparencySortAxis = Vector3.up;
 
-        sceneMgr.OnPauseStateChange.Add(PauseListener);
+        sceneMgr.pauseBind.Add(PauseListener);
     }
 
     void PauseListener(bool pause)
@@ -55,7 +55,7 @@ public class CameraCtrl
     {
         KillScaleTween();
         KillShakeTween();
-        sceneMgr.OnPauseStateChange.Remove(PauseListener);
+        sceneMgr.pauseBind.Remove(PauseListener);
     }
 
     public void Init(RoleBase player) // TODO 其实这里应该传RolePlayer先这么写后面改
@@ -238,6 +238,6 @@ public class CameraCtrl
 
     void RefreshPause()
     {
-        PauseListener(sceneMgr.isPause);
+        PauseListener(sceneMgr.pauseBind.value);
     }
 }

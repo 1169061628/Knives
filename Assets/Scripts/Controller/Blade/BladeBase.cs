@@ -5,7 +5,7 @@ public class BladeBase : ItemBase
     RoleBase role;  // 对应的角色
     bool isValid;   // 刀刃是否可用
     bool propFlag;  // 是否可捡起来
-    BladeType bladeType;// 刀刃类型
+    int bladeType;// 刀刃类型
     float height;    // 刀刃高度
     bool flyFlag;   // 是否在飞行状态
     Transform parent;   // 刀刃父物体，只有RolePlayer有用
@@ -26,13 +26,13 @@ public class BladeBase : ItemBase
         height = spriteRenderer.bounds.size.y * 0.5f;
     }
 
-    public void Init(Scene scene, BladeType bladeType, RoleBase roleBase)
+    public virtual void Init(Scene scene, int bladeType, RoleBase roleBase)
     {
         role = roleBase;
         //InitWithoutRole(scene, bladeType, role.isPlayer); TODO
     }
 
-    public void InitWithoutRole(Scene scene, BladeType bladeType, bool isPlayer)
+    public void InitWithoutRole(Scene scene, int bladeType, bool isPlayer)
     {
         sceneMgr = scene;
         this.bladeType = bladeType;
@@ -45,7 +45,7 @@ public class BladeBase : ItemBase
         flyFlag = false;
         parent = null;
         autoSpawnFlag = false;
-        scene.OnPauseStateChange.Add(PauseListener);
+        scene.pauseBind.Add(PauseListener);
     }
 
     void PauseListener(bool pause)
@@ -80,5 +80,13 @@ public class BladeBase : ItemBase
 
             });
         }
+    }
+
+    public void PushInPool()
+    {
+        isValid = false;
+        propFlag = false;
+        collider2D.enabled = false;
+        sceneMgr.BladePoolPushOne(bladeType, this);
     }
 }
