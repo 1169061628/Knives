@@ -89,6 +89,7 @@ public class Scene
     public bool NoInjury = false;
     // 游戏结束标记
     public bool overFlag = false;
+    public bool startFlag = false;
     // 随时间生成刀刃
     float spawnBladeTimer = 0;
     int bladeCount = 0;
@@ -123,6 +124,43 @@ public class Scene
         bladeCount++;
     }
 
+    public void ReduceBlade(BladeBase blade)
+    {
+        bladeCount--;
+        if (blade != null && blade.autoSpawnFlag)
+        {
+            int idx = -1;
+            foreach(var item in autoDropBladeList)
+            {
+                if (item.Value == blade)
+                {
+                    idx = item.Key;
+                    break;
+                }
+            }
+            if (idx != -1) autoDropBladeList.Remove(idx);
+        }
+    }
+
+    public void InitSpawnBlade()
+    {
+        var viewMin = cameraCtrl.ViewportToWorldPoint(Vector2.zero);
+        var viewMax = cameraCtrl.ViewportToWorldPoint(Vector2.one);
+        var abNum = autoDropBladeList.Count;
+        var random = new System.Random();
+        for (int i = 1; i <= autoBladeConfig.initNum; i++)
+        {
+            // 随机出现在周围
+            var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
+            tmpPos = GetSafetyPosition(tmpPos);
+            tmpPos.z = 0;
+            var newBlade = BladePoolPopOne(1);
+            newBlade.InitWithoutRole(this, 1, false);
+            newBlade.Drop(tmpPos, false);
+            autoDropBladeList[abNum + i] = newBlade;
+        }
+    }
+
     public void Init()
     {
         gameMgr = new();
@@ -145,7 +183,7 @@ public class Scene
     void Update()
     {
         if (pauseBind.value) return;
-        if (readyFlag)
+        if (startFlag)
         {
             foreach(var item in rolePairWithGO)
             {
@@ -161,6 +199,23 @@ public class Scene
     {
         if (pauseBind.value) return;
         if (readyFlag) cameraCtrl.FixedUpdate();
+    }
+
+    void LateUpdate()
+    {
+        if (pauseBind.value) return;
+        if (startFlag)
+        {
+            cameraCtrl.Update();
+            foreach (var item in rolePairWithGO)
+            {
+                item.Value.LateUpdate();
+            }
+        }
+        else if (readyFlag && rolePlayer != null)
+        {
+            rolePlayer.LateUpdate();
+        }
     }
 
     void AutoSpawnBlade()

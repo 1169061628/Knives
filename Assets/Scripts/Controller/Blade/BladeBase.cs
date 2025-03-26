@@ -9,7 +9,7 @@ public class BladeBase : ItemBase
     float height;    // 刀刃高度
     bool flyFlag;   // 是否在飞行状态
     Transform parent;   // 刀刃父物体，只有RolePlayer有用
-    bool autoSpawnFlag; // 是否自动生成
+    public bool autoSpawnFlag; // 是否自动生成
     Scene sceneMgr;
 
     GameObject blade;
