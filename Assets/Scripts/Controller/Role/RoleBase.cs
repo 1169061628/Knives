@@ -8,7 +8,19 @@ public class RoleBase : ItemBase
 {
     public override void InitComponent()
     {
-
+        aiDestinationSetter = Util.GetComponentByObjectName<AIDestinationSetter>(gameObject, "ironBoss");
+        aiPath = Util.GetComponentByObjectName<AIPath>(gameObject, "ironBoss");
+        triggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "player");
+        rigidbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "player");
+        bladeTriggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "blade");
+        bladeRigbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "blade");
+        bladeTran = bladeTriggerListener.transform;
+        collider = Util.GetComponentByObjectName<Collider>(gameObject, "trigger");
+        collision = Util.GetComponentByObjectName<CircleCollider2D>(gameObject, "collision");
+        collisionRadius = collision.radius;
+        // collision.gameObject.SetActive(false);
+        animator = Util.GetComponentByObjectName<Animator>(gameObject, "edit_hauptfigur");
+        skinMeshRenderer = Util.GetComponentByObjectName<SkinnedMeshRenderer>(gameObject, "COMB");
     }
 
     // private var EaseTemp = DG.Tweening.Ease;
@@ -117,9 +129,18 @@ public class RoleBase : ItemBase
     private Quaternion moveOffRot;
     private float roleMoveOff;
     // 寻路相关
-    private AIDestinationSetter AIDestinationSetter;
-    private AIPath AIPath;
+    private AIDestinationSetter aiDestinationSetter;
+    private AIPath aiPath;
     private Vector3 lastAIPosition;
+    private string mpb_FillPhase = "_FillPhase";
+    private string mpb_FillColor = "_FillColor";
+    private string mpb_DissolveThreshold = "_DissolveThreshold";
+    private string mpb_Color = "_Color";
+
+    private Rigidbody2D rigidbody;
+    private Transform bladeTran;
+    private Animator animator;
+    private SkinnedMeshRenderer skinMeshRenderer;
 
     public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
     {
@@ -129,7 +150,7 @@ public class RoleBase : ItemBase
 
     void PauseListener(bool value)
     {
-        
+
     }
 
     public void Recycle()

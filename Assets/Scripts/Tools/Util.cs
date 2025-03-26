@@ -25,4 +25,20 @@ public class Util
         obj.SetActive(true);
         return obj;
     }
+
+    public static T GetComponentByObjectName<T>(GameObject source, string targetName) where T : Component
+    {
+        T[] components = source.GetComponentsInChildren<T>(true);
+        
+        foreach (T comp in components)
+        {
+            if (comp.gameObject.name == targetName)
+            {
+                return comp;
+            }
+        }
+        
+        Debug.LogWarning($"未找到名称包含 {targetName} 的 {typeof(T).Name} 组件");
+        return null;
+    }
 }
