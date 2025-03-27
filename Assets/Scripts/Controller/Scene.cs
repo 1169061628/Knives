@@ -58,7 +58,7 @@ public class Scene
     AstarPath pathFinder;
     Transform playerPos;
 
-    RoleBase rolePlayer;
+    public RoleBase rolePlayer;
     bool readyFlag;
 
     CameraCtrl cameraCtrl;
@@ -563,9 +563,20 @@ public class Scene
         AS_FX = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_FX");
         AS_FX_Loop_Craze = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_FX_Loop_Craze");
 
-        //levelRoot = ResManager.LoadPrefab("level" + level)
+        levelRoot = ResManager.LoadPrefab("level" + level, mainScene.transform, Vector3.one, Vector3.zero);
+        bgSR = Util.GetComponent<SpriteRenderer>(levelRoot, "map/Bg");
+        playerPos = Util.GetTransform(levelRoot, "map/playerPos");
+        pathFinder = levelRoot.GetComponent<AstarPath>();
+        pathFinder.threadCount = Pathfinding.ThreadCount.AutomaticHighLoad;
     }
     
+    void InitLevelConfig()
+    {
+        bossFlag = false;
+        levelConfigTable.Clear();
+        curEnemyTypeList.Clear();
+        enemyNumMax = 0;
+    }
 
     KnifeObjectPool<PropBase> GetPropPool(int type)
     {
