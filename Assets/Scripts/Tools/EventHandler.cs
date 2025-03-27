@@ -78,7 +78,7 @@ public class EventHandler
 public class EventHandler<T>
 {
     readonly List<Action<T>> _event;
-    public T value = default;
+    public T value { get; private set; } = default;
     public EventHandler(int capacity = 4)
     {
         _event = new(capacity);
