@@ -1,3 +1,4 @@
+using GameLogic;
 using UnityEngine;
 
 public class Util
@@ -40,5 +41,12 @@ public class Util
         
         Debug.LogWarning($"未找到名称包含 {targetName} 的 {typeof(T).Name} 组件");
         return null;
+    }
+
+    public static EventTriggerListener GetEventTriggerListener(GameObject go)
+    {
+        var trigger = go.GetComponent<EventTriggerListener>();
+        if (trigger == null) trigger = go.AddComponent<EventTriggerListener>();
+        return trigger;
     }
 }
