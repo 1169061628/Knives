@@ -41,6 +41,8 @@ public class Scene
     public AudioSource AS_FX;
     public AudioSource AS_FX_Loop_Craze;
 
+    GameObject mainScene = null;
+
     // 刀刃的对象池
     readonly Dictionary<string, KnifeObjectPool<BladeBase>> bladePool = new();
     // 道具的对象池
@@ -51,6 +53,7 @@ public class Scene
     readonly Dictionary<string, KnifeObjectPool<EffectBase>> effectPool = new();
 
     Camera mainCamera;
+    Transform cameraParent;
     SpriteRenderer bgSR;
     AstarPath pathFinder;
     Transform playerPos;
@@ -218,6 +221,33 @@ public class Scene
         }
     }
 
+    public void RoleNoInjury(bool value)
+    {
+        NoInjury = value;
+        foreach(var item in rolePairWithGO)
+        {
+            //item.Value.NoInjury(value);   TODO
+        }
+    }
+
+    // 击退玩家
+    public void PlayerRepulse(Vector3 pos, int disLimit = 0)
+    {
+        var dis = Vector3.Distance(pos, rolePlayer.transform.position);
+        // 玩家被击退到5米外
+        if (disLimit == 0) disLimit = 10;
+        if (dis < disLimit)
+        {
+            var dir = rolePlayer.transform.position - pos;
+            dir.z = 0;
+            dir = dir.normalized;
+            var newPos = pos + dir * disLimit;
+            newPos = GetSafetyPosition(newPos);
+            newPos.z = 0;
+            //rolePlayer.PlayerRepulse();   TODO
+        }
+    }
+
     void AutoSpawnBlade()
     {
         // 场上少于50个，每帧生成10个
@@ -376,6 +406,18 @@ public class Scene
         }
     }
 
+    PropBase SpawnOneProp(int type,  Vector3 pos = default)
+    {
+        var tmpGO = PropPoolPopOne(type);
+        tmpGO.transform.SetParent(levelRoot.transform);
+        tmpGO.Init(this, type);
+        tmpGO.gameObject.name = ManyKnivesDefine.TriggerType.prop + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Prop;
+        pos = GetSafetyPosition(pos);
+        pos.z = 0;
+        tmpGO.transform.position = pos;
+        return tmpGO;
+    }
+
     // 生产敌人对象
     void SpawnEnemyPrefab(int num, int type, int level)
     {
@@ -512,6 +554,18 @@ public class Scene
         return pathFinder.GetNearest(pos, Pathfinding.NNConstraint.Default).position;
     }
 
+    public void Ready(Transform canvas, int level)
+    {
+        mainScene ??= ResManager.LoadPrefab("MainScene", canvas, Vector3.one, Vector3.zero);
+        cameraParent = Util.GetTransform(mainScene, "CameraParent");
+        mainCamera = Util.GetComponent<Camera>(cameraParent.gameObject, "Camera");
+        AS_BGM = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_BGM");
+        AS_FX = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_FX");
+        AS_FX_Loop_Craze = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_FX_Loop_Craze");
+
+        //levelRoot = ResManager.LoadPrefab("level" + level)
+    }
+    
 
     KnifeObjectPool<PropBase> GetPropPool(int type)
     {
