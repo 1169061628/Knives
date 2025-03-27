@@ -6,23 +6,6 @@ using UnityEngine;
 
 public class RoleBase : ItemBase
 {
-    public override void InitComponent()
-    {
-        aiDestinationSetter = Util.GetComponentByObjectName<AIDestinationSetter>(gameObject, "ironBoss");
-        aiPath = Util.GetComponentByObjectName<AIPath>(gameObject, "ironBoss");
-        triggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "player");
-        rigidbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "player");
-        bladeTriggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "blade");
-        bladeRigbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "blade");
-        bladeTran = bladeTriggerListener.transform;
-        collider = Util.GetComponentByObjectName<Collider>(gameObject, "trigger");
-        collision = Util.GetComponentByObjectName<CircleCollider2D>(gameObject, "collision");
-        collisionRadius = collision.radius;
-        // collision.gameObject.SetActive(false);
-        animator = Util.GetComponentByObjectName<Animator>(gameObject, "edit_hauptfigur");
-        skinMeshRenderer = Util.GetComponentByObjectName<SkinnedMeshRenderer>(gameObject, "COMB");
-    }
-
     // private var EaseTemp = DG.Tweening.Ease;
     // private var easeMove = EaseTemp.OutQuad;
     // private var easeHit = EaseTemp.OutQuad;
@@ -77,13 +60,13 @@ public class RoleBase : ItemBase
     private EventHandler<int> moveSpBind = new();
     // 记的当前速度
     private int curMoveSp;
-    private EventHandler<int> aiMoveBind = new();
+    private EventHandler<bool> aiMoveBind = new();
     // 特殊静止状态
     private bool fixedlyFlag;
     // 攻击速度
     private EventHandler<int> atkSpBind = new();
     // 刀刃旋转速度
-    private EventHandler<int> bladeSpBind = new();
+    private EventHandler<float> bladeSpBind = new();
     // bladeRotTween（这个属性没用到）
     
     // 真实血量
@@ -141,11 +124,94 @@ public class RoleBase : ItemBase
     private Transform bladeTran;
     private Animator animator;
     private SkinnedMeshRenderer skinMeshRenderer;
+    private Material material;
+    private Transform effectParent;
+    public bool isPlayer;
+    private RoleBase player;
+    
+    public override void InitComponent()
+    {
+        aiDestinationSetter = Util.GetComponentByObjectName<AIDestinationSetter>(gameObject, "ironBoss");
+        aiPath = Util.GetComponentByObjectName<AIPath>(gameObject, "ironBoss");
+        triggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "player");
+        rigidbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "player");
+        bladeTriggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "blade");
+        bladeRigbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "blade");
+        bladeTran = bladeTriggerListener.transform;
+        collider = Util.GetComponentByObjectName<Collider>(gameObject, "trigger");
+        collision = Util.GetComponentByObjectName<CircleCollider2D>(gameObject, "collision");
+        collisionRadius = collision.radius;
+        // collision.gameObject.SetActive(false);
+        animator = Util.GetComponentByObjectName<Animator>(gameObject, "edit_hauptfigur");
+        skinMeshRenderer = Util.GetComponentByObjectName<SkinnedMeshRenderer>(gameObject, "COMB");
+        material = skinMeshRenderer.material;
+        disply = Util.GetComponentByObjectName<Transform>(gameObject, "display");
+        effectParent = Util.GetComponentByObjectName<Transform>(gameObject, "effect");
+        // self.animCtrl = require("bcmanyknives_anim_ctrl").new(self.animator, self.moveSpBind, self.atkSpBind)
+        hpAnchor = Util.GetComponentByObjectName<Transform>(gameObject, "hpAnchor");
+        dmgOffY = skinMeshRenderer.bounds.size.y * 0.5f;
+        freezeFx = Util.GetComponentByObjectName<ParticleSystem>(gameObject, "fx_snow02");
+        fx_Light = Util.GetComponentByObjectName<ParticleSystem>(gameObject, "fx_shandianjingu");
+        triggerListener.RegisterTriggerEnter2D(OnTriggerEnter2D);
+        triggerListener.RegisterTriggerExit2D(OnTriggerExit2D);
+        bladeTriggerListener.RegisterTriggerEnter2D(BladeOnTriggerEnter2D);
+        // self.aiMoveBind = tinyrush_bindable.new(true)
+        if (aiPath)
+        {
+            moveSpBind.Add(value => aiPath.maxSpeed = value);
+            aiMoveBind.Add(value => aiPath.canMove = value);
+        }
+    }
+
+    protected GameObject GetColliderKey()
+    {
+        return collider.gameObject;
+    }
+
+    void SetFillPhase(int value, bool upLoad)
+    {
+        material.SetFloat(mpb_FillPhase, value);
+    }
+
+    void SetFillColor(Color value, bool upLoad)
+    {
+        material.SetColor(mpb_FillColor, value);
+    }
+
+    void SetDissolve(float value, bool upLoad)
+    {
+        material.SetFloat(mpb_DissolveThreshold, value);
+    }
+
+    void SetColor(Color value, bool upLoad)
+    {
+        material.SetColor(mpb_Color, value);
+    }
 
     public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
     {
         sceneMgr = scene;
-        scene.OnPauseStateChange.Add(PauseListener);
+        uiMgr = uiMgr;
+        roleName = roleName;
+        roleData = configData;
+        initPos = spawnPos;
+        transform.position = spawnPos;
+        isPlayer = roleName == ManyKnivesDefine.RoleNames.player;
+        player = scene.rolePlayer;
+        bladeSpBind.Send(isPlayer ? ManyKnivesDefine.bladeInitSpeed : ManyKnivesDefine.bladeInitSpeed_Enemy);
+        scene.pauseBind.Add(PauseListener);
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collider2D)
+    {
+    }
+
+    protected virtual void OnTriggerExit2D(Collider2D collider2D)
+    {
+    }
+
+    protected virtual void BladeOnTriggerEnter2D(Collider2D collider2D)
+    {
     }
 
     void PauseListener(bool value)
@@ -155,6 +221,6 @@ public class RoleBase : ItemBase
 
     public void Recycle()
     {
-        sceneMgr.OnPauseStateChange.Remove(PauseListener);
+        sceneMgr.pauseBind.Remove(PauseListener);
     }
 }
