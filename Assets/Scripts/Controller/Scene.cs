@@ -58,7 +58,7 @@ public class Scene
     AstarPath pathFinder;
     Transform playerPos;
 
-    public RoleBase rolePlayer;
+    public RolePlayer rolePlayer;
     bool readyFlag;
 
     CameraCtrl cameraCtrl;

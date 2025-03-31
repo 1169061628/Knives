@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using bc.MiniGameBase;
 using DG.Tweening;
 using Pathfinding;
+using UnityEditor.UI;
 using UnityEngine;
 
 public class RoleBase : ItemBase
@@ -23,7 +24,7 @@ public class RoleBase : ItemBase
         display
     }
 
-    protected Collider collider;
+    protected CircleCollider2D collider;
     protected CircleCollider2D collision;
     protected float collisionRadius;
     /// <summary>
@@ -89,13 +90,13 @@ public class RoleBase : ItemBase
     
     // debuff相关
     // 减速标记
-    // private bool debuff_moveSp_Flag;
-    // private bool debuff_moveSp_Timer;
-    // private bool debuff_freeze_Flag;
-    // private bool debuff_freeze_Timer;
-    // private bool debuff_light_Flag;
-    // private bool debuff_light_Timer;
-    // private bool debuff_lightID;
+    private bool debuff_moveSp_Flag;
+    private bool debuff_moveSp_Timer;
+    private bool debuff_freeze_Flag;
+    private bool debuff_freeze_Timer;
+    private bool debuff_light_Flag;
+    private bool debuff_light_Timer;
+    private int debuff_lightID;
     
     // 碰了多少个毒气
     private Dictionary<GameObject, int> hurtByMiasmaPair;
@@ -127,7 +128,9 @@ public class RoleBase : ItemBase
     private Material material;
     private Transform effectParent;
     public bool isPlayer;
-    private RoleBase player;
+    private RolePlayer player;
+    private bool deadFlag;
+    private int hurtByRoleCount;
     
     public override void InitComponent()
     {
@@ -138,7 +141,7 @@ public class RoleBase : ItemBase
         bladeTriggerListener = Util.GetComponentByObjectName<CollisionTriggerListener>(gameObject, "blade");
         bladeRigbody = Util.GetComponentByObjectName<Rigidbody2D>(gameObject, "blade");
         bladeTran = bladeTriggerListener.transform;
-        collider = Util.GetComponentByObjectName<Collider>(gameObject, "trigger");
+        collider = Util.GetComponentByObjectName<CircleCollider2D>(gameObject, "trigger");
         collision = Util.GetComponentByObjectName<CircleCollider2D>(gameObject, "collision");
         collisionRadius = collision.radius;
         // collision.gameObject.SetActive(false);
@@ -199,6 +202,50 @@ public class RoleBase : ItemBase
         isPlayer = roleName == ManyKnivesDefine.RoleNames.player;
         player = scene.rolePlayer;
         bladeSpBind.Send(isPlayer ? ManyKnivesDefine.bladeInitSpeed : ManyKnivesDefine.bladeInitSpeed_Enemy);
+        //这里需要只设置值，不调用回调
+        hpMaxBind.Send(roleData.hp);
+        hpValueBind.Send(roleData.hp);
+        curMoveSp = roleData.speed;
+        moveSpBind.Send(curMoveSp);
+        //这里需要只设置值，不调用回调
+        bladeNumBind.Send(0);
+        SetFillPhase(0, false);
+        SetDissolve(0, true);
+        collider.enabled = true;
+        rigidbody.simulated = true;
+        bladeRigbody.simulated = true;
+        collider.gameObject.layer =
+            isPlayer ? ManyKnivesDefine.LayerID.triggerPlayer : ManyKnivesDefine.LayerID.triggerEnemy;
+        collision.gameObject.layer =
+            isPlayer ? ManyKnivesDefine.LayerID.collisionMap : ManyKnivesDefine.LayerID.collisionEnemy;
+        if (!isPlayer)
+        {
+            ManyKnivesDefine.Func_IgnoreCollision(player.collision, collision);
+            ManyKnivesDefine.Func_IgnoreCollision(player.collectRangeCollider, collision);
+            ManyKnivesDefine.Func_IgnoreCollision(player.collectRangeCollider, collider);
+        }
+
+        noInjury = false;
+        invincible = false;
+        uncontrolled = false;
+        deadFlag = false;
+        isBoss = false;
+        fixedlyFlag = false;
+        hurtByMiasmaPair = new Dictionary<GameObject, int>();
+        hurtByRoleCount = 0;
+        hurtByMiasmaTimer = 0;
+        hurtByMiasmaCount = 0;
+        freezeFx.gameObject.SetActive(false);
+        fx_Light.gameObject.SetActive(false);
+        debuff_freeze_Flag = false;
+        debuff_light_Flag = false;
+        debuff_lightID = 0;
+        // animCtrl.Freeze(false);
+        if (!isPlayer)
+        {
+            Start();
+        }
+        
         scene.pauseBind.Add(PauseListener);
     }
 
@@ -217,6 +264,10 @@ public class RoleBase : ItemBase
     void PauseListener(bool value)
     {
 
+    }
+
+    void Start()
+    {
     }
 
     public void Recycle()
