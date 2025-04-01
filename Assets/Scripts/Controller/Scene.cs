@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public struct LevelConfigArgs
@@ -121,6 +122,9 @@ public class Scene
 
 
     public GameObject levelRoot;
+
+    readonly static Dictionary<int, Dictionary<int, LevelConfigArgs>> allLevelData = new();    // 所有关卡数据
+    readonly static Dictionary<int, (int, int)> allAutoBladeData = new();
 
     public void AddBlade()
     {
@@ -466,7 +470,6 @@ public class Scene
         var boundMax = 0.3f;
         // 1/4屏死随机位置
         var random = new System.Random();
-        float rz = (float)new System.Random().NextDouble();
         var rPos = new Vector3(Mathf.Lerp(boundMin, boundMax, (float)random.NextDouble()), Mathf.Lerp(boundMin, boundMax, (float)random.NextDouble()), 0);
         var spawnDir = (float) random.NextDouble();
         // 左下角
@@ -576,6 +579,24 @@ public class Scene
         levelConfigTable.Clear();
         curEnemyTypeList.Clear();
         enemyNumMax = 0;
+    }
+
+    public void InitAllConfigWhenGameStart()
+    {
+        string autoPath = Application.dataPath + "/ManagedResources/autoBlade.csv";
+        var autoData = Util.ReadSingleConfig(File.ReadAllText(autoPath));
+        foreach(var item in autoData)
+        {
+            allAutoBladeData[item[0]] = (item[1], item[2]);
+        }
+        string configLevelPath = Application.dataPath + "/ManagedResources/Configs/Level";
+        var cfgs = Directory.GetFiles(configLevelPath, "*.csv", SearchOption.TopDirectoryOnly);
+        for (int i = 0; i < cfgs.Length; ++i)
+        {
+            var str = File.ReadAllText(cfgs[i]);
+            var data = Util.ReadSingleConfig(str);
+
+        }
     }
 
     KnifeObjectPool<PropBase> GetPropPool(int type)

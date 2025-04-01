@@ -1,6 +1,8 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Util
+public static class Util
 {
     public static GameObject GetGameObject(GameObject go, string name)
     {
@@ -47,5 +49,24 @@ public class Util
         var trigger = go.GetComponent<EventTriggerListener>();
         if (trigger == null) trigger = go.AddComponent<EventTriggerListener>();
         return trigger;
+    }
+
+    static List<List<int>> cfgData = new();
+
+    public static List<List<int>> ReadSingleConfig(string str)
+    {
+        cfgData.Clear();
+        var sp1 = str.Split("\r\n");
+        for (int i = 0;i < sp1.Length; ++i)
+        {
+            List<int> data = new();
+            var sp2 = sp1[i].Split(',');
+            for (int j = 0; j < sp2.Length; ++j)
+            {
+                data.Add(Convert.ToInt32(sp2[j]));
+            }
+            cfgData.Add(data);
+        }
+        return cfgData;
     }
 }
