@@ -131,7 +131,9 @@ public class RoleBase : ItemBase
     private RolePlayer player;
     private bool deadFlag;
     private int hurtByRoleCount;
-    
+    private Tweener backUpTween;
+    private Tweener hitTween;
+
     public override void InitComponent()
     {
         aiDestinationSetter = Util.GetComponentByObjectName<AIDestinationSetter>(gameObject, "ironBoss");
@@ -249,6 +251,44 @@ public class RoleBase : ItemBase
         scene.pauseBind.Add(PauseListener);
     }
 
+    protected void RefreshPause()
+    {
+        PauseListener(sceneMgr.pauseBind.value);
+    }
+    
+    protected void PauseListener(bool pause)
+    {
+        int timeScale = pause ? 0 : 1;
+        if (!backUpTween.Equals(null))
+        {
+            backUpTween.timeScale = timeScale;
+        }
+
+        if (hitTween.Equals(null))
+        {
+            hitTween.timeScale = timeScale;
+        }
+
+        if (!deadTween.Equals(null))
+        {
+            deadTween.timeScale = timeScale;
+        }
+
+        if (pause)
+        {
+            // animCtrl.Freeze(true);
+            SetAICanMove(false);
+        }
+        else
+        {
+            SetAICanMove(true);
+            if (!debuff_freeze_Flag || debuff_light_Flag)
+            {
+                // animCtrl.Freeze(false);
+            }
+        }
+    }
+
     protected virtual void OnTriggerEnter2D(Collider2D collider2D)
     {
     }
@@ -261,13 +301,19 @@ public class RoleBase : ItemBase
     {
     }
 
-    void PauseListener(bool value)
-    {
-
-    }
-
     void Start()
     {
+        
+    }
+
+    void SetAICanMove(bool value)
+    {
+        if (!aiPath)
+        {
+            var canM = value && !(debuff_freeze_Flag || debuff_light_Flag || fixedlyFlag);
+            aiMoveBind.Send(canM);
+            // moveSpBind.Send(canM ? curMoveSp : 0);
+        }
     }
 
     public void Recycle()

@@ -8,4 +8,8 @@ public class UIMgr
     {
 
     }
+
+    public void popHpSlider(RoleBase roleBase, EventHandler<int> hpValueBind, EventHandler<int> hpMaxBind)
+    {
+    }
 }
