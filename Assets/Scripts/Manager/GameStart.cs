@@ -5,11 +5,16 @@ public class GameStart : MonoBehaviour
 {
     GameObject canvas;
     GameObject content, levelSelect;
+    Scene scene;
     GamePanel panel = null;
     // Start is called before the first frame update
     void Start()
     {
         ResManager.InitALlResPath();
+        scene = new();
+        scene.InitAllConfigWhenGameStart();
+
+
         canvas = GameObject.Find("Canvas");
         levelSelect = Util.GetGameObject(canvas, "levelSelect");
         content = Util.GetGameObject(levelSelect, "content");
@@ -35,15 +40,15 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        panel?.Update();
+        scene?.Update();
     }
 
     void LateUpdate()
     {
-        panel?.LateUpdate();
+        scene?.LateUpdate();
     }
     void FixedUpdate()
     {
-        panel?.FixedUpdate();
+        scene?.FixedUpdate();
     }
 }

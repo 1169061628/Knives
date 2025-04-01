@@ -12,12 +12,22 @@ public struct LevelConfigArgs
     public int enemyType;
     public int enemyNum;
     public int enemyLevel;
+    public LevelConfigArgs(List<int> datas)
+    {
+        waveId = datas[0];
+        time = datas[1];
+        propType = datas[2];
+        propNum = datas[3];
+        enemyType = datas[4];
+        enemyNum = datas[5];
+        enemyLevel = datas[6];
+    }
 }
 
 public struct RoleConfigArgs
 {
     public int level;
-    public string name;
+    public string roleName;
     public int hp;
     public int bladeType;
     public int bladeNum;
@@ -32,6 +42,25 @@ public struct RoleConfigArgs
     public int callNum;
     public int callLevel;
     public int skillLevel;
+    public RoleConfigArgs(string name, List<int> datas)
+    {
+        level = datas[0];
+        roleName = name;
+        hp = datas[1];
+        bladeType = datas[2];
+        bladeNum = datas[3];
+        speed = datas[4];
+        bodyDmg = datas[5];
+        bladeDmg = datas[6];
+        skillDmg = datas[7];
+        defence = datas[8];
+        skillType = datas[10];
+        callEnemyType = datas[11];
+        callTime = datas[12];
+        callNum = datas[13];
+        callLevel = datas[14];
+        skillLevel = datas[15];
+    }
 }
 
 public class Scene
@@ -68,9 +97,7 @@ public class Scene
     public readonly EventHandler<int> levelWaveBind = new();
     int levelWaveMax;
     // 关卡配置
-    readonly Dictionary<int, LevelConfigArgs> levelConfigTable = new();
-    // 全部角色配置
-    readonly Dictionary<string, Dictionary<int, RoleConfigArgs>> roleConfigTable = new();
+    Dictionary<int, LevelConfigArgs> levelConfigTable = new();
     // 生成关卡内容计时器
     float spawnTimer;
     // 关卡敌人总数量
@@ -122,9 +149,11 @@ public class Scene
 
 
     public GameObject levelRoot;
+    int curLevel;
 
-    readonly static Dictionary<int, Dictionary<int, LevelConfigArgs>> allLevelData = new();    // 所有关卡数据
+    readonly static List<Dictionary<int, LevelConfigArgs>> allLevelData = new();    // 所有关卡数据
     readonly static Dictionary<int, (int, int)> allAutoBladeData = new();
+    readonly static Dictionary<string, Dictionary<int, RoleConfigArgs>> roleConfigTable = new();    // 全部角色配置
 
     public void AddBlade()
     {
@@ -187,7 +216,7 @@ public class Scene
         if (cgTween != null) cgTween.timeScale = timeScale;
     }
 
-    void Update()
+    public void Update()
     {
         if (pauseBind.value) return;
         if (startFlag)
@@ -202,13 +231,13 @@ public class Scene
         else if (readyFlag && rolePlayer != null) rolePlayer.Update();
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         if (pauseBind.value) return;
         if (readyFlag) cameraCtrl.FixedUpdate();
     }
 
-    void LateUpdate()
+    public void LateUpdate()
     {
         if (pauseBind.value) return;
         if (startFlag)
@@ -559,6 +588,7 @@ public class Scene
 
     public void Ready(Transform canvas, int level)
     {
+        curLevel = level;
         mainScene ??= ResManager.LoadPrefab("MainScene", canvas, Vector3.one, Vector3.zero);
         cameraParent = Util.GetTransform(mainScene, "CameraParent");
         mainCamera = Util.GetComponent<Camera>(cameraParent.gameObject, "Camera");
@@ -571,14 +601,39 @@ public class Scene
         playerPos = Util.GetTransform(levelRoot, "map/playerPos");
         pathFinder = levelRoot.GetComponent<AstarPath>();
         pathFinder.threadCount = Pathfinding.ThreadCount.AutomaticHighLoad;
+
+        InitLevelConfig();
     }
     
     void InitLevelConfig()
     {
         bossFlag = false;
-        levelConfigTable.Clear();
         curEnemyTypeList.Clear();
         enemyNumMax = 0;
+        levelConfigTable = allLevelData[curLevel];
+        foreach (var item in levelConfigTable)
+        {
+            var v = item.Value;
+            if (v.enemyType > 0)
+            {
+                var tmpEnemyType = v.enemyType;
+                enemyNumMax += v.enemyNum;
+                if (!bossFlag && tmpEnemyType > 6 && tmpEnemyType < 10)
+                {
+                    bossFlag = true;
+                    bossTimer = v.time;
+                    curBossType = tmpEnemyType;
+                    curBossLevel = v.enemyLevel;
+                }
+                curEnemyTypeList.Add(tmpEnemyType);
+            }
+        }
+        autoBladeConfig = allAutoBladeData[curLevel];
+    }
+
+    void InitRoleConfig()
+    {
+
     }
 
     public void InitAllConfigWhenGameStart()
@@ -595,8 +650,31 @@ public class Scene
         {
             var str = File.ReadAllText(cfgs[i]);
             var data = Util.ReadSingleConfig(str);
-
+            Dictionary<int, LevelConfigArgs> singleLevel = new();
+            for (int j = 0;j < data.Count; ++j)
+            {
+                var lca = new LevelConfigArgs(data[j]);
+                singleLevel[data[j][0]] = lca;
+            }
+            allLevelData.Add(singleLevel);
         }
+        string configRolePath = Application.dataPath + "/ManagedResources/Configs/Role";
+        var allName = typeof(ManyKnivesDefine.RoleNames).GetFields();
+        for (int i = 0;i < allName.Length; ++i)
+        {
+            string name = allName[i].Name;
+            var str = File.ReadAllText(configRolePath + "/" + name);
+            var data = Util.ReadSingleConfig(str);
+            Dictionary<int, RoleConfigArgs> singleLevel = new();
+            for (int j = 0; j < data.Count; ++j)
+            {
+                var lca = new RoleConfigArgs(name, data[j]);
+                singleLevel[data[j][0]] = lca;
+            }
+            roleConfigTable[name] = singleLevel;
+        }
+
+
     }
 
     KnifeObjectPool<PropBase> GetPropPool(int type)

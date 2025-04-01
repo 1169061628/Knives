@@ -21,7 +21,7 @@ public static class Util
 
     public static GameObject NewObjToParent(GameObject go, GameObject parent, string name = null)
     {
-        var obj = Object.Instantiate(go, parent.transform, true);
+        var obj = UnityEngine.Object.Instantiate(go, parent.transform, true);
         obj.transform.localPosition = Vector3.zero;
         obj.transform.localScale = Vector3.one;
         obj.SetActive(true);
@@ -51,13 +51,13 @@ public static class Util
         return trigger;
     }
 
-    static List<List<int>> cfgData = new();
+    static readonly List<List<int>> cfgData = new();
 
     public static List<List<int>> ReadSingleConfig(string str)
     {
         cfgData.Clear();
         var sp1 = str.Split("\r\n");
-        for (int i = 0;i < sp1.Length; ++i)
+        for (int i = 1;i < sp1.Length; ++i)
         {
             List<int> data = new();
             var sp2 = sp1[i].Split(',');
