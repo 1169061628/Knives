@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,7 +30,7 @@ public static class Util
     public static T GetComponentByObjectName<T>(GameObject source, string targetName) where T : Component
     {
         T[] components = source.GetComponentsInChildren<T>(true);
-        
+
         foreach (T comp in components)
         {
             if (comp.gameObject.name == targetName)
@@ -39,7 +38,7 @@ public static class Util
                 return comp;
             }
         }
-        
+
         Debug.LogWarning($"未找到名称包含 {targetName} 的 {typeof(T).Name} 组件");
         return null;
     }
@@ -52,21 +51,31 @@ public static class Util
     }
 
     static readonly List<List<int>> cfgData = new();
+    static readonly List<(int, int, int)> dropNumData = new();
 
     public static List<List<int>> ReadSingleConfig(string str)
     {
         cfgData.Clear();
         var sp1 = str.Split("\r\n");
-        for (int i = 1;i < sp1.Length; ++i)
+        for (int i = 1; i < sp1.Length; ++i)
         {
             List<int> data = new();
             var sp2 = sp1[i].Split(',');
             for (int j = 0; j < sp2.Length; ++j)
             {
-                data.Add(Convert.ToInt32(sp2[j]));
+                if (!int.TryParse(sp2[j], out var val))
+                {
+                    var sp3 = sp2[j].Split('_');
+                    int.TryParse(sp3[0], out var d1);
+                    int.TryParse(sp3[1], out var d2);
+                    int.TryParse(sp3[2], out var d3);
+                    dropNumData.Add((d1, d1, d3));
+                }
+                data.Add(val);
             }
             cfgData.Add(data);
         }
         return cfgData;
     }
+    public static List<(int, int, int)> GetDropNumData() => dropNumData;
 }

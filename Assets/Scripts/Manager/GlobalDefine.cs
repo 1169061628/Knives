@@ -234,8 +234,6 @@ public static class ManyKnivesDefine
         public const int idle = 4;
     }
 
-    public const string allAudioPath = "casualgame/bcmanyknives/prefab/allaudios.prefab";
-
     // 音效列表
     public readonly struct AudioClips
     {
@@ -265,14 +263,9 @@ public static class ManyKnivesDefine
         public const string BGM2 = "BGM2";
     }
 
-    // 配置表
-    public const string allDatasPath = "casualgame/bcmanyknives/prefab/alldatas.prefab";
     public const string levelDataFormat = "level{0}";
     // 文案
     public const string langPath = "casualgame/bcmanyknives/tablecsv/lang.csv";
-
-    // 技能预制
-    public const string allSkillPath = "casualgame/bcmanyknives/prefab/skill/allskill.prefab";
 
     public readonly struct SkillNames
     {
@@ -300,9 +293,6 @@ public static class ManyKnivesDefine
         public const string circleDmg = "circleDmg";
     }
 
-    // 刀刃的预制
-    public const string allBladePath = "casualgame/bcmanyknives/prefab/blade/allblade.prefab";
-
     public readonly struct BladeNames
     {
         public const string snowblade = "snowblade";
@@ -314,9 +304,6 @@ public static class ManyKnivesDefine
         public const string hugeAxe = "hugeAxe";
         public const string hugeblade = "hugeblade";
     }
-
-    // 各种角色预制
-    public const string allRolePath = "casualgame/bcmanyknives/prefab/role/allrole.prefab";
 
     public readonly struct RoleNames
     {
@@ -333,8 +320,6 @@ public static class ManyKnivesDefine
         public const string bladeboss = "bladeboss";
     }
 
-    // 各种道具预制
-    public const string allPropPath = "casualgame/bcmanyknives/prefab/prop/allprop.prefab";
 
     public readonly struct PropNames
     {
@@ -350,11 +335,7 @@ public static class ManyKnivesDefine
         public const string swordProp = "swordProp";
     }
 
-    public const string allLevelPath = "casualgame/bcmanyknives/prefab/level/alllevel_{0}.prefab";
     public const string levelNameFormat = "level{0}";
-
-    public const string mainScenePath = "casualgame/bcmanyknives/prefab/mainscene.prefab";
-    public const string mainPanelPath = "casualgame/bcmanyknives/prefab/mainpanel.prefab";
 
     public static RaycastHit2D Func_Raycast(LayerMask layerMask, Vector2 from, Vector2 to, float rayLength, bool draw = false, Color? color = null)
     {

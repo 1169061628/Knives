@@ -42,8 +42,10 @@ public struct RoleConfigArgs
     public int callNum;
     public int callLevel;
     public int skillLevel;
-    public RoleConfigArgs(string name, List<int> datas)
+    public (int num, int typeMin, int typeMax) dropConfig;
+    public RoleConfigArgs(string name, List<int> datas, (int num, int typeMin, int typeMax) drop)
     {
+        var len = datas.Count;
         level = datas[0];
         roleName = name;
         hp = datas[1];
@@ -54,12 +56,107 @@ public struct RoleConfigArgs
         bladeDmg = datas[6];
         skillDmg = datas[7];
         defence = datas[8];
-        skillType = datas[10];
-        callEnemyType = datas[11];
-        callTime = datas[12];
-        callNum = datas[13];
-        callLevel = datas[14];
-        skillLevel = datas[15];
+        skillType = len > 10 ? datas[10] : 0;
+        callEnemyType = len > 11 ? datas[11] : 0;
+        callTime = len > 12 ? datas[12] : 0;
+        callNum = len > 13 ? datas[13] : 0;
+        callLevel = len > 14 ? datas[14] : 0;
+        skillLevel = len > 15 ? datas[15] : 0;
+        dropConfig = drop;
+    }
+}
+public struct RushConfigArgs
+{
+    public bool rush_Enable;    // 冲刺技能是否开启
+    public int rush_Dmg;        // 冲刺技能伤害
+    public int skillCD;         // 技能冷却时间
+    public int rushCount;       // 冲刺次数
+    public int rush_Distance;   // 冲刺距离
+    public int rush_MoveSpeed;  // 冲刺速度
+    public int rush_attent_First; // 首次冲刺预警时长
+    public int rush_interval;   // 冲刺间隔时间
+    public int rush_attent;     // 冲刺预警时间
+    public bool retinue_Enable; // 二阶段分身是否开启
+    public int transLimit;      // 二阶段血量百分比
+    public int retinueNum;      // 二阶段几个分身
+    public int retinueLevel;    // 分身等级
+
+    public RushConfigArgs(List<int> data)
+    {
+        rush_Enable = data[0] == 1;
+        rush_Dmg = data[1];
+        skillCD = data[2];
+        rushCount = data[3];
+        rush_Distance = data[4];
+        rush_MoveSpeed = data[5];
+        rush_attent_First = data[6];
+        rush_interval = data[7];
+        rush_attent = data[8];
+        retinue_Enable = data[9] == 1;
+        transLimit = data[10];
+        retinueNum = data[11];
+        retinueLevel = data[12];
+    }
+}
+public struct FireConfigArgs
+{
+    public bool fan_Enable; // 扇形技能是否开启
+    public int fan_fireDmg;
+    public int fan_SkillCD; // 扇形火球技能冷却时间
+    public int fan_Angle;   // 扇形角度
+    public int fan_FireNum; // 扇形火球数量
+    public int fan_FireDis; // 火球距离
+    public int fan_Attent;  // 扇形预警时间
+    public bool fall_Enable;// 砸地技能释放开启
+    public int fall_Dmg;
+    public int fall_SkillCD;// 砸地冷却时间
+    public int fall_Attent; // 砸地预警时间
+    public int fall_Range;  // 砸地范围
+    public int followCD;    // 每次技能后摇
+    public FireConfigArgs(List<int> data)
+    {
+        fan_Enable = data[1] == 1;
+        fan_fireDmg = data[2];
+        fan_SkillCD = data[3];
+        fan_Angle = data[4];
+        fan_FireNum = data[5];
+        fan_FireDis = data[6];
+        fan_Attent = data[7];
+        fall_Enable = data[8] == 1;
+        fall_Dmg = data[9];
+        fall_SkillCD = data[10];
+        fall_Attent = data[11];
+        fall_Range = data[12];
+        followCD = data[13];
+    }
+}
+public struct MiasmaConfigArgs
+{
+    public bool path_Enable;      // 路径毒气是否开启
+    public int dmg;              // 路径毒气伤害值
+    public int path_CD;          // 路径毒气冷却时间
+    public int path_ExitTime;    // 路径存在时长
+
+    public bool range_Enable;    // 范围毒气是否开启
+    public int range_CD;         // 范围毒气冷却时间
+    public int range_Range;      // 选取范围(米)
+    public int range_Attent;     // 预警时间
+    public int range_Num;        // 毒气数量
+    public int range_PerRange;   // 每个毒气范围(米)
+    public int range_ExitTime;   // 范围存在时长
+    public MiasmaConfigArgs(List<int> data)
+    {
+        path_Enable = data[1] == 1;
+        dmg = data[2];
+        path_CD = data[3];
+        path_ExitTime = data[4];
+        range_Enable = data[5] == 1;
+        range_CD = data[6];
+        range_Range = data[7];
+        range_Attent = data[8];
+        range_Num = data[9];
+        range_PerRange = data[10];
+        range_ExitTime = data[11];
     }
 }
 
@@ -154,7 +251,9 @@ public class Scene
     readonly static List<Dictionary<int, LevelConfigArgs>> allLevelData = new();    // 所有关卡数据
     readonly static Dictionary<int, (int, int)> allAutoBladeData = new();
     readonly static Dictionary<string, Dictionary<int, RoleConfigArgs>> roleConfigTable = new();    // 全部角色配置
-
+    readonly static Dictionary<int, RushConfigArgs> rushConfigData = new();
+    readonly static Dictionary<int, FireConfigArgs> fireConfigData = new();
+    readonly static Dictionary<int, MiasmaConfigArgs> miasmaConfigData = new();
     public void AddBlade()
     {
         bladeCount++;
@@ -603,6 +702,9 @@ public class Scene
         pathFinder.threadCount = Pathfinding.ThreadCount.AutomaticHighLoad;
 
         InitLevelConfig();
+        InitRoleConfig();
+        BladePoolReady();
+        RolePoolReady();
     }
     
     void InitLevelConfig()
@@ -631,13 +733,57 @@ public class Scene
         autoBladeConfig = allAutoBladeData[curLevel];
     }
 
+    void BladePoolReady()
+    {
+        void InitSinglePool(string name)
+        {
+            if (!bladePool.ContainsKey(name)) bladePool[name] = new();  // TODO
+        }
+        var fields = typeof(ManyKnivesDefine.BladeNames).GetFields();
+        for (int i = 0; i < fields.Length; ++i)
+        {
+            InitSinglePool(fields[i].Name);
+        }
+    }
+
+    void RolePoolReady()
+    {
+        foreach (var v in curEnemyTypeList)
+        {
+            var enemyName = ManyKnivesDefine.roleTypeWithName[v - 1];
+            if (!rolePool.ContainsKey(enemyName)) rolePool[enemyName] = new();  // TODO
+        }
+    }
+
     void InitRoleConfig()
     {
-
+        if (bossFlag)
+        {
+            var roleName = ManyKnivesDefine.roleTypeWithName[curBossType - 1];
+            var tmpBossConfig = GetRoleConfig(roleName, curBossLevel);
+            if (tmpBossConfig.callEnemyType > 0 && tmpBossConfig.callNum > 0)
+            {
+                curEnemyTypeList.Add(tmpBossConfig.callEnemyType);
+            }
+            if (roleName == ManyKnivesDefine.RoleNames.axeboss)
+            {
+                var rushConfig = GetRushConfigById(tmpBossConfig.skillLevel);
+                if (rushConfig.retinueNum > 0)
+                {
+                    // 分身类型是11
+                    curBossRetinueNum = rushConfig.retinueNum;
+                    curEnemyTypeList.Add(11);
+                }
+            }
+        }
     }
+
+    RushConfigArgs GetRushConfigById(int id) => rushConfigData[id];
 
     public void InitAllConfigWhenGameStart()
     {
+        System.Diagnostics.Stopwatch watch = new();
+        watch.Start();
         string autoPath = Application.dataPath + "/ManagedResources/autoBlade.csv";
         var autoData = Util.ReadSingleConfig(File.ReadAllText(autoPath));
         foreach(var item in autoData)
@@ -666,15 +812,38 @@ public class Scene
             var str = File.ReadAllText(configRolePath + "/" + name);
             var data = Util.ReadSingleConfig(str);
             Dictionary<int, RoleConfigArgs> singleLevel = new();
+            var dropData = Util.GetDropNumData();
             for (int j = 0; j < data.Count; ++j)
             {
-                var lca = new RoleConfigArgs(name, data[j]);
+                var lca = new RoleConfigArgs(name, data[j], dropData[j]);
                 singleLevel[data[j][0]] = lca;
             }
             roleConfigTable[name] = singleLevel;
         }
 
+        string rushConfigPath = Application.dataPath + "/ManagedResources/rushConfig.csv";
+        var rushs = Util.ReadSingleConfig(File.ReadAllText(rushConfigPath));
+        for (int i = 0; i < rushs.Count; ++i)
+        {
+            rushConfigData[rushs[i][0]] = new RushConfigArgs(rushs[i]);
+        }
 
+        string fireConfigPath = Application.dataPath + "/ManagedResources/fireConfig.csv";
+        var fires = Util.ReadSingleConfig(File.ReadAllText(fireConfigPath));
+        for (int i = 0; i < fires.Count; ++i)
+        {
+            fireConfigData[fires[i][0]] = new FireConfigArgs(fires[i]);
+        }
+
+        string miasmaConfigPath = Application.dataPath + "/ManagedResources/fireConfig.csv";
+        var miasmas = Util.ReadSingleConfig(File.ReadAllText(miasmaConfigPath));
+        for (int i = 0; i < miasmas.Count; ++i)
+        {
+            miasmaConfigData[miasmas[i][0]] = new MiasmaConfigArgs(miasmas[i]);
+        }
+
+        watch.Stop();
+        Debug.LogError("初始化表耗时：" + watch.ElapsedMilliseconds);
     }
 
     KnifeObjectPool<PropBase> GetPropPool(int type)
