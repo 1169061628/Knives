@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using bc.MiniGameBase;
 using DG.Tweening;
 using Pathfinding;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class RoleBase : ItemBase
@@ -42,14 +41,14 @@ public class RoleBase : ItemBase
 
     protected UIMgr uiMgr;
     // 是否为boss
-    protected bool isBoss;
+    public bool isBoss;
     // 角色名字
     protected string roleName;
 
     protected RoleConfigArgs roleData;
     // 初始位置
     protected Vector3 initPos;
-    protected Dictionary<GameObject, GameObject> bladeList;
+    public Dictionary<GameObject, GameObject> bladeList;
     protected Transform disply;
     // 无敌状态
     protected bool invincible;
@@ -121,8 +120,8 @@ public class RoleBase : ItemBase
     private string mpb_DissolveThreshold = "_DissolveThreshold";
     private string mpb_Color = "_Color";
 
-    private Rigidbody2D rigidbody;
-    private Transform bladeTran;
+    public Rigidbody2D rigidbody;
+    public Transform bladeTran;
     private Animator animator;
     private SkinnedMeshRenderer skinMeshRenderer;
     private Material material;

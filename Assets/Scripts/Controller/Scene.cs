@@ -238,11 +238,12 @@ public class Scene
     UIMgr uiMgr;
     AudioMgr audioMgr;
 
-    Tween cgTween;
+    Sequence cgTween;
 
     readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
     readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
     readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
+    readonly Dictionary<GameObject, EffectBase> effectPairWithGO = new();
 
 
     public GameObject levelRoot;
@@ -259,7 +260,7 @@ public class Scene
         bladeCount++;
     }
 
-    public void ReduceBlade(BladeBase blade)
+    public void ReduceBlade(BladeBase blade = null)
     {
         bladeCount--;
         if (blade != null && blade.autoSpawnFlag)
@@ -584,6 +585,39 @@ public class Scene
         }
     }
 
+    bool EnemyDie(RoleBase role)
+    {
+        var recycleFlag = true;
+        if (!role.isPlayer) enemyNumBind.Send(enemyNumBind.value - 1);
+        if (!overFlag && (role.isPlayer || role.isBoss || (!bossFlag && enemyNumBind.value >= enemyNumMax)))
+        {
+            overFlag = true;
+            readyFlag = false;
+            if (role.isPlayer) recycleFlag = false;
+            //if (role.isPlayer) audioMgr.PlayOneShot(ManyKnivesDefine.AudioClips.shibai);TODO
+            //else audioMgr.PlayOneShot(ManyKnivesDefine.AudioClips.shengli);TODO
+            KillCGTween();
+            cgTween = DOTween.Sequence();
+            cgTween.InsertCallback(0, () => Time.timeScale = 0.1f);
+            cgTween.InsertCallback(0.2f, () => Time.timeScale = 1);
+            cameraCtrl.FocusPos(true, role.transform, true);
+            cameraCtrl.Shake_BossDie();
+            cgTween.InsertCallback(1.1f, () =>
+            {
+                //if (role.isPlayer) gameMgr.GameFail();TODO
+                //if (role.isPlayer) gameMgr.GameWin();TODO
+            });
+            RefreshPause();
+        }
+        return recycleFlag;
+    }
+
+    public void RolePoolPushOne(string roleName, RoleBase item)
+    {
+        rolePairWithGO.Remove(item.gameObject);
+        rolePool[roleName].Put(item);
+    }
+
     RoleBase RolePoolPopOne(string roleName)
     {
         var obj = rolePool[roleName].Get();
@@ -680,7 +714,7 @@ public class Scene
         return spawnPos;
     }
 
-    Vector3 GetSafetyPosition(Vector3 pos)
+    public Vector3 GetSafetyPosition(Vector3 pos)
     {
         return pathFinder.GetNearest(pos, Pathfinding.NNConstraint.Default).position;
     }
@@ -705,6 +739,8 @@ public class Scene
         InitRoleConfig();
         BladePoolReady();
         RolePoolReady();
+        PropPoolReady();
+        EffectPoolReady();
     }
     
     void InitLevelConfig()
@@ -735,14 +771,11 @@ public class Scene
 
     void BladePoolReady()
     {
-        void InitSinglePool(string name)
-        {
-            if (!bladePool.ContainsKey(name)) bladePool[name] = new();  // TODO
-        }
         var fields = typeof(ManyKnivesDefine.BladeNames).GetFields();
         for (int i = 0; i < fields.Length; ++i)
         {
-            InitSinglePool(fields[i].Name);
+            var name = fields[i].Name;
+            if (!bladePool.ContainsKey(name)) bladePool[name] = new();  // TODO
         }
     }
 
@@ -752,6 +785,26 @@ public class Scene
         {
             var enemyName = ManyKnivesDefine.roleTypeWithName[v - 1];
             if (!rolePool.ContainsKey(enemyName)) rolePool[enemyName] = new();  // TODO
+        }
+    }
+
+    void PropPoolReady()
+    {
+        var fields = typeof(ManyKnivesDefine.PropNames).GetFields();
+        for (int i = 0; i < fields.Length; ++i)
+        {
+            var name = fields[i].Name;
+            if (!propPool.ContainsKey(name)) propPool[name] = new();  // TODO
+        }
+    }
+
+    void EffectPoolReady()
+    {
+        var fields = typeof(ManyKnivesDefine.SkillNames).GetFields();
+        for (int i = 0; i < fields.Length; ++i)
+        {
+            var name = fields[i].Name;
+            if (!effectPool.ContainsKey(name)) effectPool[name] = new();  // TODO
         }
     }
 
@@ -779,6 +832,8 @@ public class Scene
     }
 
     RushConfigArgs GetRushConfigById(int id) => rushConfigData[id];
+    FireConfigArgs GetFireConfigById(int id) => fireConfigData[id];
+    MiasmaConfigArgs GetMiasmaConfigById(int id) => miasmaConfigData[id];
 
     public void InitAllConfigWhenGameStart()
     {
@@ -835,7 +890,7 @@ public class Scene
             fireConfigData[fires[i][0]] = new FireConfigArgs(fires[i]);
         }
 
-        string miasmaConfigPath = Application.dataPath + "/ManagedResources/fireConfig.csv";
+        string miasmaConfigPath = Application.dataPath + "/ManagedResources/miasmaConfig.csv";
         var miasmas = Util.ReadSingleConfig(File.ReadAllText(miasmaConfigPath));
         for (int i = 0; i < miasmas.Count; ++i)
         {
@@ -868,5 +923,93 @@ public class Scene
         var obj = GetPropPool(type).Get();
         propPairWithGO[obj.gameObject] = obj;
         return obj;
+    }
+
+    public void PropPoolPushOne(int type, PropBase item)
+    {
+        propPairWithGO.Remove(item.gameObject);
+        GetPropPool(type).Put(item);
+    }
+
+    public EffectBase PopEffect(string name)
+    {
+        var obj = effectPool[name].Get();
+        effectPairWithGO[obj.gameObject] = obj;
+        return obj;
+    }
+
+    public void PushEffect(string name, EffectBase item)
+    {
+        effectPairWithGO.Remove(item.gameObject);
+        effectPool[name].Put(item);
+    }
+
+    Vector3 GetPlayerViewPos()
+    {
+        //return mainCamera.WorldToViewportPoint(rolePlayer.center.position); TODO
+        return default;
+    }
+
+    void KillCGTween()
+    {
+        cgTween?.Kill();
+        cgTween = null;
+    }
+    void OverBattle()
+    {
+        pauseBind.Send(true);
+        startFlag = false;
+        overFlag = true;
+        //foreach (var item in rolePairWithGO) item.Value.Stop();   TODO
+    }
+
+    void StartBattle()
+    {
+        // 开始出怪
+        levelWaveMax = levelConfigTable.Count;
+        levelWaveBind.Send(1);
+        spawnTimer = 0;
+        //rolePlayer.Start();TODO
+        startFlag = true;
+        overFlag = false;
+    }
+
+    void ResetGame()
+    {
+        KillCGTween();
+        pauseBind.Send(false);
+        // 清空对象池
+        foreach (var item in rolePool) item.Value.Clear();
+        foreach (var item in bladePool) item.Value.Clear();
+        foreach (var item in propPool) item.Value.Clear();
+        foreach (var item in effectPool) item.Value.Clear();
+        OverBattle();
+        if (rolePlayer == null)
+        {
+            // 初始化主角
+            rolePlayer = new RolePlayer
+            {
+                gameObject = ResManager.LoadPrefab(ManyKnivesDefine.RoleNames.player, levelRoot.transform, Vector3.one, Vector3.zero)
+            };
+            rolePlayer.gameObject.name = ManyKnivesDefine.TriggerType.role + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Player;
+        }
+        if (cameraCtrl == null)
+        {
+            cameraCtrl = new CameraCtrl(mainCamera, cameraParent, bgSR, this);
+            cameraCtrl.Init(rolePlayer);
+        }
+        var playerPosV3 = GetSafetyPosition(playerPos.position);
+        playerPosV3.z = 0;
+        rolePlayer.Init(this, uiMgr, ManyKnivesDefine.RoleNames.player, GetRoleConfig(ManyKnivesDefine.RoleNames.player, curLevel), playerPosV3);
+        rolePairWithGO[rolePlayer.gameObject] = rolePlayer;
+        cameraCtrl.Reset();
+        if (bossFlag) bossTimerBind.Send(bossTimer);
+        else enemyNumBind.Send(0);
+        readyFlag = true;
+        NoInjury = false;
+        Time.timeScale = 1;
+        bladeCount = 0;
+        autoDropBladeList.Clear();
+        InitSpawnBlade();
     }
 }

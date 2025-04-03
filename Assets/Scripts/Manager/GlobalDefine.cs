@@ -269,25 +269,17 @@ public static class ManyKnivesDefine
 
     public readonly struct SkillNames
     {
-        public const string role_smoke = "role_smoke";
-        public const string fx_xuanyun = "fx_xuanyun";
-        public const string fx_snow02 = "fx_snow02";
         public const string fx_snow01 = "fx_snow01";
         public const string fx_pindao = "fx_pindao";
         public const string fx_miasma = "fx_miasma";
         public const string fx_lightning01 = "fx_lightning01";
-        public const string fx_huoqudaoju = "fx_huoqudaoju";
-        public const string fx_huixue = "fx_huixue";
         public const string fx_fire01 = "fx_fire01";
         public const string fx_dimian = "fx_dimian";
-        public const string fx_chongci = "fx_chongci";
         public const string fx_bingzhangjineng = "fx_bingzhangjineng";
-        public const string fx_bingzhang = "fx_bingzhang";
         public const string fx_miasma_boss = "fx_miasma_boss";
         public const string fx_juese_shouji = "fx_juese_shouji";
         public const string fx_fire_boss = "fx_fire_boss";
         public const string rushGuide = "rushGuide";
-        public const string fx_xiaoguaisiwang = "fx_xiaoguaisiwang";
         public const string fanGuide = "fanGuide";
         public const string circleGuide = "circleGuide";
         public const string circleDmg = "circleDmg";
