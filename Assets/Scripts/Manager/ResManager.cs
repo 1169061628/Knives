@@ -29,7 +29,7 @@ public class ResManager
         if (loadedPrefabs.ContainsKey(name) && loadedPrefabs[name].Count > 0) go = loadedPrefabs[name].Pop();
         else go = Object.Instantiate(LoadRes<GameObject>(name));
         go.SetActive(true);
-        go.transform.SetParent(parent);
+        if (parent != null) go.transform.SetParent(parent);
         go.transform.localPosition = pos;
         go.transform.localScale = scale;
         return go;

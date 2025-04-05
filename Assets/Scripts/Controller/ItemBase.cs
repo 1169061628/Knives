@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public abstract class ItemBase
+public class ItemBase
 {
     public GameObject gameObject;
     public Transform transform;
 
-    public abstract void InitComponent();
+    public virtual void InitComponent() { }
 
     public virtual void Update() { }
     public virtual void FixedUpdate() { }

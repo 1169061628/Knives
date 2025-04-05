@@ -2,7 +2,7 @@ using DG.Tweening;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
+using static ManyKnivesDefine;
 public struct LevelConfigArgs
 {
     public int waveId;
@@ -177,7 +177,7 @@ public class Scene
     // 角色对象池
     readonly Dictionary<string, KnifeObjectPool<RoleBase>> rolePool = new();
     // 特效对象池
-    readonly Dictionary<string, KnifeObjectPool<EffectBase>> effectPool = new();
+    readonly Dictionary<string, KnifeObjectPool<ItemBase>> effectPool = new();
 
     Camera mainCamera;
     Transform cameraParent;
@@ -243,7 +243,7 @@ public class Scene
     readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
     readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
     readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
-    readonly Dictionary<GameObject, EffectBase> effectPairWithGO = new();
+    readonly Dictionary<GameObject, ItemBase> effectPairWithGO = new();
 
 
     public GameObject levelRoot;
@@ -476,7 +476,7 @@ public class Scene
     BladeBase BladePoolPopOne(int type)
     {
         var obj = GetBladePool(type).Get();
-        obj.gameObject.name = ManyKnivesDefine.TriggerType.blade + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Blade;
+        obj.gameObject.name = TriggerType.blade + Names.split + Names.Blade;
         bladePairWithGO[obj.gameObject] = obj;
         return obj;
     }
@@ -485,14 +485,14 @@ public class Scene
     {
         return type switch
         {
-            1 => bladePool[ManyKnivesDefine.BladeNames.defaultblade],
-            2 => bladePool[ManyKnivesDefine.BladeNames.snowblade],
-            3 => bladePool[ManyKnivesDefine.BladeNames.fireblade],
-            4 => bladePool[ManyKnivesDefine.BladeNames.miasmablade],
-            5 => bladePool[ManyKnivesDefine.BladeNames.lightningblade],
-            6 => bladePool[ManyKnivesDefine.BladeNames.ironblade],
-            7 => bladePool[ManyKnivesDefine.BladeNames.hugeAxe],
-            8 => bladePool[ManyKnivesDefine.BladeNames.hugeblade],
+            1 => bladePool[BladeNames.defaultblade],
+            2 => bladePool[BladeNames.snowblade],
+            3 => bladePool[BladeNames.fireblade],
+            4 => bladePool[BladeNames.miasmablade],
+            5 => bladePool[BladeNames.lightningblade],
+            6 => bladePool[BladeNames.ironblade],
+            7 => bladePool[BladeNames.hugeAxe],
+            8 => bladePool[BladeNames.hugeblade],
             _ => null
         };
     }
@@ -523,7 +523,7 @@ public class Scene
             var temGo = PropPoolPopOne(type);
             temGo.transform.SetParent(levelRoot.transform);
             temGo.Init(this, type);
-            temGo.gameObject.name = ManyKnivesDefine.TriggerType.prop + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Prop;
+            temGo.gameObject.name = TriggerType.prop + Names.split + Names.Prop;
 
             Vector3 tmpPos;
             // 随机出现在周围
@@ -544,7 +544,7 @@ public class Scene
         var tmpGO = PropPoolPopOne(type);
         tmpGO.transform.SetParent(levelRoot.transform);
         tmpGO.Init(this, type);
-        tmpGO.gameObject.name = ManyKnivesDefine.TriggerType.prop + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Prop;
+        tmpGO.gameObject.name = TriggerType.prop + Names.split + Names.Prop;
         pos = GetSafetyPosition(pos);
         pos.z = 0;
         tmpGO.transform.position = pos;
@@ -554,7 +554,7 @@ public class Scene
     // 生产敌人对象
     void SpawnEnemyPrefab(int num, int type, int level)
     {
-        var roleName = ManyKnivesDefine.roleTypeWithName[type];
+        var roleName = roleTypeWithName[type];
         // boss入场
         if (type >= 7 && type <= 9)
         {
@@ -581,7 +581,7 @@ public class Scene
             var tmpGo = RolePoolPopOne(roleName);
             tmpGo.transform.SetParent(levelRoot.transform);
             tmpGo.Init(this, uiMgr, roleName, GetRoleConfig(roleName, level), GetRoleSpawnPos(spawnPos));
-            tmpGo.gameObject.name = ManyKnivesDefine.TriggerType.role + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.enemy;
+            tmpGo.gameObject.name = TriggerType.role + Names.split + Names.enemy;
         }
     }
 
@@ -594,8 +594,8 @@ public class Scene
             overFlag = true;
             readyFlag = false;
             if (role.isPlayer) recycleFlag = false;
-            //if (role.isPlayer) audioMgr.PlayOneShot(ManyKnivesDefine.AudioClips.shibai);TODO
-            //else audioMgr.PlayOneShot(ManyKnivesDefine.AudioClips.shengli);TODO
+            //if (role.isPlayer) audioMgr.PlayOneShot(AudioClips.shibai);TODO
+            //else audioMgr.PlayOneShot(AudioClips.shengli);TODO
             KillCGTween();
             cgTween = DOTween.Sequence();
             cgTween.InsertCallback(0, () => Time.timeScale = 0.1f);
@@ -771,11 +771,11 @@ public class Scene
 
     void BladePoolReady()
     {
-        var fields = typeof(ManyKnivesDefine.BladeNames).GetFields();
+        var fields = typeof(BladeNames).GetFields();
         for (int i = 0; i < fields.Length; ++i)
         {
             var name = fields[i].Name;
-            if (!bladePool.ContainsKey(name)) bladePool[name] = new();  // TODO
+            if (!bladePool.ContainsKey(name)) bladePool[name] = new(levelRoot.transform);
         }
     }
 
@@ -783,42 +783,58 @@ public class Scene
     {
         foreach (var v in curEnemyTypeList)
         {
-            var enemyName = ManyKnivesDefine.roleTypeWithName[v - 1];
-            if (!rolePool.ContainsKey(enemyName)) rolePool[enemyName] = new();  // TODO
+            var enemyName = roleTypeWithName[v - 1];
+            if (!rolePool.ContainsKey(enemyName)) rolePool[enemyName] = new(levelRoot.transform);
         }
     }
 
     void PropPoolReady()
     {
-        var fields = typeof(ManyKnivesDefine.PropNames).GetFields();
+        var fields = typeof(PropNames).GetFields();
         for (int i = 0; i < fields.Length; ++i)
         {
             var name = fields[i].Name;
-            if (!propPool.ContainsKey(name)) propPool[name] = new();  // TODO
+            if (!propPool.ContainsKey(name)) propPool[name] = new(levelRoot.transform);
         }
     }
 
     void EffectPoolReady()
     {
-        var fields = typeof(ManyKnivesDefine.SkillNames).GetFields();
+        var fields = typeof(SkillNames).GetFields();
         for (int i = 0; i < fields.Length; ++i)
         {
             var name = fields[i].Name;
-            if (!effectPool.ContainsKey(name)) effectPool[name] = new();  // TODO
+            if (!effectPool.ContainsKey(name)) effectPool[name] = new(levelRoot.transform);
         }
+        //var parent = levelRoot.transform;
+        //effectPool[SkillNames.fx_bingzhangjineng] = new(parent);
+        //effectPool[SkillNames.fx_snow01] = new(parent);
+        //effectPool[SkillNames.fx_fire01] = new(parent);
+        //particalItemPool[SkillNames.fx_pindao] = new(parent);
+        //particalItemPool[SkillNames.fx_dimian] = new(parent);
+        //effectPool[SkillNames.fx_lightning01] = new(parent);
+        //effectPool[SkillNames.fx_miasma] = new(parent);
+        //effectPool[SkillNames.fx_miasma_boss] = new(parent);
+        //particalItemPool[SkillNames.fx_juese_shouji] = new(parent);
+        //effectPool[SkillNames.fx_fire_boss] = new(parent);
+        //spriteRendererPool[SkillNames.rushGuide] = new(parent);
+        //spriteRendererPool[SkillNames.fanGuide] = new(parent);
+        //spriteRendererPool[SkillNames.circleGuide] = new(parent);
+        //effectPool[SkillNames.circleDmg] = new(parent);
+
     }
 
     void InitRoleConfig()
     {
         if (bossFlag)
         {
-            var roleName = ManyKnivesDefine.roleTypeWithName[curBossType - 1];
+            var roleName = roleTypeWithName[curBossType - 1];
             var tmpBossConfig = GetRoleConfig(roleName, curBossLevel);
             if (tmpBossConfig.callEnemyType > 0 && tmpBossConfig.callNum > 0)
             {
                 curEnemyTypeList.Add(tmpBossConfig.callEnemyType);
             }
-            if (roleName == ManyKnivesDefine.RoleNames.axeboss)
+            if (roleName == RoleNames.axeboss)
             {
                 var rushConfig = GetRushConfigById(tmpBossConfig.skillLevel);
                 if (rushConfig.retinueNum > 0)
@@ -860,7 +876,7 @@ public class Scene
             allLevelData.Add(singleLevel);
         }
         string configRolePath = Application.dataPath + "/ManagedResources/Configs/Role";
-        var allName = typeof(ManyKnivesDefine.RoleNames).GetFields();
+        var allName = typeof(RoleNames).GetFields();
         for (int i = 0;i < allName.Length; ++i)
         {
             string name = allName[i].Name;
@@ -905,16 +921,16 @@ public class Scene
     {
         return type switch
         {
-            1 => propPool[ManyKnivesDefine.PropNames.defaultBladeProp],
-            2 => propPool[ManyKnivesDefine.PropNames.iceBladeProp],
-            3 => propPool[ManyKnivesDefine.PropNames.fireBladeProp],
-            4 => propPool[ManyKnivesDefine.PropNames.miasmaBladeProp],
-            5 => propPool[ManyKnivesDefine.PropNames.lightningBladeProp],
-            6 => propPool[ManyKnivesDefine.PropNames.crazeProp],
-            7 => propPool[ManyKnivesDefine.PropNames.swordProp],
-            8 => propPool[ManyKnivesDefine.PropNames.fleetfootedProp],
-            9 => propPool[ManyKnivesDefine.PropNames.loveProp],
-            10 => propPool[ManyKnivesDefine.PropNames.defaultBladeProp2],
+            1 => propPool[PropNames.defaultBladeProp],
+            2 => propPool[PropNames.iceBladeProp],
+            3 => propPool[PropNames.fireBladeProp],
+            4 => propPool[PropNames.miasmaBladeProp],
+            5 => propPool[PropNames.lightningBladeProp],
+            6 => propPool[PropNames.crazeProp],
+            7 => propPool[PropNames.swordProp],
+            8 => propPool[PropNames.fleetfootedProp],
+            9 => propPool[PropNames.loveProp],
+            10 => propPool[PropNames.defaultBladeProp2],
             _ => null
         };
     }
@@ -931,14 +947,14 @@ public class Scene
         GetPropPool(type).Put(item);
     }
 
-    public EffectBase PopEffect(string name)
+    public ItemBase PopEffect(string name)
     {
-        var obj = effectPool[name].Get();
+        ItemBase obj = effectPool[name].Get();
         effectPairWithGO[obj.gameObject] = obj;
         return obj;
     }
 
-    public void PushEffect(string name, EffectBase item)
+    public void PushEffect(string name, ItemBase item)
     {
         effectPairWithGO.Remove(item.gameObject);
         effectPool[name].Put(item);
@@ -989,9 +1005,9 @@ public class Scene
             // 初始化主角
             rolePlayer = new RolePlayer
             {
-                gameObject = ResManager.LoadPrefab(ManyKnivesDefine.RoleNames.player, levelRoot.transform, Vector3.one, Vector3.zero)
+                gameObject = ResManager.LoadPrefab(RoleNames.player, levelRoot.transform, Vector3.one, Vector3.zero)
             };
-            rolePlayer.gameObject.name = ManyKnivesDefine.TriggerType.role + ManyKnivesDefine.Names.split + ManyKnivesDefine.Names.Player;
+            rolePlayer.gameObject.name = TriggerType.role + Names.split + Names.Player;
         }
         if (cameraCtrl == null)
         {
@@ -1000,7 +1016,7 @@ public class Scene
         }
         var playerPosV3 = GetSafetyPosition(playerPos.position);
         playerPosV3.z = 0;
-        rolePlayer.Init(this, uiMgr, ManyKnivesDefine.RoleNames.player, GetRoleConfig(ManyKnivesDefine.RoleNames.player, curLevel), playerPosV3);
+        rolePlayer.Init(this, uiMgr, RoleNames.player, GetRoleConfig(RoleNames.player, curLevel), playerPosV3);
         rolePairWithGO[rolePlayer.gameObject] = rolePlayer;
         cameraCtrl.Reset();
         if (bossFlag) bossTimerBind.Send(bossTimer);
