@@ -133,6 +133,8 @@ public class RoleBase : ItemBase
     private Tweener backUpTween;
     private Tweener hitTween;
 
+    AnimControl animCtrl;
+
     public override void InitComponent()
     {
         aiDestinationSetter = Util.GetComponentByObjectName<AIDestinationSetter>(gameObject, "ironBoss");
@@ -151,7 +153,7 @@ public class RoleBase : ItemBase
         material = skinMeshRenderer.material;
         disply = Util.GetComponentByObjectName<Transform>(gameObject, "display");
         effectParent = Util.GetComponentByObjectName<Transform>(gameObject, "effect");
-        // self.animCtrl = require("bcmanyknives_anim_ctrl").new(self.animator, self.moveSpBind, self.atkSpBind)
+        animCtrl = new AnimControl(animator, moveSpBind, atkSpBind);
         hpAnchor = Util.GetComponentByObjectName<Transform>(gameObject, "hpAnchor");
         dmgOffY = skinMeshRenderer.bounds.size.y * 0.5f;
         freezeFx = Util.GetComponentByObjectName<ParticleSystem>(gameObject, "fx_snow02");
