@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using bc.MiniGameBase;
 using DG.Tweening;
 using Pathfinding;
 using UnityEngine;
@@ -197,8 +196,8 @@ public class RoleBase : ItemBase
     public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
     {
         sceneMgr = scene;
-        uiMgr = uiMgr;
-        roleName = roleName;
+        this.uiMgr = uiMgr;
+        this.roleName = roleName;
         roleData = configData;
         initPos = spawnPos;
         transform.position = spawnPos;
