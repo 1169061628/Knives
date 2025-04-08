@@ -11,7 +11,7 @@ public class BladeBase : ItemBase
     bool flyFlag;   // 是否在飞行状态
     BladeParent parent;   // 刀刃父物体，只有RolePlayer有用
     public bool autoSpawnFlag; // 是否自动生成
-    Scene sceneMgr;
+    GameScene sceneMgr;
     Transform bladeTran;
 
     GameObject blade;
@@ -28,13 +28,13 @@ public class BladeBase : ItemBase
         height = spriteRenderer.bounds.size.y * 0.5f;
     }
 
-    public virtual void Init(Scene scene, int bladeType, RoleBase roleBase)
+    public virtual void Init(GameScene scene, int bladeType, RoleBase roleBase)
     {
         this.roleBase = roleBase;
         //InitWithoutRole(scene, bladeType, role.isPlayer); TODO
     }
 
-    public void InitWithoutRole(Scene scene, int bladeType, bool isPlayer)
+    public void InitWithoutRole(GameScene scene, int bladeType, bool isPlayer)
     {
         sceneMgr = scene;
         this.bladeType = bladeType;

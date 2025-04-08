@@ -2,7 +2,7 @@
 
 public class Sprite_Renderer_Item : ItemBase
 {
-    Scene sceneMgr;
+    GameScene sceneMgr;
     string type;
     Material mat;
     // 1:boxFill,2:AngleFill
@@ -31,7 +31,7 @@ public class Sprite_Renderer_Item : ItemBase
         else if (spriteRendererFill.name == "Circle") fillFlag = 0;
     }
 
-    public void Init(Scene sceneMgr, string type)
+    public void Init(GameScene sceneMgr, string type)
     {
         this.sceneMgr = sceneMgr;
         this.type = type;

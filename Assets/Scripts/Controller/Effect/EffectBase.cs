@@ -6,7 +6,7 @@ public class EffectBase : ItemBase
     // 对应的角色
     RoleBase roleBase;
     string type;
-    Scene sceneMgr;
+    GameScene sceneMgr;
     Collider2D collider;
     ParticleSystem particle;
     int effectID;
@@ -17,7 +17,7 @@ public class EffectBase : ItemBase
         particle = gameObject.GetComponentInChildren<ParticleSystem>();
     }
 
-    public void Init(Scene sceneMgr, string type, RoleBase roleBase)
+    public void Init(GameScene sceneMgr, string type, RoleBase roleBase)
     {
         this.roleBase = roleBase;
         this.sceneMgr = sceneMgr;

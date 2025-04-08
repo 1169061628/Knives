@@ -3,7 +3,7 @@ using DG.Tweening;
 
 public class Effect_Partical_Item : ItemBase
 {
-    Scene sceneMgr;
+    GameScene sceneMgr;
     ParticleSystem particle;
     string type;
     Tween tween;
@@ -12,7 +12,7 @@ public class Effect_Partical_Item : ItemBase
         particle = gameObject.GetComponentInChildren<ParticleSystem>();
     }
 
-    public void Init(Scene sceneMgr, string type)
+    public void Init(GameScene sceneMgr, string type)
     {
         this.sceneMgr = sceneMgr;
         this.type = type;

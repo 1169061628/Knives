@@ -160,8 +160,10 @@ public struct MiasmaConfigArgs
     }
 }
 
-public class Scene
+public class GameScene
 {
+    public float TopRatio = 0;
+
     public EventHandler<bool> pauseBind = new();
 
     public AudioSource AS_BGM;
@@ -198,9 +200,9 @@ public class Scene
     // 生成关卡内容计时器
     float spawnTimer;
     // 关卡敌人总数量
-    int enemyNumMax;
+    public int enemyNumMax;
     // 记录已经击杀数量
-    readonly EventHandler<int> enemyNumBind = new();
+    public readonly EventHandler<int> enemyNumBind = new();
     // 是否boss关卡
     public bool bossFlag;
     // 记录当前boss类型
@@ -212,7 +214,7 @@ public class Scene
     // boss生成时间
     float bossTimer = 0;
     // boss倒计时
-    readonly EventHandler<float> bossTimerBind = new();
+    public readonly EventHandler<int> bossTimerBind = new();
     // 演出状态下，所有角色无伤
     public bool NoInjury = false;
     // 游戏结束标记
@@ -721,6 +723,7 @@ public class Scene
 
     public void Ready(Transform canvas, int level)
     {
+        if (Screen.height > Screen.safeArea.yMax) TopRatio = (Screen.height - Screen.safeArea.yMax) / Screen.height;
         curLevel = level;
         mainScene ??= ResManager.LoadPrefab("MainScene", canvas, Vector3.one, Vector3.zero);
         cameraParent = Util.GetTransform(mainScene, "CameraParent");
@@ -960,7 +963,7 @@ public class Scene
         effectPool[name].Put(item);
     }
 
-    Vector3 GetPlayerViewPos()
+    public Vector3 GetPlayerViewPos()
     {
         //return mainCamera.WorldToViewportPoint(rolePlayer.center.position); TODO
         return default;
@@ -971,7 +974,7 @@ public class Scene
         cgTween?.Kill();
         cgTween = null;
     }
-    void OverBattle()
+    public void OverBattle()
     {
         pauseBind.Send(true);
         startFlag = false;
@@ -979,7 +982,7 @@ public class Scene
         //foreach (var item in rolePairWithGO) item.Value.Stop();   TODO
     }
 
-    void StartBattle()
+    public void StartBattle()
     {
         // 开始出怪
         levelWaveMax = levelConfigTable.Count;
@@ -990,7 +993,7 @@ public class Scene
         overFlag = false;
     }
 
-    void ResetGame()
+    public void ResetGame()
     {
         KillCGTween();
         pauseBind.Send(false);

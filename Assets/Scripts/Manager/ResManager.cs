@@ -9,6 +9,7 @@ public class ResManager
     public static string resTxtPath = Application.dataPath + "/ManagedResources/Configs/ResRecord.txt";
     static GameObject poolNode;
     static readonly Dictionary<string, Stack<GameObject>> loadedPrefabs = new();
+    static readonly Dictionary<string, Stack<AudioClip>> loadedAudios = new();
     public static T LoadRes<T>(string name) where T : Object
     {
         if (resName2resPath.TryGetValue(name, out var path))
@@ -46,7 +47,14 @@ public class ResManager
         obj.transform.SetParent(poolNode.transform);
         obj.SetActive(false);
         data.Push(obj);
-
+    }
+    // 加载音效
+    public static AudioClip LoadAudioClip(string name)
+    {
+        AudioClip clip;
+        if (loadedAudios.ContainsKey(name) && loadedAudios[name].Count > 0) clip = loadedAudios[name].Pop();
+        else clip = LoadRes<AudioClip>(name);
+        return clip;
     }
 
     public static void InitALlResPath()

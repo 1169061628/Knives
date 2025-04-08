@@ -36,7 +36,7 @@ public class RoleBase : ItemBase
 
     protected CollisionTriggerListener bladeTriggerListener;
 
-    protected Scene sceneMgr;
+    protected GameScene sceneMgr;
 
     protected UIMgr uiMgr;
     // 是否为boss
@@ -69,11 +69,11 @@ public class RoleBase : ItemBase
     // bladeRotTween（这个属性没用到）
     
     // 真实血量
-    private EventHandler<int> hpValueBind = new();
+    public EventHandler<int> hpValueBind = new();
     // 最大血量
-    private EventHandler<int> hpMaxBind = new();
+    public EventHandler<int> hpMaxBind = new();
     // 刀刃数量
-    private EventHandler<int> bladeNumBind = new();
+    public EventHandler<int> bladeNumBind = new();
     // 动画控制器(后面写)
     // AnimCtr
     private GameObject hpSlider;
@@ -193,7 +193,7 @@ public class RoleBase : ItemBase
         material.SetColor(mpb_Color, value);
     }
 
-    public virtual void Init(Scene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
+    public virtual void Init(GameScene scene, UIMgr uiMgr, string roleName, RoleConfigArgs configData, Vector3 spawnPos)
     {
         sceneMgr = scene;
         this.uiMgr = uiMgr;

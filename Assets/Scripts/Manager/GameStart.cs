@@ -5,7 +5,7 @@ public class GameStart : MonoBehaviour
 {
     GameObject canvas;
     GameObject content, levelSelect;
-    Scene scene;
+    GameScene scene;
     GamePanel panel = null;
     // Start is called before the first frame update
     void Start()

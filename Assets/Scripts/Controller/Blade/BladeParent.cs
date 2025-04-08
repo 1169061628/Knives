@@ -4,12 +4,12 @@ public class BladeParent : ItemBase
 {
     BladeBase blade;
     int index;
-    Scene sceneMgr;
+    GameScene sceneMgr;
     Sequence resetTween;
 
     public override void InitComponent() { }
 
-    public void Init(Scene scene, BladeBase blade)
+    public void Init(GameScene scene, BladeBase blade)
     {
         sceneMgr = scene;
         this.blade = blade;

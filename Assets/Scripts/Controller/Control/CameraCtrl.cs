@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraCtrl
 {
-    Scene sceneMgr;
+    GameScene sceneMgr;
     Camera camera;
     Transform cameraParent;
 
@@ -30,7 +30,7 @@ public class CameraCtrl
     float orthographiSizeScale;
     float viewSizeX, viewSizeY;
 
-    public CameraCtrl(Camera camera, Transform cp, SpriteRenderer sr, Scene scene)
+    public CameraCtrl(Camera camera, Transform cp, SpriteRenderer sr, GameScene scene)
     {
         this.camera = camera;
         bgSpriteRenderer = sr;
