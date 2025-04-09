@@ -61,9 +61,9 @@ public class RoleBase : ItemBase
     private int curMoveSp;
     private EventHandler<bool> aiMoveBind = new();
     // 特殊静止状态
-    private bool fixedlyFlag;
+    protected bool fixedlyFlag;
     // 攻击速度
-    private EventHandler<int> atkSpBind = new();
+    protected EventHandler<int> atkSpBind = new();
     // 刀刃旋转速度
     private EventHandler<float> bladeSpBind = new();
     // bladeRotTween（这个属性没用到）
@@ -75,7 +75,7 @@ public class RoleBase : ItemBase
     // 刀刃数量
     public EventHandler<int> bladeNumBind = new();
     // 动画控制器(后面写)
-    // AnimCtr
+    protected AnimControl animCtrl;
     private GameObject hpSlider;
     // 血条的位置
     private Transform hpAnchor;
@@ -90,9 +90,9 @@ public class RoleBase : ItemBase
     // 减速标记
     private bool debuff_moveSp_Flag;
     private bool debuff_moveSp_Timer;
-    private bool debuff_freeze_Flag;
+    protected bool debuff_freeze_Flag;
     private bool debuff_freeze_Timer;
-    private bool debuff_light_Flag;
+    protected bool debuff_light_Flag;
     private bool debuff_light_Timer;
     private int debuff_lightID;
     
@@ -108,11 +108,11 @@ public class RoleBase : ItemBase
     // 是否准备好
     private bool readyFlag;
     // 移动方向随机偏移
-    private Quaternion moveOffRot;
-    private float roleMoveOff;
+    protected Quaternion moveOffRot;
+    protected float moveOffTimer;
     // 寻路相关
     private AIDestinationSetter aiDestinationSetter;
-    private AIPath aiPath;
+    protected AIPath aiPath;
     private Vector3 lastAIPosition;
     private string mpb_FillPhase = "_FillPhase";
     private string mpb_FillColor = "_FillColor";
@@ -126,13 +126,11 @@ public class RoleBase : ItemBase
     private Material material;
     private Transform effectParent;
     public bool isPlayer;
-    private RolePlayer player;
-    private bool deadFlag;
+    protected RolePlayer player;
+    protected bool deadFlag;
     private int hurtByRoleCount;
     private Tweener backUpTween;
     private Tweener hitTween;
-
-    AnimControl animCtrl;
 
     public override void InitComponent()
     {
@@ -256,7 +254,7 @@ public class RoleBase : ItemBase
         PauseListener(sceneMgr.pauseBind.value);
     }
     
-    protected void PauseListener(bool pause)
+    protected virtual void PauseListener(bool pause)
     {
         int timeScale = pause ? 0 : 1;
         if (!backUpTween.Equals(null))
@@ -301,12 +299,12 @@ public class RoleBase : ItemBase
     {
     }
 
-    void Start()
+    protected virtual void Start()
     {
         
     }
 
-    void SetAICanMove(bool value)
+    protected void SetAICanMove(bool value)
     {
         if (!aiPath)
         {
@@ -316,8 +314,36 @@ public class RoleBase : ItemBase
         }
     }
 
-    public void Recycle()
+    protected void MoveFollow()
+    {
+        if (deadFlag) return;
+        var tarPos = player.transform.position;
+        aiPath.destination = tarPos;
+        RefreshDisplayFlip();
+    }
+
+    protected void RefreshDisplayFlip()
+    {
+        var curPos = transform.position;
+        if (lastAIPosition == default || Mathf.Abs(curPos.x - lastAIPosition.x) >= 0.05f)
+        {
+            SetDisplayFlip(aiPath.desiredVelocity.x < 0);
+            lastAIPosition = curPos;
+        }
+    }
+
+    protected void SetDisplayFlip(bool forward)
+    {
+        disply.localScale = forward ? ManyKnivesDefine.RoleDir.forward : ManyKnivesDefine.RoleDir.back;
+    }
+
+    protected virtual void Recycle()
     {
         sceneMgr.pauseBind.Remove(PauseListener);
+    }
+
+    protected virtual void Deaded()
+    {
+
     }
 }

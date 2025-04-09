@@ -63,7 +63,7 @@ public class Sprite_Renderer_Item : ItemBase
             SetFill(0);
         }
     }
-    void SetFill(float value)
+    public void SetFill(float value)
     {
         if (fillFlag == 1) spriteRendererFill.size = new Vector2(Mathf.Lerp(0, targetSize.x, value), targetSize.y);
         else spriteRendererFill.transform.localScale = Vector3.one * value;

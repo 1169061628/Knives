@@ -44,6 +44,8 @@ public class UIMgr
     Sequence bossTweener, bossCGTween;
     Tween breathSequence;
 
+    public bool bossFlag;
+
     public void Init(GameScene scene, AudioMgr audioMgr, GameMgr gameMgr)
     {
         this.gameMgr = gameMgr;
@@ -174,9 +176,17 @@ public class UIMgr
     void BigSwordTimer(float value) => swordFill.fillAmount = 1 - value / ManyKnivesDefine.PlayerEffectConfig.CD_bigSword;
     void FleetfootTimer(float value) => fleetfootFill.fillAmount = 1 - value / ManyKnivesDefine.PlayerEffectConfig.CD_fleetfoot;
 
-    void MoveListener(Vector2 val)
+    void MoveListener(Vector2 value)
     {
-
+        if (!startFlag) gameMgr.StartBattle();
+        if (value.x != 0 || value.y != 0)
+        {
+            int radius = 180;
+            playerArrow.anchoredPosition = radius * value;
+            var deg = Vector2.Angle(value, Vector2.right);
+            if (value.y < 0) deg = -deg;
+            playerArrow.localEulerAngles = new Vector3(0, 0, deg - 90);
+        }
     }
 
     void RoleNumListener(int value)
@@ -187,7 +197,7 @@ public class UIMgr
         }
     }
 
-    void BossTimerListener(int value)
+    void BossTimerListener(float value)
     {
         if (sceneMgr.bossFlag)
         {
@@ -198,12 +208,94 @@ public class UIMgr
 
 
 
-    public void BossCGPlay(Action call)
+    public void BossCGPlay(Action call = null)
     {
-
+        KillBossCG();
+        audioMgr.PlayOneShot(ManyKnivesDefine.AudioClips.boss_appears);
+        bossGuideObj.SetActive(true);
+        bossCG.alpha = 0;
+        bossCGTween = DOTween.Sequence();
+        bossCGTween.Append(DOVirtual.Float(0, 1, 0.3f, val => bossCG.alpha = val));
+        bossCGTween.AppendInterval(1);
+        bossCGTween.Append(DOVirtual.Float(1, 0, 0.3f, val => bossCG.alpha = val));
+        bossCGTween.OnComplete(() =>
+        {
+            bossGuideObj.SetActive(false);
+            call?.Invoke();
+        });
+        bossCGTween.SetLink(bossGuideObj);
+        RefreshPause();
     }
 
-    public void popHpSlider(RoleBase roleBase, EventHandler<int> hpValueBind, EventHandler<int> hpMaxBind)
+    void StartBtnTween()
     {
+        KillStartTween();
+        startGuide.SetActive(true);
+        startGuideImg.transform.localScale = Vector3.one;
+        breathSequence = startGuideImg.transform.DOScale(Vector3.one * 1.1f, 0.5f).SetEase(Ease.InSine).SetLoops(-1, LoopType.Yoyo);
+        RefreshPause();
+    }
+
+    void KillStartTween()
+    {
+        breathSequence?.Kill();
+        breathSequence = null;
+        startGuide.SetActive(false);
+    }
+
+    public void StartBattle()
+    {
+        KillStartTween();
+        playerFollower.gameObject.SetActive(true);
+        uiCtrl.Ready();
+        CDSlider.SetActive(true);
+        startFlag = true;
+    }
+    public HpSliderCtrl popHpSlider(RoleBase roleBase, EventHandler<int> hpValueBind, EventHandler<int> hpMaxBind)
+    {
+        var slider = hpSliderPool.Get();
+        slider.Init(roleBase, hpValueBind, hpMaxBind, sceneMgr.mainCamera, this);
+        slider.transform.SetParent(hpSliderCon);
+        slider.transform.localScale = Vector3.one;
+        return slider;
+    }
+
+    public void PushHpSlider(HpSliderCtrl slider) => hpSliderPool.Put(slider);
+
+    // 伤害 type: 1-普通伤害  2-真伤
+    public void ShowDmgText(int type, int dmgValue, Vector3 pos)
+    {
+        var dmg = dmgPool.Get();
+        dmgPair[dmg.gameObject] = dmg;
+        dmg.transform.SetParent(dmgCon);
+        dmg.Play(type, dmgValue.ToString(), pos, sceneMgr.mainCamera, this);
+    }
+    public void PushDmgText(DamageMgr item)
+    {
+        dmgPair.Remove(item.gameObject);
+        dmgPool.Put(item);
+    }
+    public void OverBattle() => uiCtrl.Hide();
+
+    void KillBossCG()
+    {
+        bossCGTween?.Kill();
+        bossCGTween = null;
+        bossGuideObj.SetActive(false);
+    }
+
+    public void ResetGame()
+    {
+        sceneMgr.enemyNumBind.Send(sceneMgr.enemyNumBind.value);
+        CDSlider.SetActive(false);
+        hpSliderPool?.Clear();
+        dmgPool?.Clear();
+        dmgPair.Clear();
+        startFlag = false;
+        playerFollower.gameObject.SetActive(false);
+        uiCtrl.Hide();
+        StartBtnTween();
+        KillBossCG();
+        bossFlag = false;
     }
 }

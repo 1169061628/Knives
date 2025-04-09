@@ -181,7 +181,7 @@ public class GameScene
     // 特效对象池
     readonly Dictionary<string, KnifeObjectPool<ItemBase>> effectPool = new();
 
-    Camera mainCamera;
+    public Camera mainCamera;
     Transform cameraParent;
     SpriteRenderer bgSR;
     AstarPath pathFinder;
@@ -190,7 +190,7 @@ public class GameScene
     public RolePlayer rolePlayer;
     bool readyFlag;
 
-    CameraCtrl cameraCtrl;
+    public CameraCtrl cameraCtrl;
 
     // 记录关卡生成波次
     public readonly EventHandler<int> levelWaveBind = new();
@@ -212,9 +212,9 @@ public class GameScene
     // 记录当前关卡有哪些敌人，对象池只创建需要的敌人
     readonly List<int> curEnemyTypeList = new();
     // boss生成时间
-    float bossTimer = 0;
+    int bossTimer = 0;
     // boss倒计时
-    public readonly EventHandler<int> bossTimerBind = new();
+    public readonly EventHandler<float> bossTimerBind = new();
     // 演出状态下，所有角色无伤
     public bool NoInjury = false;
     // 游戏结束标记
@@ -238,7 +238,7 @@ public class GameScene
 
     GameMgr gameMgr;
     UIMgr uiMgr;
-    AudioMgr audioMgr;
+    public AudioMgr audioMgr;
 
     Sequence cgTween;
 
@@ -291,7 +291,6 @@ public class GameScene
             // 随机出现在周围
             var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
             tmpPos = GetSafetyPosition(tmpPos);
-            tmpPos.z = 0;
             var newBlade = BladePoolPopOne(1);
             newBlade.InitWithoutRole(this, 1, false);
             newBlade.Drop(tmpPos, false);
@@ -378,7 +377,6 @@ public class GameScene
             dir = dir.normalized;
             var newPos = pos + dir * disLimit;
             newPos = GetSafetyPosition(newPos);
-            newPos.z = 0;
             //rolePlayer.PlayerRepulse();   TODO
         }
     }
@@ -423,7 +421,6 @@ public class GameScene
                 else
                     tmpPos = new(Mathf.Lerp(viewMax.x - spawnViewMinOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMax.y + spawnViewMaxOff, (float)random.NextDouble()));
                 tmpPos = GetSafetyPosition(tmpPos);
-                tmpPos.z = 0;
                 var newBlade = BladePoolPopOne(1);
                 newBlade.InitWithoutRole(this, 1, false);
                 newBlade.Drop(tmpPos, false);
@@ -548,13 +545,12 @@ public class GameScene
         tmpGO.Init(this, type);
         tmpGO.gameObject.name = TriggerType.prop + Names.split + Names.Prop;
         pos = GetSafetyPosition(pos);
-        pos.z = 0;
         tmpGO.transform.position = pos;
         return tmpGO;
     }
 
     // 生产敌人对象
-    void SpawnEnemyPrefab(int num, int type, int level)
+    public void SpawnEnemyPrefab(int num, int type, int level)
     {
         var roleName = roleTypeWithName[type];
         // boss入场
@@ -712,13 +708,14 @@ public class GameScene
             else spawnPos = new Vector3(viewMax.x - mapBound, Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
         }
         spawnPos = GetSafetyPosition(spawnPos);
-        spawnPos.z = 0;
         return spawnPos;
     }
 
     public Vector3 GetSafetyPosition(Vector3 pos)
     {
-        return pathFinder.GetNearest(pos, Pathfinding.NNConstraint.Default).position;
+        var rPos = pathFinder.GetNearest(pos, Pathfinding.NNConstraint.Default).position;
+        rPos.z = 0;
+        return rPos;
     }
 
     public void Ready(Transform canvas, int level)
@@ -850,9 +847,9 @@ public class GameScene
         }
     }
 
-    RushConfigArgs GetRushConfigById(int id) => rushConfigData[id];
-    FireConfigArgs GetFireConfigById(int id) => fireConfigData[id];
-    MiasmaConfigArgs GetMiasmaConfigById(int id) => miasmaConfigData[id];
+    public RushConfigArgs GetRushConfigById(int id) => rushConfigData[id];
+    public FireConfigArgs GetFireConfigById(int id) => fireConfigData[id];
+    public MiasmaConfigArgs GetMiasmaConfigById(int id) => miasmaConfigData[id];
 
     public void InitAllConfigWhenGameStart()
     {
