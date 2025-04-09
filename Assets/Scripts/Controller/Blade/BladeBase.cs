@@ -228,6 +228,8 @@ public class BladeBase : ItemBase
         PushInPool();
     }
 
+    public Vector2 Trigger(Vector2 point) => !roleBase.invincible ? Dead(point) : default;
+
     float moveSpeedMin = 7.5f;
     float moveSpeedMax = 8;
     int rotateSpeedMin = 1600;
