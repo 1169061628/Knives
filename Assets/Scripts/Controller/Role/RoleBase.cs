@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Pathfinding;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RoleBase : ItemBase
 {
@@ -50,7 +52,7 @@ public class RoleBase : ItemBase
     public Dictionary<GameObject, GameObject> bladeList;
     protected Transform disply;
     // 无敌状态
-    protected bool invincible;
+    public bool invincible;
     // 无伤状态
     protected bool noInjury;
     // 不受击退控制
@@ -76,7 +78,7 @@ public class RoleBase : ItemBase
     public EventHandler<int> bladeNumBind = new();
     // 动画控制器(后面写)
     protected AnimControl animCtrl;
-    private GameObject hpSlider;
+    private HpSliderCtrl hpSlider;
     // 血条的位置
     private Transform hpAnchor;
     // 伤害数字位置
@@ -131,6 +133,7 @@ public class RoleBase : ItemBase
     private int hurtByRoleCount;
     private Tweener backUpTween;
     private Tweener hitTween;
+    private int curBladeType;
 
     public override void InitComponent()
     {
@@ -286,24 +289,18 @@ public class RoleBase : ItemBase
             }
         }
     }
-
-    protected virtual void OnTriggerEnter2D(Collider2D collider2D)
-    {
-    }
-
-    protected virtual void OnTriggerExit2D(Collider2D collider2D)
-    {
-    }
-
-    protected virtual void BladeOnTriggerEnter2D(Collider2D collider2D)
-    {
-    }
-
+    
     protected virtual void Start()
     {
-        
+        hpSlider = uiMgr.popHpSlider(this, hpValueBind, hpMaxBind);
+        UpdateHPSliderPos();
+        readyFlag = true;
+        moveOffTimer = ManyKnivesDefine.RoleMoveOff.offTimeCD;
+        moveOffRot = Quaternion.identity;
+        lastAIPosition = default;
+        aiMoveBind.Send(true);
     }
-
+    
     protected void SetAICanMove(bool value)
     {
         if (!aiPath)
@@ -331,6 +328,53 @@ public class RoleBase : ItemBase
             lastAIPosition = curPos;
         }
     }
+    
+    protected virtual void BladeOnTriggerEnter2D(Collider2D collider2D)
+    {
+        if (!readyFlag || deadFlag || sceneMgr.overFlag || noInjury)
+            return;
+        string[] splitStrs = collider2D.name.Split(ManyKnivesDefine.Names.split);
+        var type = Int32.Parse(splitStrs[1]);
+        BladeBase targetClass = null;
+        var targetObj = collider2D.gameObject;
+        //碰到了刀刃
+        if (type == ManyKnivesDefine.TriggerType.blade)
+        {
+            targetClass = sceneMgr.bladePairWithGO[targetObj];
+            if (targetClass == null || !targetClass.valid || targetClass.roleBase == null ||
+                targetClass.roleBase == this || targetClass.roleBase.invincible)
+            {
+                return;
+            }
+
+            var pos = collider2D.bounds.ClosestPoint(transform.position);
+            //从角色刀刃池中移除
+            targetClass.roleBase.bladeList[targetClass.gameObject] = null;
+            targetClass.roleBase.bladeNumBind.Send(targetClass.roleBase.bladeNumBind.value - 1);
+            var bladeFlyDir = targetClass.Trigger(rigidbody.position);
+            var fx = sceneMgr.PopEffect(ManyKnivesDefine.SkillNames.fx_pindao) as Effect_Partical_Item;
+            fx?.Init(sceneMgr, ManyKnivesDefine.SkillNames.fx_pindao);
+            fx?.Play(2, pos, 0.5f);
+            fx.transform.localScale = Vector3.one * Mathf.Lerp(0.8f, 1, Random.Range(0,2f));
+            fx.transform.localRotation = Quaternion.Euler(0,0,Random.Range(0, 360f));
+            if (targetClass.roleBase.player == null)
+            {
+                //往一个方向上抖动
+                sceneMgr.cameraCtrl.Shake_BladeTrigger(bladeFlyDir);
+                targetClass.roleBase.BackUpTween(transform.position);
+                sceneMgr.audioMgr.PlayKnifeFightSound(curBladeType);
+            }
+            
+        }
+    }
+    
+    protected virtual void OnTriggerExit2D(Collider2D collider2D)
+    {
+    }
+    
+    protected virtual void OnTriggerEnter2D(Collider2D collider2D)
+    {
+    }
 
     protected void SetDisplayFlip(bool forward)
     {
@@ -345,5 +389,20 @@ public class RoleBase : ItemBase
     protected virtual void Deaded()
     {
 
+    }
+
+    protected virtual void UpdateHPSliderPos()
+    {
+        hpSlider?.RefreshPos(hpAnchor.position);
+    }
+
+    protected virtual void BackUpTween(Vector3 point, Vector3 dis = default)
+    {
+        
+    }
+
+    protected virtual void InitBlade(int bladeType, int bladeNum)
+    {
+        curBladeType = bladeType;
     }
 }

@@ -244,7 +244,7 @@ public class GameScene
 
     readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
     readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
-    readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
+    public readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
     readonly Dictionary<GameObject, ItemBase> effectPairWithGO = new();
 
 
