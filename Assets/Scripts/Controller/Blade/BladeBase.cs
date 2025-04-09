@@ -3,8 +3,8 @@ using DG.Tweening;
 using System.Collections.Generic;
 public class BladeBase : ItemBase
 {
-    RoleBase roleBase;  // 对应的角色
-    bool valid;   // 刀刃是否可用
+    public RoleBase roleBase;  // 对应的角色
+    public bool valid;   // 刀刃是否可用
     bool propFlag;  // 是否可捡起来
     int bladeType;// 刀刃类型
     float height;    // 刀刃高度
