@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using static ManyKnivesDefine;
 public class RoleFireBoss : RoleBossBase
 {
@@ -150,11 +151,41 @@ public class RoleFireBoss : RoleBossBase
                     circlePos = sceneMgr.GetSafetyPosition(player.transform.position);
                     circleGuide = sceneMgr.PopEffect(SkillNames.circleGuide) as Sprite_Renderer_Item;
                     circleGuide.Init(sceneMgr, SkillNames.circleGuide);
-                    //circleGuide.Play(3, )
+                    circleGuide.Play(3, 0, new Vector2(fireConfig.fall_Range, fireConfig.fall_Range), circlePos, Quaternion.identity);
                 }
+                if (!circleFlag && attentTimer >= fireConfig.fall_Attent)
+                {
+                    circleFlag = true;
+                    KillCGTween();
+                    rigidbody.simulated = false;
+                    bladeRigbody.simulated = false;
+                    invincible = true;
+                    transform.position = circlePos;
+                    animCtrl.Play(AnimatorState.entrance);
+                    cgTween = DOTween.Sequence();
+                    cgTween.InsertCallback(0.3f, () =>
+                    {
+                        sceneMgr.audioMgr.PlayOneShot(AudioClips.boss_fall);
+                        sceneMgr.cameraCtrl.Shake_BossEntrance();
+                        var dmgObj = sceneMgr.PopEffect(SkillNames.circleDmg) as EffectBase;
+                        dmgObj.gameObject.name = TriggerType.effect + Names.split + Names.Effect + Names.split + EffectType.bossCircle;
+                        dmgObj.Init(sceneMgr, SkillNames.fx_dimian, this);
+                        dmgObj.Play(circlePos, 0.1f, fireConfig.fall_Range);
+                        rigidbody.simulated = true;
+                        bladeRigbody.simulated = true;
+                        invincible = false;
+                        HideCircleGuide();
+                    });
+                    cgTween.InsertCallback(1, () =>
+                    {
+                        moveFlagBind.Send(4);
+                        waitTimer = 0;
+                        circleTimer = 0;
+                    });
+                }
+                circleGuide?.SetFill(Mathf.Min(1, attentTimer / fireConfig.fall_Attent));
             }
         }
-
     }
 
     void HideFanGuide()
@@ -166,5 +197,13 @@ public class RoleFireBoss : RoleBossBase
     {
         circleGuide?.PushInPool();
         circleGuide = null;
+    }
+
+    protected override void Recycle()
+    {
+        HideFanGuide();
+        HideCircleGuide();
+        fx_rushReady.gameObject.SetActive(false);
+        base.Recycle();
     }
 }
