@@ -549,6 +549,12 @@ public class RoleBase : ItemBase
         
     }
 
+    protected void KillBackUpTween()
+    {
+        backUpTween?.Kill();
+        backUpTween = null;
+    }
+
     protected virtual void InitBlade(int bladeType, int bladeNum)
     {
         curBladeType = bladeType;

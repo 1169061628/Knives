@@ -24,7 +24,7 @@ public class RoleBossBase : RoleBase
     const float rushGuide_height = 3.6f;
 
     // 入场演出
-    Sequence cgTween;
+    protected Sequence cgTween;
 
     int s_interval, callNum, callEnemyType, callLevel;
     float spawnTimer;
@@ -122,7 +122,7 @@ public class RoleBossBase : RoleBase
         }
     }
 
-    void KillCGTween()
+    protected void KillCGTween()
     {
         cgTween?.Kill();
         cgTween = null;
