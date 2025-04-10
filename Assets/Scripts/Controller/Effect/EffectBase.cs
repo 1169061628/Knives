@@ -4,12 +4,12 @@ using UnityEngine;
 public class EffectBase : ItemBase
 {
     // 对应的角色
-    RoleBase roleBase;
+    public RoleBase roleBase;
     string type;
     GameScene sceneMgr;
     Collider2D collider;
     ParticleSystem particle;
-    int effectID;
+    public int effectID;
     Tween tween;
     public override void InitComponent()
     {

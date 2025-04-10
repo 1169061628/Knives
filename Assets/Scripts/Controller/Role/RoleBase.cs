@@ -93,7 +93,7 @@ public class RoleBase : ItemBase
     private bool debuff_moveSp_Flag;
     private bool debuff_moveSp_Timer;
     protected bool debuff_freeze_Flag;
-    private bool debuff_freeze_Timer;
+    private int debuff_freeze_Timer;
     protected bool debuff_light_Flag;
     private bool debuff_light_Timer;
     private int debuff_lightID;
@@ -101,7 +101,7 @@ public class RoleBase : ItemBase
     // 碰了多少个毒气
     private Dictionary<GameObject, int> hurtByMiasmaPair;
     // 毒气计时器
-    private int hurtByMiasmaTimer;
+    private float hurtByMiasmaTimer;
     private int hurtByMiasmaCount;
     private GameObject miasmaObj;
     private float miasmaDmg;
@@ -334,13 +334,12 @@ public class RoleBase : ItemBase
         if (!readyFlag || deadFlag || sceneMgr.overFlag || noInjury)
             return;
         string[] splitStrs = collider2D.name.Split(ManyKnivesDefine.Names.split);
-        var type = Int32.Parse(splitStrs[1]);
-        BladeBase targetClass = null;
+        var type = int.Parse(splitStrs[1]);
         var targetObj = collider2D.gameObject;
         //碰到了刀刃
         if (type == ManyKnivesDefine.TriggerType.blade)
         {
-            targetClass = sceneMgr.bladePairWithGO[targetObj];
+            var targetClass = sceneMgr.bladePairWithGO[targetObj];
             if (targetClass == null || !targetClass.valid || targetClass.roleBase == null ||
                 targetClass.roleBase == this || targetClass.roleBase.invincible)
             {
@@ -364,16 +363,165 @@ public class RoleBase : ItemBase
                 targetClass.roleBase.BackUpTween(transform.position);
                 sceneMgr.audioMgr.PlayKnifeFightSound(curBladeType);
             }
-            
+        }
+        //碰到了角色
+        else if (type == ManyKnivesDefine.TriggerType.role)
+        {
+            RoleBase targetClass = sceneMgr.rolePairWithGO[targetObj];
+            //碰到了自己的角色
+            if (targetClass == this || targetClass.invincible)
+            {
+                return;
+            }
+
+            if (isPlayer)
+            {
+                sceneMgr.cameraCtrl.Shake_EnemyHurt();
+                var dmg = ManyKnivesDefine.bladeDmgWithType[ManyKnivesDefine.PropType.blade_default] -
+                          targetClass.roleData.defence;
+                dmg = dmg * (ManyKnivesDefine.bladeDmgWithType[curBladeType] /
+                             ManyKnivesDefine.bladeDmgWithType[ManyKnivesDefine.PropType.blade_default]);
+                targetClass.RoleTrigger(transform.position, dmg, true, true);
+            }
+            else
+            {
+                targetClass.RoleTrigger(transform.position, roleData.bladeDmg, false);
+            }
+            sceneMgr.audioMgr.PlayHitSound();
         }
     }
     
     protected virtual void OnTriggerExit2D(Collider2D collider2D)
     {
+        if (deadFlag || sceneMgr.overFlag)
+        {
+            return;
+        }
+
+        string[] splitStrs = collider2D.name.Split(ManyKnivesDefine.Names.split);
+        int type = int.Parse(splitStrs[1]);
+        var targetObj = collider2D.gameObject;
+        //碰到了特效
+        if (type == ManyKnivesDefine.TriggerType.effect)
+        {
+            var effectType = int.Parse(splitStrs[3]);
+            //都能生效的特效
+            if (effectType == ManyKnivesDefine.EffectType.miasma)
+            {
+                if (hurtByMiasmaPair.ContainsKey(targetObj))
+                {
+                    hurtByMiasmaPair[targetObj] = 0;
+                    hurtByMiasmaCount -= 1;
+                }
+            }
+        }
     }
     
     protected virtual void OnTriggerEnter2D(Collider2D collider2D)
     {
+        if (deadFlag || sceneMgr.overFlag)
+        {
+            return;
+        }
+
+        string[] splitStrs = collider2D.name.Split(ManyKnivesDefine.Names.split);
+        var type = int.Parse(splitStrs[1]);
+        var targetObj = collider2D.gameObject;
+        //碰到了特效
+        if (type == ManyKnivesDefine.TriggerType.effect)
+        {
+            var targetClass = sceneMgr.effectPairWithGO[targetObj] as EffectBase;
+            //碰到了自己的特效
+            if (targetClass == null || targetClass.roleBase == this)
+            {
+                return;
+            }
+
+            float dmg;
+            var effectType = int.Parse(splitStrs[3]);
+            if (!noInjury && invincible)
+            {
+                //只有敌人生效的特效
+                if (!isPlayer)
+                {
+                    if (effectType == ManyKnivesDefine.EffectType.lightning)
+                    {
+                        if (debuff_lightID != targetClass.effectID)
+                        {
+                            debuff_light_Flag = true;
+                            debuff_freeze_Timer = 0;
+                            fx_Light.gameObject.SetActive(true);
+                            animCtrl.Freeze(true);
+                            SetAICanMove(false);
+                            dmg = ManyKnivesDefine.PlayerEffectDmg.lightning / 100 * hpMaxBind.value;
+                            RoleTrigger(targetObj.transform.position, dmg, true);
+                            debuff_lightID = targetClass.effectID;
+                        }
+                    }
+                    //冰冻
+                    else if (effectType == ManyKnivesDefine.EffectType.snow)
+                    {
+                        targetClass.Trigger();
+                        debuff_freeze_Flag = true;
+                        debuff_freeze_Timer = 0;
+                        freezeFx.gameObject.SetActive(true);
+                        animCtrl.Freeze(true);
+                        SetAICanMove(false);
+                        dmg = ManyKnivesDefine.PlayerEffectDmg.snow / 100 * hpMaxBind.value;
+                        RoleTrigger(targetClass.roleBase.transform.position, dmg, true);
+                        sceneMgr.audioMgr.PlayFreezeSound();
+                    }
+                }
+            }
+            //都能生效的特效
+            if (effectType == ManyKnivesDefine.EffectType.miasma)
+            {
+                if (!hurtByMiasmaPair.ContainsKey(targetObj))
+                {
+                    if (hurtByMiasmaCount < 1)
+                    {
+                        hurtByMiasmaTimer = ManyKnivesDefine.RoleDebuffConfig.hurtByMiasmaCD;
+                    }
+
+                    targetClass = sceneMgr.effectPairWithGO[targetObj] as EffectBase;
+                    if (targetClass.roleBase.isPlayer)
+                    {
+                        miasmaDmg = ManyKnivesDefine.PlayerEffectDmg.miasma / 100 * hpMaxBind.value;
+                    }
+                    else
+                    {
+                        miasmaDmg = targetClass.roleBase.miasmaDmg;
+                    }
+
+                    miasmaObj = targetObj;
+                    hurtByMiasmaCount += 1;
+                    hurtByMiasmaPair[targetObj] = 1;
+                }
+            }
+            else if (effectType == ManyKnivesDefine.EffectType.fire)
+            {
+                if (!noInjury || !invincible)
+                {
+                    if (targetClass.roleBase.isPlayer)
+                    {
+                        dmg = ManyKnivesDefine.PlayerEffectDmg.fire / 100 * hpMaxBind.value;
+                    }
+                    else
+                    {
+                        if (targetClass.roleBase.isBoss)
+                        {
+                            dmg = targetClass.roleBase.fireBossDmg;
+                        }
+                        else
+                        {
+                            dmg = targetClass.roleBase.roleData.skillDmg;
+                        }
+                    }
+                    RoleTrigger(targetClass.roleBase.transform.position, dmg, true);
+                    targetClass.Trigger();
+                }
+            }
+        }
     }
 
     protected void SetDisplayFlip(bool forward)
@@ -404,5 +552,11 @@ public class RoleBase : ItemBase
     protected virtual void InitBlade(int bladeType, int bladeNum)
     {
         curBladeType = bladeType;
+    }
+
+    //受伤掉血
+    protected void RoleTrigger(Vector3 point, float dmgValue, bool realInjury, bool bladeFlag = default)
+    {
+        
     }
 }

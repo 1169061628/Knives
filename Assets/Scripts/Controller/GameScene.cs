@@ -242,10 +242,10 @@ public class GameScene
 
     Sequence cgTween;
 
-    readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
-    readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
+    public readonly Dictionary<GameObject, RoleBase> rolePairWithGO = new();
+    public readonly Dictionary<GameObject, PropBase> propPairWithGO = new();
     public readonly Dictionary<GameObject, BladeBase> bladePairWithGO = new();
-    readonly Dictionary<GameObject, ItemBase> effectPairWithGO = new();
+    public readonly Dictionary<GameObject, ItemBase> effectPairWithGO = new();
 
 
     public GameObject levelRoot;
