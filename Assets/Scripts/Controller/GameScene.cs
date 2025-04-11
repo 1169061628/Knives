@@ -237,7 +237,7 @@ public class GameScene
     const int spawnCountPerFreme = 5;
 
     GameMgr gameMgr;
-    UIMgr uiMgr;
+    public UIMgr uiMgr;
     public AudioMgr audioMgr;
 
     Sequence cgTween;
@@ -567,7 +567,7 @@ public class GameScene
         else SpawnEnemy(roleName, num, level);
     }
 
-    RoleConfigArgs GetRoleConfig(string roleName, int levelOrId)
+    public RoleConfigArgs GetRoleConfig(string roleName, int levelOrId)
     {
         return roleConfigTable[roleName][levelOrId];
     }
@@ -616,7 +616,7 @@ public class GameScene
         rolePool[roleName].Put(item);
     }
 
-    RoleBase RolePoolPopOne(string roleName)
+    public RoleBase RolePoolPopOne(string roleName)
     {
         var obj = rolePool[roleName].Get();
         rolePairWithGO[obj.gameObject] = obj;

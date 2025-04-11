@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Pathfinding;
@@ -58,9 +57,9 @@ public class RoleBase : ItemBase
     // 不受击退控制
     protected bool uncontrolled;
     // 移动速度
-    private EventHandler<int> moveSpBind = new();
+    protected EventHandler<int> moveSpBind = new();
     // 记的当前速度
-    private int curMoveSp;
+    protected int curMoveSp;
     private EventHandler<bool> aiMoveBind = new();
     // 特殊静止状态
     protected bool fixedlyFlag;
@@ -437,7 +436,7 @@ public class RoleBase : ItemBase
                 return;
             }
 
-            float dmg;
+            float dmg = 0;
             var effectType = int.Parse(splitStrs[3]);
             if (!noInjury && invincible)
             {
@@ -510,7 +509,8 @@ public class RoleBase : ItemBase
                     {
                         if (targetClass.roleBase.isBoss)
                         {
-                            dmg = targetClass.roleBase.fireBossDmg;
+                            Debug.LogError("被调用了");
+                            //dmg = targetClass.roleBase.fireBossDmg;
                         }
                         else
                         {
