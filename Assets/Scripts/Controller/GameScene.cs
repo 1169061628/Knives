@@ -478,7 +478,7 @@ public class GameScene
         GetBladePool(type).Put(item);
     }
 
-    BladeBase BladePoolPopOne(int type)
+    public BladeBase BladePoolPopOne(int type)
     {
         var obj = GetBladePool(type).Get();
         obj.gameObject.name = TriggerType.blade + Names.split + Names.Blade;

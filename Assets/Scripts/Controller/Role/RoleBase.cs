@@ -92,9 +92,9 @@ public class RoleBase : ItemBase
     private bool debuff_moveSp_Flag;
     private bool debuff_moveSp_Timer;
     protected bool debuff_freeze_Flag;
-    private int debuff_freeze_Timer;
+    private float debuff_freeze_Timer;
     protected bool debuff_light_Flag;
-    private bool debuff_light_Timer;
+    private float debuff_light_Timer;
     private int debuff_lightID;
     
     // 碰了多少个毒气
@@ -520,6 +520,100 @@ public class RoleBase : ItemBase
                     RoleTrigger(targetClass.roleBase.transform.position, dmg, true);
                     targetClass.Trigger();
                 }
+            }
+        }
+    }
+
+    protected void OnUpdate(float deltaTime)
+    {
+        if (deadFlag)
+        {
+            return;
+        }
+
+        if (bladeTran != null)
+        {
+            bladeTran.Rotate(new Vector3(0, 0, bladeSpBind.value * -deltaTime));
+        }
+        UpdateHPSliderPos();
+        UpdateDebuff(deltaTime);
+    }
+
+    protected void OnLateUpdate()
+    {
+        if (deadFlag)
+        {
+            return;
+        }
+        UpdateHPSliderPos();
+    }
+
+    protected void UpdateDebuff(float deltaTime)
+    {
+        //只有敌人才生效
+        if (!isPlayer)
+        {
+            //冷冻
+            if (debuff_freeze_Flag)
+            {
+                debuff_freeze_Timer += deltaTime;
+                if (debuff_freeze_Timer >= ManyKnivesDefine.RoleDebuffConfig.debuff_freeze_CD)
+                {
+                    debuff_freeze_Flag = false;
+                    freezeFx.gameObject.SetActive(false);
+                    SetAICanMove(true);
+                    if (!debuff_light_Flag)
+                    {
+                        animCtrl.Freeze(false);
+                    }
+                }
+            }
+
+            if (debuff_light_Flag)
+            {
+                debuff_freeze_Timer += deltaTime;
+                if (debuff_light_Timer >= ManyKnivesDefine.RoleDebuffConfig.debuff_light_CD)
+                {
+                    debuff_light_Flag = false;
+                    fx_Light.gameObject.SetActive(false);
+                    SetAICanMove(true);
+                    if (!debuff_freeze_Flag)
+                    {
+                        animCtrl.Freeze(false);
+                    }
+                }
+            }
+        }
+
+        if (hurtByMiasmaCount > 0)
+        {
+            hurtByMiasmaTimer += deltaTime;
+            if (hurtByMiasmaTimer >= ManyKnivesDefine.RoleDebuffConfig.hurtByMiasmaCD)
+            {
+                hurtByMiasmaTimer = 0;
+                RoleTrigger(miasmaObj.transform.position, miasmaDmg, !isPlayer);
+            }
+        }
+    }
+
+    protected void DropBlade()
+    {
+        if (isBoss)
+        {
+            return;
+        }
+        //带刀刃小兵，必掉刀刃
+        if (roleData.bladeType > 0)
+        {
+            var oriPos = transform.position;
+            for (int i = 0; i < 5; i++)
+            {
+                //随机出现在周围
+                var tmpPos = new Vector3(oriPos.x + Mathf.Lerp(-1, 1, Random.Range(0, 1)) * 1.5f,
+                    oriPos.y + Mathf.Lerp(-1, 1, Random.Range(0, 1)) * 1.5f);
+                var newBlade = sceneMgr.BladePoolPopOne(curBladeType);
+                newBlade.Init(sceneMgr, curBladeType, this);
+                newBlade.Drop(tmpPos, true);
             }
         }
     }
