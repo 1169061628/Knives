@@ -12,7 +12,6 @@ public class GameStart : MonoBehaviour
     {
         ResManager.InitALlResPath();
         scene = new();
-        scene.InitAllConfigWhenGameStart();
 
 
         canvas = GameObject.Find("Canvas");

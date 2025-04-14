@@ -22,26 +22,26 @@ public class GameMgr
     public void GameFail()
     {
         sceneMgr.OverBattle();
-        //uiMgr.OverBattle();TODO
+        uiMgr.OverBattle();
         audioMgr.OverBattle();
     }
 
-    public void GameReady()
+    public void GameReady(UnityEngine.Transform canvas, int level)
     {
-        //sceneMgr.Ready();TODO
-        //uiMgr.Ready();TODO
+        sceneMgr.Ready(canvas, level);
+        uiMgr.Ready();
         audioMgr.Ready();
     }
     public void StartBattle()
     {
         sceneMgr.StartBattle();
-        //uiMgr.StartBattle();TODO
+        uiMgr.StartBattle();
         audioMgr.StartBattle();
     }
     public void GameReset()
     {
         sceneMgr.ResetGame();
-        //uiMgr.ResetGame();TODO
+        uiMgr.ResetGame();
         audioMgr.ResetGame();
     }
 

@@ -1,8 +1,5 @@
-AllAudios	Assets\ManagedResources\Prefabs\AllAudios.prefab
-AllDatas	Assets\ManagedResources\Prefabs\AllDatas.prefab
 MainPanel	Assets\ManagedResources\Prefabs\MainPanel.prefab
 MainScene	Assets\ManagedResources\Prefabs\MainScene.prefab
-AllBlade	Assets\ManagedResources\Prefabs\Blade\AllBlade.prefab
 defaultblade	Assets\ManagedResources\Prefabs\Blade\defaultblade.prefab
 fireblade	Assets\ManagedResources\Prefabs\Blade\fireblade.prefab
 hugeAxe	Assets\ManagedResources\Prefabs\Blade\hugeAxe.prefab
@@ -35,14 +32,6 @@ fx_snow02	Assets\ManagedResources\Prefabs\effs\fx_snow02.prefab
 fx_xiaoguaisiwang	Assets\ManagedResources\Prefabs\effs\fx_xiaoguaisiwang.prefab
 fx_xuanyun	Assets\ManagedResources\Prefabs\effs\fx_xuanyun.prefab
 role_smoke	Assets\ManagedResources\Prefabs\effs\role_smoke.prefab
-AllLevel_10	Assets\ManagedResources\Prefabs\Level\AllLevel_10.prefab
-AllLevel_20	Assets\ManagedResources\Prefabs\Level\AllLevel_20.prefab
-AllLevel_30	Assets\ManagedResources\Prefabs\Level\AllLevel_30.prefab
-AllLevel_40	Assets\ManagedResources\Prefabs\Level\AllLevel_40.prefab
-AllLevel_50	Assets\ManagedResources\Prefabs\Level\AllLevel_50.prefab
-AllLevel_60	Assets\ManagedResources\Prefabs\Level\AllLevel_60.prefab
-AllLevel_70	Assets\ManagedResources\Prefabs\Level\AllLevel_70.prefab
-AllLevel_80	Assets\ManagedResources\Prefabs\Level\AllLevel_80.prefab
 level1	Assets\ManagedResources\Prefabs\Level\level1.prefab
 level10	Assets\ManagedResources\Prefabs\Level\level10.prefab
 level11	Assets\ManagedResources\Prefabs\Level\level11.prefab
@@ -123,7 +112,6 @@ level79	Assets\ManagedResources\Prefabs\Level\level79.prefab
 level8	Assets\ManagedResources\Prefabs\Level\level8.prefab
 level80	Assets\ManagedResources\Prefabs\Level\level80.prefab
 level9	Assets\ManagedResources\Prefabs\Level\level9.prefab
-AllProp	Assets\ManagedResources\Prefabs\prop\AllProp.prefab
 crazeProp	Assets\ManagedResources\Prefabs\prop\crazeProp.prefab
 defaultBladeProp	Assets\ManagedResources\Prefabs\prop\defaultBladeProp.prefab
 defaultBladeProp2	Assets\ManagedResources\Prefabs\prop\defaultBladeProp2.prefab
@@ -145,7 +133,6 @@ ironBoss	Assets\ManagedResources\Prefabs\Role\ironBoss.prefab
 knight	Assets\ManagedResources\Prefabs\Role\knight.prefab
 onion	Assets\ManagedResources\Prefabs\Role\onion.prefab
 player	Assets\ManagedResources\Prefabs\Role\player.prefab
-AllSkill	Assets\ManagedResources\Prefabs\Skill\AllSkill.prefab
 circleDmg	Assets\ManagedResources\Prefabs\Skill\circleDmg.prefab
 circleGuide	Assets\ManagedResources\Prefabs\Skill\circleGuide.prefab
 fanGuide	Assets\ManagedResources\Prefabs\Skill\fanGuide.prefab

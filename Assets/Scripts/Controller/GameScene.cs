@@ -257,6 +257,12 @@ public class GameScene
     readonly static Dictionary<int, RushConfigArgs> rushConfigData = new();
     readonly static Dictionary<int, FireConfigArgs> fireConfigData = new();
     readonly static Dictionary<int, MiasmaConfigArgs> miasmaConfigData = new();
+
+    public GameScene()
+    {
+        InitAllConfigWhenGameStart();
+    }
+
     public void AddBlade()
     {
         bladeCount++;
@@ -722,7 +728,7 @@ public class GameScene
     {
         if (Screen.height > Screen.safeArea.yMax) TopRatio = (Screen.height - Screen.safeArea.yMax) / Screen.height;
         curLevel = level;
-        mainScene ??= ResManager.LoadPrefab("MainScene", canvas, Vector3.one, Vector3.zero);
+        if (mainScene == null) mainScene = ResManager.LoadPrefab("MainScene", canvas, Vector3.one, Vector3.zero);
         cameraParent = Util.GetTransform(mainScene, "CameraParent");
         mainCamera = Util.GetComponent<Camera>(cameraParent.gameObject, "Camera");
         AS_BGM = Util.GetComponent<AudioSource>(cameraParent.gameObject, "AS_BGM");
@@ -851,7 +857,7 @@ public class GameScene
     public FireConfigArgs GetFireConfigById(int id) => fireConfigData[id];
     public MiasmaConfigArgs GetMiasmaConfigById(int id) => miasmaConfigData[id];
 
-    public void InitAllConfigWhenGameStart()
+    void InitAllConfigWhenGameStart()
     {
         System.Diagnostics.Stopwatch watch = new();
         watch.Start();
