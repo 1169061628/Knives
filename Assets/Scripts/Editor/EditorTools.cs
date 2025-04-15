@@ -2,6 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
 
 public class EditorTools
 {
@@ -92,13 +93,57 @@ public class EditorTools
             //{
             //    lock (lockObj)
             //    {
-                    //nowName = go.name;
-                    Util.GetTransform(go, "map").localScale = Vector3.one * 50;
-                    SetSortingLayer(go);
-                    EditorUtility.SetDirty(go);
-                    //count++;
+            //nowName = go.name;
+            Util.GetTransform(go, "map").localScale = Vector3.one * 50;
+            SetSortingLayer(go);
+            EditorUtility.SetDirty(go);
+            //count++;
             //    }
             //});
+        }
+    }
+
+    static void ChangeSingle(TextAsset ta, string path)
+    {
+        var fullPath = Path.GetFullPath(path);
+        var s1 = ta.text.Split("\r\n").ToList();
+        s1.Insert(2, "int,float,int,int,int,int,int");
+        File.WriteAllText(fullPath, string.Join("\r\n", s1));
+    }
+
+    [MenuItem("Assets/写入数据类型")]
+    static void ChangeAllOutlines()
+    {
+        var objs = Selection.GetFiltered(typeof(object), SelectionMode.Assets);
+        if (objs.Length > 0)
+        {
+            for (int k = 0; k < objs.Length; ++k)
+            {
+                var path = AssetDatabase.GetAssetPath(objs[k]);
+                if (!AssetDatabase.IsValidFolder(path))
+                {
+                    Debug.Log("选的不是文件夹，尝试进行单个转换");
+                    var tx = AssetDatabase.LoadAssetAtPath<TextAsset>(path);
+                    if (tx != null)
+                    {
+                        ChangeSingle(tx, path);
+                        EditorUtility.SetDirty(tx);
+                    }
+                }
+                else
+                {
+                    var ps = Directory.GetFiles(path, "*.csv", SearchOption.AllDirectories);
+                    for (int i = 0; i < ps.Length; i++)
+                    {
+                        var tx = AssetDatabase.LoadAssetAtPath<TextAsset>(ps[i]);
+                        ChangeSingle(tx, ps[i]);
+                        EditorUtility.SetDirty(tx);
+                    }
+                }
+            }
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
     }
 }

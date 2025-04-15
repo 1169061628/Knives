@@ -1,5 +1,6 @@
 波次顺序,波次时间,地图生成道具类型1普通刀刃2冰冻技能3火球技能4瘴气技能5闪电技能6狂暴7大宝剑8飞毛腿9爱心,道具数量,敌人类型1洋葱头2骑士3角斗士4大乌龟5冰魔导士7ironBoss8axeBoss9bladeBoss,敌人数量,敌人等级
 id,time,propType,propNum,enemyType,enemyNum,enemyLevel
+int,float,int,int,int,int,int
 1,1.2,0,0,3,3,8
 2,3,0,0,4,1,4
 3,5,0,0,1,1,3
