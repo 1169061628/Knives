@@ -260,6 +260,7 @@ public class GameScene
 
     public GameScene()
     {
+        SetLayerIgnore();
         InitAllConfigWhenGameStart();
     }
 
@@ -314,7 +315,7 @@ public class GameScene
     }
     void RefreshPause()
     {
-
+        PauseListener(pauseBind.value);
     }
 
     void PauseListener(bool pause)
@@ -598,8 +599,8 @@ public class GameScene
             overFlag = true;
             readyFlag = false;
             if (role.isPlayer) recycleFlag = false;
-            //if (role.isPlayer) audioMgr.PlayOneShot(AudioClips.shibai);TODO
-            //else audioMgr.PlayOneShot(AudioClips.shengli);TODO
+            if (role.isPlayer) audioMgr.PlayOneShot(AudioClips.shibai);
+            else audioMgr.PlayOneShot(AudioClips.shengli);
             KillCGTween();
             cgTween = DOTween.Sequence();
             cgTween.InsertCallback(0, () => Time.timeScale = 0.1f);
@@ -921,6 +922,23 @@ public class GameScene
 
         watch.Stop();
         Debug.LogError("初始化表耗时：" + watch.ElapsedMilliseconds);
+    }
+
+    void SetLayerIgnore()
+    {
+        Physics2D.IgnoreLayerCollision(LayerID.collisionMap, LayerID.collisionMap, false);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionMap, LayerID.collisionEnemy, false);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionMap, LayerID.triggerPlayer, true);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionMap, LayerID.triggerEnemy, true);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionEnemy, LayerID.collisionEnemy, true);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionEnemy, LayerID.triggerPlayer, true);
+        Physics2D.IgnoreLayerCollision(LayerID.collisionEnemy, LayerID.triggerEnemy, true);
+        Physics2D.IgnoreLayerCollision(LayerID.triggerPlayer, LayerID.triggerEnemy, false);
+        Physics2D.IgnoreLayerCollision(LayerID.triggerPlayer, LayerID.triggerPlayer, true);
+        Physics2D.IgnoreLayerCollision(LayerID.triggerEnemy, LayerID.triggerEnemy, true);
+
+        Application.targetFrameRate = 60;
+        Time.fixedDeltaTime = 0.02f;
     }
 
     KnifeObjectPool<PropBase> GetPropPool(int type)

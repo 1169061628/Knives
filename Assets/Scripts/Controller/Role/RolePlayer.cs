@@ -10,7 +10,7 @@ public class RolePlayer : RoleBase
     private Tweener repulseTween;
     private bool repulseFlag;
 
-    void PauseListener(bool pause)
+    protected override void PauseListener(bool pause)
     {
         base.PauseListener(pause);
         int timeScale = pause ? 0 : 1;
