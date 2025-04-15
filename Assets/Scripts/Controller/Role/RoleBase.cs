@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Pathfinding;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -48,7 +50,7 @@ public class RoleBase : ItemBase
     protected RoleConfigArgs roleData;
     // 初始位置
     protected Vector3 initPos;
-    public Dictionary<GameObject, GameObject> bladeList;
+    public Dictionary<GameObject, BladeBase> bladeList;
     protected Transform disply;
     // 无敌状态
     public bool invincible;
@@ -70,7 +72,7 @@ public class RoleBase : ItemBase
     // bladeRotTween（这个属性没用到）
     
     // 真实血量
-    public EventHandler<int> hpValueBind = new();
+    public EventHandler<float> hpValueBind = new();
     // 最大血量
     public EventHandler<int> hpMaxBind = new();
     // 刀刃数量
@@ -131,7 +133,7 @@ public class RoleBase : ItemBase
     protected bool deadFlag;
     private int hurtByRoleCount;
     private Tweener backUpTween;
-    private Tweener hitTween;
+    private Sequence hitTween;
     private int curBladeType;
 
     public override void InitComponent()
@@ -173,7 +175,7 @@ public class RoleBase : ItemBase
         return collider.gameObject;
     }
 
-    void SetFillPhase(int value, bool upLoad)
+    void SetFillPhase(float value, bool upLoad = false)
     {
         material.SetFloat(mpb_FillPhase, value);
     }
@@ -183,7 +185,7 @@ public class RoleBase : ItemBase
         material.SetColor(mpb_FillColor, value);
     }
 
-    void SetDissolve(float value, bool upLoad)
+    void SetDissolve(float value, bool upLoad = false)
     {
         material.SetFloat(mpb_DissolveThreshold, value);
     }
@@ -619,6 +621,23 @@ public class RoleBase : ItemBase
         }
     }
 
+    protected void DropProp()
+    {
+        if (isPlayer || isBoss || roleData.dropConfig.Equals(null))
+        {
+            return;
+        }
+
+        var config = roleData.dropConfig;
+        int num = config.num;
+        while (num > 0)
+        {
+            int type = Random.Range(config.typeMin, config.typeMax);
+            sceneMgr.SpawnPropPrefab(1, type, transform.position);
+            num--;
+        }
+    }
+
     protected void SetDisplayFlip(bool forward)
     {
         disply.localScale = forward ? ManyKnivesDefine.RoleDir.forward : ManyKnivesDefine.RoleDir.back;
@@ -626,22 +645,118 @@ public class RoleBase : ItemBase
 
     protected virtual void Recycle()
     {
+        KillDeadTween();
+        KillHitTween();
+        KillBackUpTween();
+        readyFlag = false;
         sceneMgr.pauseBind.Remove(PauseListener);
     }
 
     protected virtual void Deaded()
     {
+        if (deadFlag)
+        {
+            return;
+        }
 
+        deadFlag = true;
+        readyFlag = false;
+        //敌人死亡时，身上有刀刃，直接回收
+        if (!isPlayer)
+        {
+            DropBlade();
+            if (bladeNumBind.value > 0)
+            {
+                foreach (var v in bladeList)
+                {
+                    v.Value.PushInPool();
+                }
+            }
+        }
+
+        bladeList = null;
+        rigidbody.simulated = false;
+        animCtrl.Play(ManyKnivesDefine.AnimatorState.die);
+        animCtrl.Freeze(false);
+        freezeFx.gameObject.SetActive(false);
+        fx_Light.gameObject.SetActive(false);
+        uiMgr.PushHpSlider(hpSlider);
+        hpSlider = null;
+        //死亡回收
+        deadTween = DOTween.Sequence();
+        deadTween.Insert(0.6f, DOVirtual.Float(0, 1, 0.5f, value => SetDissolve(value)));
+        //主角不回收
+        if (sceneMgr.EnemyDie(this))
+        {
+            deadTween.InsertCallback(1.1f, () =>
+            {
+                sceneMgr.RolePoolPushOne(roleName, this);
+            });
+        }
+        RefreshPause();
+    }
+
+    protected void KillDeadTween()
+    {
+        if (deadTween != null)
+        {
+            deadTween.Kill();
+            deadTween = null;
+        }
+    }
+
+    void KillHitTween()
+    {
+        if (hitTween != null)
+        {
+            hitTween.Kill();
+            hitTween = null;
+        }
+    }
+
+    void HitTween(Vector3 point, bool dieFlag)
+    {
+        KillHitTween();
+        hitTween = DOTween.Sequence();
+        hitTween.Insert(0, DOVirtual.Float(0, 1, ManyKnivesDefine.MK_Hit.fillColDur1,
+            value => { SetFillPhase(value); })).SetEase(Ease.OutQuad);
+        hitTween.Insert(ManyKnivesDefine.MK_Hit.fillColDur1, DOVirtual.Float(1, 0, ManyKnivesDefine.MK_Hit.fillColDur2,
+            value => { SetFillPhase(value); })).SetEase(Ease.InQuad);
+        if (deadFlag)
+        {
+            sceneMgr.audioMgr.PlayOneShot(isBoss
+                ? ManyKnivesDefine.AudioClips.boss_die
+                : ManyKnivesDefine.AudioClips.monster_death);
+            int limitDis = 5;
+            if (Vector3.Distance(transform.position, point) < limitDis)
+            {
+                var dir = transform.position - point;
+                SetDisplayFlip(dir.x > 0);
+                dir.z = 0;
+                dir = dir.normalized;
+                var tarPos = sceneMgr.GetSafetyPosition(point + (dir * 5.5f));
+                hitTween.Insert(0, transform.DOMove(tarPos, 0.5f)).SetEase(Ease.OutQuad);
+            }
+
+            hitTween.InsertCallback(0.22f, () =>
+            {
+                sceneMgr.audioMgr.PlayOneShot(isBoss
+                    ? ManyKnivesDefine.AudioClips.boss_die2
+                    : ManyKnivesDefine.AudioClips.monster_death2);
+            });
+            hitTween.InsertCallback(0.5f, DropProp);
+        }
+
+        if (isPlayer)
+        {
+            sceneMgr.cameraCtrl.Shake_PlayerHurt();
+        }
+        RefreshPause();
     }
 
     protected virtual void UpdateHPSliderPos()
     {
         hpSlider?.RefreshPos(hpAnchor.position);
-    }
-
-    protected virtual void BackUpTween(Vector3 point, Vector3 dis = default)
-    {
-        
     }
 
     protected void KillBackUpTween()
@@ -652,11 +767,65 @@ public class RoleBase : ItemBase
 
     protected virtual void InitBlade(int bladeType, int bladeNum)
     {
+        bladeList = new Dictionary<GameObject, BladeBase>();
         curBladeType = bladeType;
+        bladeNumBind.Send(bladeNum);
+        int rotation = 360 / bladeNum * ManyKnivesDefine.bladeSide;
+        for (int i = 0; i < bladeNum; i++)
+        {
+            BladeBase tmpGO = sceneMgr.BladePoolPopOne(bladeType);
+            tmpGO.transform.SetParent(bladeTran.transform);
+            tmpGO.Init(sceneMgr, bladeType, this);
+            int deg = (i - 1) * rotation;
+            float radius = ManyKnivesDefine.bladeRadius;
+            float x = radius * Mathf.Cos(deg * Mathf.Deg2Rad);
+            float y = radius * Mathf.Sin(deg * Mathf.Deg2Rad);
+            var localRot = Quaternion.Euler(0, 0, deg - 90);
+            tmpGO.transform.localPosition = new Vector3(x, y, 0);
+            tmpGO.transform.localRotation = localRot;
+            tmpGO.transform.localScale = Vector3.one;
+            bladeList[tmpGO.gameObject] = tmpGO;
+        }
     }
 
     //受伤掉血
     protected void RoleTrigger(Vector3 point, float dmgValue, bool realInjury, bool bladeFlag = default)
+    {
+        if (deadFlag)
+        {
+            return;
+        }
+        //敌方有防御值
+        if (!noInjury && !isPlayer)
+        {
+            dmgValue = Mathf.Max(0, dmgValue - roleData.defence);
+        }
+
+        dmgValue = Mathf.Floor(dmgValue);
+        bool dieFlag = false;
+        uiMgr.ShowDmgText((!bladeFlag && realInjury) ? 0 : 1, dmgValue, transform.position + new Vector3(0, dmgOffY, 0));
+        if (dmgValue > 0)
+        {
+            var fx = sceneMgr.PopEffect(ManyKnivesDefine.SkillNames.fx_juese_shouji) as Effect_Partical_Item;
+            fx.Init(sceneMgr, ManyKnivesDefine.SkillNames.fx_juese_shouji);
+            var fxPos = transform.position;
+            fxPos.x = fxPos.x + Mathf.Lerp(-0.2f, 0.2f, Random.Range(0, 1));
+            fxPos.y = fxPos.y + Mathf.Lerp(0, dmgOffY, Random.Range(0, 1));
+            fx.Play(2, fxPos, 0.5f);
+            fx.transform.localScale = Vector3.one * Mathf.Lerp(0.4f, 0.6f, Random.Range(0, 1));
+            fx.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(0,360));
+            hpValueBind.Send(bladeNumBind.value - dmgValue);
+            if (bladeNumBind.value <= 0)
+            {
+                //死亡被击飞
+                deadFlag = true;
+                Deaded();
+            }
+        }
+        HitTween();
+    }
+    
+    protected virtual void BackUpTween(Vector3 point, Vector3 dis = default)
     {
         
     }
