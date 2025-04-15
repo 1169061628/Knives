@@ -242,7 +242,7 @@ public class RoleBase : ItemBase
         debuff_freeze_Flag = false;
         debuff_light_Flag = false;
         debuff_lightID = 0;
-        // animCtrl.Freeze(false);
+        animCtrl.Freeze(false);
         if (!isPlayer)
         {
             Start();
@@ -524,8 +524,9 @@ public class RoleBase : ItemBase
         }
     }
 
-    protected void OnUpdate(float deltaTime)
+    public override void Update()
     {
+        float deltaTime = Time.deltaTime;
         if (deadFlag)
         {
             return;
@@ -539,7 +540,7 @@ public class RoleBase : ItemBase
         UpdateDebuff(deltaTime);
     }
 
-    protected void OnLateUpdate()
+    public override void LateUpdate()
     {
         if (deadFlag)
         {
