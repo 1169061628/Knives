@@ -641,15 +641,6 @@ public class RoleBase : ItemBase
         disply.localScale = forward ? ManyKnivesDefine.RoleDir.forward : ManyKnivesDefine.RoleDir.back;
     }
 
-    protected virtual void Recycle()
-    {
-        KillDeadTween();
-        KillHitTween();
-        KillBackUpTween();
-        readyFlag = false;
-        sceneMgr.pauseBind.Remove(PauseListener);
-    }
-
     protected virtual void Deaded()
     {
         if (deadFlag)
@@ -692,24 +683,6 @@ public class RoleBase : ItemBase
             });
         }
         RefreshPause();
-    }
-
-    protected void KillDeadTween()
-    {
-        if (deadTween != null)
-        {
-            deadTween.Kill();
-            deadTween = null;
-        }
-    }
-
-    void KillHitTween()
-    {
-        if (hitTween != null)
-        {
-            hitTween.Kill();
-            hitTween = null;
-        }
     }
 
     void HitTween(Vector3 point, bool dieFlag)
@@ -755,12 +728,6 @@ public class RoleBase : ItemBase
     protected virtual void UpdateHPSliderPos()
     {
         hpSlider?.RefreshPos(hpAnchor.position);
-    }
-
-    protected void KillBackUpTween()
-    {
-        backUpTween?.Kill();
-        backUpTween = null;
     }
 
     protected virtual void InitBlade(int bladeType, int bladeNum)
@@ -823,8 +790,92 @@ public class RoleBase : ItemBase
         HitTween(point, dieFlag);
     }
     
-    protected virtual void BackUpTween(Vector3 point, Vector3 dis = default)
+    protected virtual void BackUpTween(Vector3 point, float dis = default)
     {
-        
+        if (deadFlag || uncontrolled)
+        {
+            return;
+        }
+        KillDeadTween();
+        var dir = transform.position - point;
+        SetDisplayFlip(dir.x > 0);
+        dir.z = 0;
+        dir = dir.normalized;
+        if (dir == null)
+        {
+            dis = 0.2f;
+        }
+
+        var tarPos = sceneMgr.GetSafetyPosition(transform.position + (dir * dis));
+        backUpTween = transform.DOMove(tarPos, 0.1f).SetEase(Ease.OutQuad);
+        if (aiPath != null)
+        {
+            SetAICanMove(false);
+            backUpTween.OnComplete(() =>
+            {
+                SetAICanMove(true);
+            });
+        }
+        RefreshPause();
+    }
+
+    protected void Stop()
+    {
+        if (!deadFlag)
+        {
+            moveSpBind.Send(0);
+        }
+
+        readyFlag = false;
+        SetAICanMove(false);
+    }
+
+    //演出状态下角色无伤
+    protected void NoInjury(bool value)
+    {
+        noInjury = value;
+    }
+    
+    protected void KillBackUpTween()
+    {
+        backUpTween?.Kill();
+        backUpTween = null;
+    }
+    protected void KillDeadTween()
+    {
+        if (deadTween != null)
+        {
+            deadTween.Kill();
+            deadTween = null;
+        }
+    }
+
+    void KillHitTween()
+    {
+        if (hitTween != null)
+        {
+            hitTween.Kill();
+            hitTween = null;
+        }
+    }
+    
+
+    protected virtual void Recycle()
+    {
+        KillDeadTween();
+        KillHitTween();
+        KillBackUpTween();
+        readyFlag = false;
+        sceneMgr.pauseBind.Remove(PauseListener);
+    }
+
+    protected void Dispose()
+    {
+        KillDeadTween();
+        KillHitTween();
+        KillBackUpTween();
+        animCtrl.Dispose();
+        animCtrl = null;
+        base.Dispose();
     }
 }

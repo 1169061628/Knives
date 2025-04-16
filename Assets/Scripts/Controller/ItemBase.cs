@@ -15,4 +15,11 @@ public class ItemBase
         transform.localScale = Vector3.one;
         transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
     }
+
+    protected void Dispose()
+    {
+        Object.Destroy(gameObject);
+        gameObject = null;
+        transform = null;
+    }
 }
