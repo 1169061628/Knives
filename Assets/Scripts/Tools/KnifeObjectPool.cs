@@ -32,8 +32,7 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
     public void Put(T obj)
     {
         ResManager.UnloadPrefab(resName, obj.gameObject);
-        obj.gameObject = null;
-        obj.transform = null;
+        obj.Dispose();
         stack.Push(obj);
     }
 

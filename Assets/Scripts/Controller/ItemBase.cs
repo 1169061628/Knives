@@ -16,9 +16,8 @@ public class ItemBase
         transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
     }
 
-    protected void Dispose()
+    public void Dispose()
     {
-        Object.Destroy(gameObject);
         gameObject = null;
         transform = null;
     }
