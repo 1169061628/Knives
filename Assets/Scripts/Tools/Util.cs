@@ -18,9 +18,12 @@ public static class Util
         return GetGameObject(go, name).GetComponent<T>();
     }
 
+    public static float Random01f() => Random.Range(0f, 1f);
+
     public static GameObject NewObjToParent(GameObject go, GameObject parent, string name = null)
     {
         var obj = Object.Instantiate(go, parent.transform, true);
+        if (!string.IsNullOrEmpty(name)) obj.name = name;
         obj.transform.localPosition = Vector3.zero;
         obj.transform.localScale = Vector3.one;
         obj.SetActive(true);
@@ -39,7 +42,7 @@ public static class Util
             }
         }
 
-        Debug.LogWarning($"未找到名称包含 {targetName} 的 {typeof(T).Name} 组件");
+        Debug.LogWarning($"未找到名称包含 {targetName} 的 {nameof(T)} 组件");
         return null;
     }
 

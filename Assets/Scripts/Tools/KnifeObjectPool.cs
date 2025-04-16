@@ -11,7 +11,7 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
     public KnifeObjectPool() { }
     public KnifeObjectPool(Transform parent, Func<T> onCreate = null)
     {
-        resName = typeof(T).Name;
+        resName = nameof(T);
         this.parent = parent;
         this.onCreate = onCreate ?? (() => new T());
     }

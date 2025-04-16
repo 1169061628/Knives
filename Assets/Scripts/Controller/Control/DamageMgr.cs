@@ -28,8 +28,8 @@ public class DamageMgr : ItemBase
     public override void Update()
     {
         var anchorPos = mainCamera.WorldToViewportPoint(worldPos);
-        //anchorPos.x = uiMgr.realCanvas.x * (anchorPos.x - 0.5f);TODO
-        //anchorPos.y = uiMgr.realCanvas.y * (anchorPos.y - 0.5f);TODO
+        anchorPos.x = uiMgr.realCanvasSize.x * (anchorPos.x - 0.5f);
+        anchorPos.y = uiMgr.realCanvasSize.y * (anchorPos.y - 0.5f);
         bgRect.anchoredPosition = (Vector2)anchorPos;
     }
 
@@ -47,7 +47,7 @@ public class DamageMgr : ItemBase
         tween = DOTween.Sequence();
         Update();
         transform.localScale = Vector3.one;
-        text.rectTransform.anchoredPosition = new Vector2(Mathf.Lerp(leftOff, rightOff, (float)new System.Random().NextDouble()), 0);
+        text.rectTransform.anchoredPosition = new Vector2(Mathf.Lerp(leftOff, rightOff, Util.Random01f()), 0);
         text.transform.localScale = Vector3.one * 0.4f;
         // 放大
         tween.Insert(0, text.transform.DOScale(Vector3.one, 0.35f).SetEase(Ease.OutQuad));
@@ -57,9 +57,9 @@ public class DamageMgr : ItemBase
         tween.Insert(0.5f, DOVirtual.Float(0, 1, 0.3f, val => text.color = Color.Lerp(oriCol, tarCol, val)).SetEase(Ease.OutQuad));
         // 缩放
         tween.Insert(0.5f, text.transform.DOScale(Vector3.one * 0.5f, 0.3f).SetEase(Ease.Linear));
-        //tween.OnComplete(() => uiMgr.PushDmgText());TODO
+        tween.OnComplete(() => uiMgr.PushDmgText(this));
         tween.SetLink(gameObject);
-        //uiMgr.sceneMgr.pauseBind.Add(PauseListener);TODO
+        uiMgr.sceneMgr.pauseBind.Add(PauseListener);
     }
 
     void PauseListener(bool value)
@@ -76,7 +76,7 @@ public class DamageMgr : ItemBase
     public void Recycle()
     {
         KillTween();
-        //uiMgr.sceneMgr.pauseBind.Remove(PauseListener);TODO
+        uiMgr.sceneMgr.pauseBind.Remove(PauseListener);
     }
 
     public void Dispose()

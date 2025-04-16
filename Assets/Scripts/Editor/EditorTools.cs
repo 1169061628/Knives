@@ -3,6 +3,8 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class EditorTools
 {
@@ -56,6 +58,31 @@ public class EditorTools
         AssetDatabase.Refresh();
     }
 
+    [MenuItem("FastCopy/Copy Scripts")]
+    // /E：拷贝所有子目录（包括空目录）
+
+    // /COPYALL：拷贝所有文件属性
+
+    // /R:1：失败时重试 1 次
+
+    // /W:1：重试间隔 1 秒
+    static void FastCopyScripts()
+    {
+        var sourcePath = Application.dataPath + "/Scripts";
+        var tarPath = "F:/Knives/Assets/Scripts";
+
+        if (Directory.Exists(tarPath)) Directory.Delete(tarPath, true);
+        ProcessStartInfo psi = new()
+        {
+            FileName = "robocopy",
+            Arguments = $"\"{sourcePath}\" \"{tarPath}\" /E /COPYALL /R:1 /W:1",
+            UseShellExecute = false,
+            CreateNoWindow = true
+        };
+
+        using Process process = Process.Start(psi);
+        process.WaitForExit();
+    }
 
     static void SetSortingLayer(GameObject go)
     {
@@ -107,7 +134,18 @@ public class EditorTools
     {
         var fullPath = Path.GetFullPath(path);
         var s1 = ta.text.Split("\r\n").ToList();
-        s1.Insert(2, "int,float,int,int,int,int,int");
+        //s1.Insert(2, "int,float,int,int,int,int,int");    // Level
+        // RushConfig
+        //s1.Insert(1, "ID,rush_Enable,rush_Dmg,skillCD,rushCount,rush_Distance,rush_MoveSpeed,rush_attent_First,rush_interval,rush_attent,retinue_Enable,transLimit,retinueNum,retinueLevel");
+        //s1.Insert(2, "int,int,int,int,int,int,int,float,int,int,int,int,int,int");
+        // MiasmaConfig
+        //s1.Insert(1, "ID,path_Enable,dmg,path_CD,path_ExitTime,range_Enable,range_CD,range_Range,range_Attent,range_Num,range_PerRange,range_ExitTime");
+        //s1.Insert(2, "int,int,int,float,int,int,int,int,int,int,int,int");
+        // FireConfig
+        //s1.Insert(1, "ID,fan_Enable,fan_fireDmg,fan_SkillCD,fan_Angle,fan_FireNum,fan_FireDis,fan_Attent,fall_Enable,fall_Dmg,fall_SkillCD,fall_Attent,fall_Range,followCD");
+        //s1.Insert(2, "int,int,int,int,int,int,int,int,float,int,int,int,float,int,int");
+        // Role
+        //s1.Insert(2, "int,int,int,int,int,int,int,int,int,int[],int,int,int,int,int,int");
         File.WriteAllText(fullPath, string.Join("\r\n", s1));
     }
 

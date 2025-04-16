@@ -64,13 +64,12 @@ public class RoleMiasmaBoss : RoleBossBase
                     var bound = new Vector3(miasmaConfig.range_Range * 0.5f, miasmaConfig.range_Range * 0.5f);
                     var viewMin = sceneMgr.cameraCtrl.ViewportToWorldPoint(vecOne) + bound;
                     var viewMax = sceneMgr.cameraCtrl.ViewportToWorldPoint(vecOne) - bound;
-                    var random = new System.Random();
-                    var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
+                    var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, Util.Random01f()), Mathf.Lerp(viewMin.y, viewMax.y, Util.Random01f()));
                     rangeGuideList.Clear();
                     var perRange = miasmaConfig.range_Range * 0.5f;
                     for (int i = 0; i < miasmaConfig.range_Num; ++i)
                     {
-                        var newPos = tmpPos + new Vector3(Mathf.Lerp(-perRange, perRange, (float)random.NextDouble()), Mathf.Lerp(-perRange, perRange, (float)random.NextDouble()));
+                        var newPos = tmpPos + new Vector3(Mathf.Lerp(-perRange, perRange, Util.Random01f()), Mathf.Lerp(-perRange, perRange, Util.Random01f()));
                         newPos = sceneMgr.GetSafetyPosition(newPos);
                         var circleGuide = sceneMgr.PopEffect(SkillNames.circleGuide) as Sprite_Renderer_Item;
                         circleGuide.Init(sceneMgr, SkillNames.circleGuide);

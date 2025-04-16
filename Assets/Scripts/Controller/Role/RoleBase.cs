@@ -132,7 +132,7 @@ public class RoleBase : ItemBase
     private int hurtByRoleCount;
     private Tweener backUpTween;
     private Sequence hitTween;
-    private int curBladeType;
+    public int curBladeType;
 
     public override void InitComponent()
     {

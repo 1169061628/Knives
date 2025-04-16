@@ -292,11 +292,10 @@ public class GameScene
         var viewMin = cameraCtrl.ViewportToWorldPoint(Vector2.zero);
         var viewMax = cameraCtrl.ViewportToWorldPoint(Vector2.one);
         var abNum = autoDropBladeList.Count;
-        var random = new System.Random();
         for (int i = 1; i <= autoBladeConfig.initNum; i++)
         {
             // 随机出现在周围
-            var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
+            var tmpPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, Util.Random01f()), Mathf.Lerp(viewMin.y, viewMax.y, Util.Random01f()));
             tmpPos = GetSafetyPosition(tmpPos);
             var newBlade = BladePoolPopOne(1);
             newBlade.InitWithoutRole(this, 1, false);
@@ -384,7 +383,7 @@ public class GameScene
             dir = dir.normalized;
             var newPos = pos + dir * disLimit;
             newPos = GetSafetyPosition(newPos);
-            //rolePlayer.PlayerRepulse();   TODO
+            rolePlayer.PlayerRepulse(newPos);
         }
     }
 
@@ -412,7 +411,6 @@ public class GameScene
                 sideList = new() { [1] = 1, [2] = 2, [3] = 3, [4] = 4 };
                 sideNum = 4;
             }
-            var random = new System.Random();
             for (int i = 0; i < num; ++i)
             {
                 // 随机出现在周围
@@ -420,13 +418,13 @@ public class GameScene
                 Vector3 tmpPos;
                 // 上方
                 if (spawnDir == 4) 
-                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMax.y + spawnViewMinOff, viewMax.y + spawnViewMaxOff, (float)random.NextDouble()));
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, Util.Random01f()), Mathf.Lerp(viewMax.y + spawnViewMinOff, viewMax.y + spawnViewMaxOff, Util.Random01f()));
                 else if (spawnDir == 2)
-                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMinOff, (float)random.NextDouble()));
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMax.x + spawnViewMaxOff, Util.Random01f()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMinOff, Util.Random01f()));
                 else if (spawnDir == 1)
-                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMin.x + spawnViewMinOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMaxOff, (float)random.NextDouble()));
+                    tmpPos = new(Mathf.Lerp(viewMin.x - spawnViewMaxOff, viewMin.x + spawnViewMinOff, Util.Random01f()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMin.y + spawnViewMaxOff, Util.Random01f()));
                 else
-                    tmpPos = new(Mathf.Lerp(viewMax.x - spawnViewMinOff, viewMax.x + spawnViewMaxOff, (float)random.NextDouble()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMax.y + spawnViewMaxOff, (float)random.NextDouble()));
+                    tmpPos = new(Mathf.Lerp(viewMax.x - spawnViewMinOff, viewMax.x + spawnViewMaxOff, Util.Random01f()), Mathf.Lerp(viewMin.y + spawnViewMaxOff, viewMax.y + spawnViewMaxOff, Util.Random01f()));
                 tmpPos = GetSafetyPosition(tmpPos);
                 var newBlade = BladePoolPopOne(1);
                 newBlade.InitWithoutRole(this, 1, false);
@@ -536,10 +534,9 @@ public class GameScene
             if (spawnPosFlag) tmpPos = GetPropSpawnPos();
             else
             {
-                var random = new System.Random();
                 tmpPos = pos;
-                tmpPos.x += Mathf.Lerp(-1, 1, (float)random.NextDouble()) * 1.5f;
-                tmpPos.y += Mathf.Lerp(-1, 1, (float)random.NextDouble()) * 1.5f;
+                tmpPos.x += Mathf.Lerp(-1, 1, Util.Random01f()) * 1.5f;
+                tmpPos.y += Mathf.Lerp(-1, 1, Util.Random01f()) * 1.5f;
             }
             temGo.transform.position = tmpPos;
         }
@@ -636,9 +633,8 @@ public class GameScene
         var boundMin = 0.05f;
         var boundMax = 0.3f;
         // 1/4屏死随机位置
-        var random = new System.Random();
-        var rPos = new Vector3(Mathf.Lerp(boundMin, boundMax, (float)random.NextDouble()), Mathf.Lerp(boundMin, boundMax, (float)random.NextDouble()), 0);
-        var spawnDir = (float) random.NextDouble();
+        var rPos = new Vector3(Mathf.Lerp(boundMin, boundMax, Util.Random01f()), Mathf.Lerp(boundMin, boundMax, Util.Random01f()), 0);
+        var spawnDir = Util.Random01f();
         // 左下角
         if (spawnDir < 0.25f) { }
         else if (spawnDir < 0.5f) // 左上角
@@ -708,11 +704,10 @@ public class GameScene
             }
             var spawnDir = sideList[Random.Range(1, sideNum + 1)];
             // 上方
-            var random = new System.Random();
-            if (spawnDir == 4) spawnPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), viewMax.y + mapBound);
-            else if (spawnDir == 2) spawnPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, (float)random.NextDouble()), viewMin.y - mapBound);
-            else if (spawnDir == 1) spawnPos = new Vector3(viewMin.x - mapBound, Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
-            else spawnPos = new Vector3(viewMax.x - mapBound, Mathf.Lerp(viewMin.y, viewMax.y, (float)random.NextDouble()));
+            if (spawnDir == 4) spawnPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, Util.Random01f()), viewMax.y + mapBound);
+            else if (spawnDir == 2) spawnPos = new Vector3(Mathf.Lerp(viewMin.x, viewMax.x, Util.Random01f()), viewMin.y - mapBound);
+            else if (spawnDir == 1) spawnPos = new Vector3(viewMin.x - mapBound, Mathf.Lerp(viewMin.y, viewMax.y, Util.Random01f()));
+            else spawnPos = new Vector3(viewMax.x - mapBound, Mathf.Lerp(viewMin.y, viewMax.y, Util.Random01f()));
         }
         spawnPos = GetSafetyPosition(spawnPos);
         return spawnPos;

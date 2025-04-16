@@ -52,6 +52,7 @@ public enum ExportType
 
 public class SingleExcelColumn
 {
+    public int index;
     public string name;
     public string typeName;
     public string defaultValue;
@@ -70,9 +71,9 @@ public class ExcelSheet
         int column = dimension.Columns, row = dimension.Rows;
         var cells = sheet.Cells;
         sheetName = sheet.Name;
-        for (int c = 2; c <= column; c++)
+        for (int c = 1; c <= column; c++)
         {
-            if (cells[1, c].Value == null) break;
+            if (cells[1, c].Value == null) continue;
             if (!ConfigUtil.NeedExport(cells[3, c].Value.ToString())) continue;
             columnsInfo ??= new();
             var cName = cells[1, c].Value.ToString();
@@ -82,6 +83,7 @@ public class ExcelSheet
             {
                 var columnObj = new SingleExcelColumn
                 {
+                    index = c,
                     name = cName,
                     typeName = tName.Replace(tNameWithPair, ConfigUtil.GetSysTypeName(tNameWithPair))
                 };
@@ -156,12 +158,22 @@ public static class ConfigManager
 
     static Dictionary<int, IConfig> ReadConfig<T>() where T : IConfig, new()
     {
-        var configJson = Path.Combine(Application.persistentDataPath, "ConfigJsons", typeof(T).Name);
+        var configJson = Path.Combine(Application.persistentDataPath, "ConfigJsons", nameof(T));
         configJson += ".json";
         var obj = JsonConvert.DeserializeObject<ExcelSheet>(File.ReadAllText(configJson));
         Dictionary<int, IConfig> data = new();
 
-        var IDVal = obj.columnsInfo["ID"].fieldValues;
+        List<string> IDVal = null;
+
+        int bigIndex = 999999;
+        foreach(var item in obj.columnsInfo)
+        {
+            if (item.Value.index < bigIndex)
+            {
+                bigIndex = item.Value.index;
+                IDVal = item.Value.fieldValues;
+            }
+        }
         for (int i = 0; i < IDVal.Count; i++)
         {
             T t = new();

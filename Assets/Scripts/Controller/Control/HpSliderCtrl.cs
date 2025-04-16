@@ -46,8 +46,8 @@ public class HpSliderCtrl : ItemBase
     public void RefreshPos(Vector3 pos)
     {
         var anchorPos = mainCamera.WorldToViewportPoint(pos);
-        //anchorPos.x = uiMgr.realCanvaSize.x * (anchorPos.x - 0.5f);TODO
-        //anchorPos.y = uiMgr.realCanvaSize.y * (anchorPos.y - 0.5f);TODO
+        anchorPos.x = uiMgr.realCanvasSize.x * (anchorPos.x - 0.5f);
+        anchorPos.y = uiMgr.realCanvasSize.y * (anchorPos.y - 0.5f);
         bgRect.anchoredPosition = (Vector2)anchorPos;
     }
 

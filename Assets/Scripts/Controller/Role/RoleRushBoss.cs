@@ -142,8 +142,7 @@ public class RoleRushBoss : RoleBossBase
                 var tmpRole = sceneMgr.RolePoolPopOne(roleName);
                 tmpRole.transform.SetParent(sceneMgr.levelRoot.transform);
                 //  生成在3米外
-                var random = new System.Random();
-                var dir = new Vector3(Mathf.Lerp(-1, 1, (float)random.NextDouble()), Mathf.Lerp(-1, 1, (float)random.NextDouble())).normalized;
+                var dir = new Vector3(Mathf.Lerp(-1, 1, Util.Random01f()), Mathf.Lerp(-1, 1, Util.Random01f())).normalized;
                 var newPos = sceneMgr.GetSafetyPosition(centerPos + dir * 3);
                 tmpRole.Init(sceneMgr, sceneMgr.uiMgr, roleName, sceneMgr.GetRoleConfig(roleName, roleLevel), newPos);
                 tmpRole.gameObject.name = TriggerType.role + Names.split + Names.enemy;

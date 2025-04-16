@@ -12,7 +12,7 @@ public class UIMgr
     GameMgr gameMgr;
     AudioMgr audioMgr;
     GameObject mainPanel;
-    GameScene sceneMgr;
+    public GameScene sceneMgr;
     Camera uiCamera;
 
     // 当前关卡
@@ -33,7 +33,7 @@ public class UIMgr
 
     KnifeObjectPool<DamageMgr> dmgPool;
     RectTransform dmgCon;
-    public Vector2 realCanvaSize;
+    public Vector2 realCanvasSize;
     readonly Dictionary<GameObject, DamageMgr> dmgPair = new();
 
     RectTransform swordBg, fleetfootBG, crazeBg;
@@ -73,8 +73,8 @@ public class UIMgr
     {
         if (!startFlag) return;
         var anchorPos = sceneMgr.GetPlayerViewPos();
-        anchorPos.x = realCanvaSize.x * (anchorPos.x * 0.5f);
-        anchorPos.y = realCanvaSize.y * (anchorPos.y * 0.5f);
+        anchorPos.x = realCanvasSize.x * (anchorPos.x * 0.5f);
+        anchorPos.y = realCanvasSize.y * (anchorPos.y * 0.5f);
         playerFollower.anchoredPosition = (Vector2)anchorPos;
         foreach(var item in dmgPair)
         {
@@ -118,9 +118,9 @@ public class UIMgr
         // 更宽
         if (realScale > standardScale) tempRealSize.x *= realScale / standardScale;
         else if (realScale < standardScale) tempRealSize.y *= standardScale / realScale;
-        realCanvaSize = new(Mathf.Round(tempRealSize.x), Mathf.Round(tempRealSize.y));
+        realCanvasSize = new(Mathf.Round(tempRealSize.x), Mathf.Round(tempRealSize.y));
         var topSize = topRect.GetComponent<RectTransform>().sizeDelta;
-        topSize.y = 100 + sceneMgr.TopRatio * realCanvaSize.y;
+        topSize.y = 100 + sceneMgr.TopRatio * realCanvasSize.y;
         topRect.GetComponent<RectTransform>().sizeDelta = topSize;
 
         var ctrlPanel = Util.GetGameObject(canvas, "ctrlPanel");

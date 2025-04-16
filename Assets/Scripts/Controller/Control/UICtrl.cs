@@ -48,7 +48,7 @@ public class UICtrl
 
     void OnPointerDown(PointerEventData eventData)
     {
-        //joystickBg.localPosition = uiMgr.realCanvasSize * (eventData.position / new Vector2(Screen.width, Screen.height));TODO
+        joystickBg.localPosition = uiMgr.realCanvasSize * (eventData.position / new Vector2(Screen.width, Screen.height));
     }
 
     void OnPointerUp(PointerEventData eventData)
@@ -60,8 +60,7 @@ public class UICtrl
 
     void OnDrag(PointerEventData eventData)
     {
-        //var curPos = uiMgr.realCanvaSize * (eventData.position / new Vector2(Screen.width, Screen.height));TODO
-        Vector2 curPos = default;   // TODO
+        var curPos = uiMgr.realCanvasSize * (eventData.position / new Vector2(Screen.width, Screen.height));
         var off = curPos - joystickBg.anchoredPosition;
         // 摇杆偏移量限制
         if (off.magnitude > joySize.x) off = off.normalized * joySize.x;

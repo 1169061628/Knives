@@ -31,7 +31,7 @@ public class BladeBase : ItemBase
     public virtual void Init(GameScene scene, int bladeType, RoleBase roleBase)
     {
         this.roleBase = roleBase;
-        //InitWithoutRole(scene, bladeType, role.isPlayer); TODO
+        InitWithoutRole(scene, bladeType, roleBase.isPlayer);
     }
 
     public void InitWithoutRole(GameScene scene, int bladeType, bool isPlayer)
@@ -195,11 +195,10 @@ public class BladeBase : ItemBase
         flyTween.OnComplete(() =>
         {
             // 刀刃转换成当前类型
-            //if (bladeType != roleBase.curBladeType) TODO
-            if (true)
+            if (bladeType != roleBase.curBladeType)
             {
                 if (roleBase.bladeList.ContainsKey(gameObject)) roleBase.bladeList.Remove(gameObject);
-                //roleBase.AddBladeForce(parent);TODO
+                //roleBase.AddBladeForce(parent); TODO
                 PushInPool();
             }
             else
@@ -263,12 +262,11 @@ public class BladeBase : ItemBase
         spriteRenderer.sortingOrder = ManyKnivesDefine.SortOrder.blade_fly;
         var dir = (point - roleBase.rigidbody.position).normalized;
         dir = Vector2.Perpendicular(new Vector2(dir.x, dir.y).normalized);
-        var random = new System.Random();
-        var flyDirOff = Mathf.Lerp(dirOffMin, dirOffMax, (float)random.NextDouble());
+        var flyDirOff = Mathf.Lerp(dirOffMin, dirOffMax, Util.Random01f());
         dir = (Quaternion.Euler(0, 0, flyDirOff) * (Vector3)dir).normalized;
-        var flyDur = Mathf.Lerp(flyDurMin, flyDurMax, (float)random.NextDouble());
-        var moveSpeed = Mathf.Lerp(moveSpeedMin, moveSpeedMax, (float)random.NextDouble());
-        var rotateSpeed = Mathf.Lerp(rotateSpeedMin, rotateSpeedMax, (float)random.NextDouble());
+        var flyDur = Mathf.Lerp(flyDurMin, flyDurMax, Util.Random01f());
+        var moveSpeed = Mathf.Lerp(moveSpeedMin, moveSpeedMax, Util.Random01f());
+        var rotateSpeed = Mathf.Lerp(rotateSpeedMin, rotateSpeedMax, Util.Random01f());
         tmpLocalPos = transform.position;
         var tarPos = sceneMgr.GetSafetyPosition(tmpLocalPos + (Vector3)dir * (moveSpeed * flyDur));
         flyTween.Insert(0, transform.DOMove(tarPos, flyDur, false).SetEase(Ease.Linear));

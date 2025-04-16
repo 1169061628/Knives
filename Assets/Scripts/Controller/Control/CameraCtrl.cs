@@ -58,7 +58,7 @@ public class CameraCtrl
         sceneMgr.pauseBind.Remove(PauseListener);
     }
 
-    public void Init(RoleBase player) // TODO 其实这里应该传RolePlayer先这么写后面改
+    public void Init(RolePlayer player) // TODO 其实这里应该传RolePlayer先这么写后面改
     {
         //playerCenter = player.center;   TODO
         // 地图边界
@@ -93,7 +93,7 @@ public class CameraCtrl
 
     void BigSwordChange(bool value)
     {
-        if (/*TODO!sceneMgr.overFlag && */scaleFlag != value)
+        if (!sceneMgr.overFlag && scaleFlag != value)
         {
             KillScaleTween();
             var starSize = value ? minOSize : maxOSize;
@@ -162,7 +162,7 @@ public class CameraCtrl
     public void FixedUpdate()
     {
         // 非演出状态才跟随玩家
-        if (followPlayer/*TODO && !sceneMgr.NoInjury*/)
+        if (followPlayer && !sceneMgr.NoInjury)
         {
             var oSizeScale = camera.orthographicSize / minOSize;
             // 相机移动范围
@@ -187,7 +187,7 @@ public class CameraCtrl
             cameraParent.position = tarPos;
             return;
         }
-        if (true/*TODOsceneMgr.NoInjury*/)
+        if (sceneMgr.NoInjury)
         {
             var oSizeScale = camera.orthographicSize / minOSize;
             // 相机移动范围

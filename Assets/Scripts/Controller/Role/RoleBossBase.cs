@@ -42,7 +42,7 @@ public class RoleBossBase : RoleBase
         int bladeType = 8;
         if (roleData.roleName == RoleNames.axeboss2) bladeType = 7;
         else if (roleData.roleName == RoleNames.ironboss) bladeType = 6;
-        //InitBlade(bladeType, roleData.bladeNum);TODO
+        InitBlade(bladeType, roleData.bladeNum);
         spawnTimer = s_interval;
         // 行动标记
         actionFlag = false;

@@ -19,7 +19,7 @@ public class RolePlayer : RoleBase
     /// <summary>
     /// 被击退
     /// </summary>
-    void PlayerRepulse(Vector3 pos)
+    public void PlayerRepulse(Vector3 pos)
     {
         KillRepulseTween();
         repulseFlag = true;
