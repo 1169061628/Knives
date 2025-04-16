@@ -11,7 +11,7 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
     public KnifeObjectPool() { }
     public KnifeObjectPool(Transform parent, Func<T> onCreate = null)
     {
-        resName = nameof(T);
+        resName = typeof(T).Name;
         this.parent = parent;
         this.onCreate = onCreate ?? (() => new T());
     }
@@ -32,8 +32,7 @@ public class KnifeObjectPool<T> where T : ItemBase, new()
     public void Put(T obj)
     {
         ResManager.UnloadPrefab(resName, obj.gameObject);
-        obj.gameObject = null;
-        obj.transform = null;
+        obj.Dispose();
         stack.Push(obj);
     }
 

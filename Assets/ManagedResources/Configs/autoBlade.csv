@@ -1,5 +1,6 @@
 关卡id,初始化刀刃数量,地上刀刃最大数量
 id,initNum,maxNum
+int,int,int
 1,10,15
 2,15,20
 3,15,15

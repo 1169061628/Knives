@@ -42,7 +42,7 @@ public static class Util
             }
         }
 
-        Debug.LogWarning($"未找到名称包含 {targetName} 的 {nameof(T)} 组件");
+        Debug.LogWarning($"未找到名称包含 {targetName} 的 {typeof(T).Name} 组件");
         return null;
     }
 

@@ -1,5 +1,6 @@
 等级,敌人血量,刀刃类型,带刀刃数量,移动速度,身体伤害,刀刃伤害,技能伤害,固定防御,掉落数量_类型Min_类型Max,召唤小怪类型1洋葱头2骑士3角斗士4大乌龟5冰魔导士,Boss相关:技能类型1冲刺2火球3毒瘴,召唤时间间隔,召唤每次数量,召唤等级,技能等级
 level,hp,bladeType,bladeNum,speed,bodyDmg,bladeDmg,skillDmg,defense,dropNum_typeMin_typeMax,callEnemyType,skillType,callTime,callNum,callLevel,skillLevel
+int,int,int,int,int,int,int,int,int,int[],int,int,int,int,int,int
 1,700,6,15,5,20,9,25,93,0_0_0,0,1,0,0,0,1
 2,1500,8,25,5,25,9,30,93,0_0_0,0,1,0,0,0,2
 3,2500,8,35,5,30,9,50,93,0_0_0,0,1,0,0,0,3

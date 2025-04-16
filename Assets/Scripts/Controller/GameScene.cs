@@ -261,7 +261,7 @@ public class GameScene
     public GameScene()
     {
         SetLayerIgnore();
-        InitAllConfigWhenGameStart();
+        //InitAllConfigWhenGameStart();
     }
 
     public void AddBlade()
