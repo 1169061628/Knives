@@ -521,7 +521,7 @@ public class GameScene
         }
     }
     // 生产道具对象
-    void SpawnPropPrefab(int num, int type, Vector3 pos = default)
+    public void SpawnPropPrefab(int num, int type, Vector3 pos = default)
     {
         var spawnPosFlag = pos == default;
         for (int i = 0; i < num; ++i)
@@ -590,7 +590,7 @@ public class GameScene
         }
     }
 
-    bool EnemyDie(RoleBase role)
+    public bool EnemyDie(RoleBase role)
     {
         var recycleFlag = true;
         if (!role.isPlayer) enemyNumBind.Send(enemyNumBind.value - 1);

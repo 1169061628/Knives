@@ -22,7 +22,7 @@ public class HpSliderCtrl : ItemBase
         text = Util.GetComponent<TextMeshProUGUI>(gameObject, "text");
     }
 
-    public void Init(RoleBase roleBase, EventHandler<int> hpBind, EventHandler<int> hpMaxBind, Camera camera, UIMgr uiMgr)
+    public void Init(RoleBase roleBase, EventHandler<float> hpBind, EventHandler<int> hpMaxBind, Camera camera, UIMgr uiMgr)
     {
         this.roleBase = roleBase;
         mainCamera = camera;
@@ -33,7 +33,7 @@ public class HpSliderCtrl : ItemBase
         hpMaxBind.Add(HpListener);
     }
 
-    void HpListener(int _)
+    void HpListener(float _)
     {
         var process = (float)roleBase.hpValueBind.value / roleBase.hpMaxBind.value;
         var fill = roleBase.isPlayer ? playerFill : enemyFill;
@@ -41,6 +41,7 @@ public class HpSliderCtrl : ItemBase
         else fill.rectTransform.SetSizeWithCurrentAnchors(horAxis, Mathf.Lerp(fillMin, fillMax, process));
         text.text = Mathf.Ceil(roleBase.hpValueBind.value).ToString();
     }
+    void HpListener(int _) => HpListener(0f);
 
     public void RefreshPos(Vector3 pos)
     {

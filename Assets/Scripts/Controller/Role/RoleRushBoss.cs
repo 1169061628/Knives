@@ -117,7 +117,7 @@ public class RoleRushBoss : RoleBossBase
         rushTimer = 0;
         rushCount = 0;
         moveDir = default;
-        HpListener();
+        HpListener(0f);
     }
 
     void FuryListener(bool value)
@@ -152,7 +152,7 @@ public class RoleRushBoss : RoleBossBase
         }
     }
 
-    void HpListener(int _ = 0)
+    void HpListener(float _ = 0)
     {
         if (actionFlag && !furyFlagBind.value && rushConfig.retinue_Enable)
         {
@@ -160,6 +160,7 @@ public class RoleRushBoss : RoleBossBase
             if ((float)hpValueBind.value / hpMaxBind.value * 100 <= rushConfig.transLimit) furyFlagBind.Send(true);
         }
     }
+    void HpListener(int _ = 0) => HpListener(0f);
 
     public override void Update()
     {

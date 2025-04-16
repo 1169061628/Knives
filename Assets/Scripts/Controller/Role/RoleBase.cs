@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Pathfinding;
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -822,7 +820,7 @@ public class RoleBase : ItemBase
                 Deaded();
             }
         }
-        HitTween();
+        HitTween(point, dieFlag);
     }
     
     protected virtual void BackUpTween(Vector3 point, Vector3 dis = default)

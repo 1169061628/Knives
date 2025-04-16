@@ -251,7 +251,7 @@ public class UIMgr
         CDSlider.SetActive(true);
         startFlag = true;
     }
-    public HpSliderCtrl popHpSlider(RoleBase roleBase, EventHandler<int> hpValueBind, EventHandler<int> hpMaxBind)
+    public HpSliderCtrl popHpSlider(RoleBase roleBase, EventHandler<float> hpValueBind, EventHandler<int> hpMaxBind)
     {
         var slider = hpSliderPool.Get();
         slider.Init(roleBase, hpValueBind, hpMaxBind, sceneMgr.mainCamera, this);
@@ -263,12 +263,12 @@ public class UIMgr
     public void PushHpSlider(HpSliderCtrl slider) => hpSliderPool.Put(slider);
 
     // 伤害 type: 1-普通伤害  2-真伤
-    public void ShowDmgText(int type, int dmgValue, Vector3 pos)
+    public void ShowDmgText(int type, float dmgValue, Vector3 pos)
     {
         var dmg = dmgPool.Get();
         dmgPair[dmg.gameObject] = dmg;
         dmg.transform.SetParent(dmgCon);
-        dmg.Play(type, dmgValue.ToString(), pos, sceneMgr.mainCamera, this);
+        dmg.Play(type, Math.Floor(dmgValue).ToString(), pos, sceneMgr.mainCamera, this);
     }
     public void PushDmgText(DamageMgr item)
     {
