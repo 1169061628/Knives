@@ -10,23 +10,24 @@ using System.Threading;
 
 public class ExcelTools : EditorWindow
 {
-    static readonly string cfgPath = Directory.GetParent(Application.dataPath).FullName + "/Excels";
+    static readonly string cfgPath = Application.dataPath + "/ManagedResources/Configs";
     static readonly string definePath = Application.dataPath + "/Scripts/Config/ConfigDefine.cs";
-    static readonly string bytePath = Application.persistentDataPath + "/ConfigBytes";
+    static readonly string bytePath = Application.dataPath + "/ManagedResources/ConfigData";
     static readonly StringBuilder sb = new();
 
-    //[MenuItem("打表/关进度", false)]
-    //static void CloseJinDu()
-    //{
-    //    EditorApplication.update = null;
-    //    EditorUtility.ClearProgressBar();
-    //}
+    [MenuItem("打表/关进度", false)]
+    static void CloseJinDu()
+    {
+        EditorApplication.update = null;
+        EditorUtility.ClearProgressBar();
+    }
 
     [MenuItem("打表/全部表", false)]
     public static void ImportAllConfigs()
     {
         if (!File.Exists(definePath)) File.Create(definePath);
-        var cfgFiles = Directory.GetFiles(cfgPath, "*.csv");
+        var cfgFiles = Directory.GetFiles(cfgPath, "*.csv", SearchOption.AllDirectories);
+        //string[] cfgFiles = new string[] { cfgPath + "/Level/level1.csv" };
         int totalNum = cfgFiles.Length;
         int count = 0;
         object lockObj = new();
@@ -41,9 +42,10 @@ public class ExcelTools : EditorWindow
                 EditorUtility.ClearProgressBar();
                 File.WriteAllText(definePath, sb.ToString(), Encoding.UTF8);
                 sb.Clear();
+                AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
                 Debug.LogError("完成");
-                OpenConfigJsonPath();
+                //OpenConfigJsonPath();
             }
         };
 
@@ -60,32 +62,39 @@ public class ExcelTools : EditorWindow
                 }
             });
         }
-        
     }
 
 
     static void ReadSingleExcel(string filePath)
     {
-        var file = new FileInfo(filePath);
-        using ExcelPackage package = new(file);
+        var csvContent = File.ReadAllText(filePath);
+        //var file = new FileInfo(filePath);
+        //using ExcelPackage package = new(file);
+        using var package = new ExcelPackage();
         var name = Path.GetFileNameWithoutExtension(filePath);
-        var sheet = package.Workbook.Worksheets[name];
-        if (sheet == null) Debug.LogError(name);
+        var sheet = package.Workbook.Worksheets.Add(name);
+        sheet.Cells["A1"].LoadFromText(csvContent, new ExcelTextFormat()
+        {
+            Delimiter = ',',
+            EOL = "\r\n",
+            DataTypes = new[] { eDataTypes.String }
+        });
+        //if (sheet == null) Debug.LogError(name);
         var dimension = sheet.Dimension;
         int column = dimension.Columns, row = dimension.Rows;
 
         sb.AppendFormat("public readonly struct {0} : IConfig\n", name);
         sb.Append("{\n");
 
-        for (int c = 2; c <= column; c++)
+        for (int c = 1; c <= column; c++)
         {
             var value = sheet.Cells[1, c].Value;
             if (value == null) break;
-            var readType = sheet.Cells[3, c].Value.ToString();
-            if (ConfigUtil.NeedExport(readType))
-            {
-                sb.AppendFormat("\tpublic readonly {0} {1};\n", sheet.Cells[2, c].Value.ToString(), value.ToString());
-            }
+            //var readType = sheet.Cells[3, c].Value.ToString();
+            //if (ConfigUtil.NeedExport(readType))
+            //{
+                sb.AppendFormat("\tpublic readonly {0} {1};\n", sheet.Cells[3, c].Value.ToString(), sheet.Cells[2, c].Value.ToString());
+            //}
         }
         sb.Append("}\n");
 

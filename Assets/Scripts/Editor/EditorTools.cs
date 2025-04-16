@@ -146,6 +146,8 @@ public class EditorTools
         //s1.Insert(2, "int,int,int,int,int,int,int,int,float,int,int,int,float,int,int");
         // Role
         //s1.Insert(2, "int,int,int,int,int,int,int,int,int,int[],int,int,int,int,int,int");
+        // autoBlade
+        s1.Insert(2, "int,int,int,int,float,int,int,int,int,int[]");
         File.WriteAllText(fullPath, string.Join("\r\n", s1));
     }
 

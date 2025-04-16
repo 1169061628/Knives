@@ -74,11 +74,11 @@ public class ExcelSheet
         sheetName = sheet.Name;
         for (int c = 1; c <= column; c++)
         {
-            if (cells[1, c].Value == null) continue;
-            if (!ConfigUtil.NeedExport(cells[3, c].Value.ToString())) continue;
+            if (cells[1, c].Value == null) break;
+            //if (!ConfigUtil.NeedExport(cells[3, c].Value.ToString())) continue;
             columnsInfo ??= new();
-            var cName = cells[1, c].Value.ToString();
-            var tName = cells[2, c].Value.ToString();
+            var cName = cells[2, c].Value.ToString();
+            var tName = cells[3, c].Value.ToString();
             var tNameWithPair = tName.Replace("[]", "");
             if (ConfigUtil.IsIncludeTypeName(tNameWithPair))
             {
@@ -88,12 +88,13 @@ public class ExcelSheet
                     name = cName,
                     typeName = tName.Replace(tNameWithPair, ConfigUtil.GetSysTypeName(tNameWithPair))
                 };
-                var df = cells[5, c].Value;
+                //var df = cells[5, c].Value;
+                object df = null;
                 columnObj.defaultValue = df == null ? "" : df.ToString();
                 List<string> valsList = new();
-                for (int r = 6; r <= row; r++)
+                for (int r = 4; r <= row; r++)
                 {
-                    if (cells[r, 2].Value == null) continue;
+                    if (cells[r, 1].Value == null) break;
                     var rowValue = cells[r, c].Value;
                     valsList.Add(rowValue == null ? "" : rowValue.ToString());
                 }
@@ -124,7 +125,7 @@ public static class ConfigManager
         var transType = Type.GetType("System." + ttName);
         Array SetArrVal(string str)
         {
-            var s2 = str.Split('#');
+            var s2 = str.Split('_');
             Array sArr = Array.CreateInstance(transType, s2.Length);
             for (int i = 0; i < s2.Length; i++)
             {
@@ -159,7 +160,8 @@ public static class ConfigManager
 
     static Dictionary<int, IConfig> ReadConfig<T>() where T : IConfig, new()
     {
-        var configJson = Path.Combine(Application.persistentDataPath, "ConfigBytes", nameof(T));
+        Debug.LogError(typeof(T).Name + "  " + nameof(T));
+        var configJson = Path.Combine(Application.dataPath, "ManagedResources/ConfigData", typeof(T).Name);
         configJson += ".bytes";
         var bytes = File.ReadAllBytes(configJson);
         var obj = JsonConvert.DeserializeObject<ExcelSheet>(Encoding.UTF8.GetString(bytes));
