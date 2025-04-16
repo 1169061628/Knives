@@ -3,6 +3,7 @@ using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -106,7 +107,7 @@ public class ExcelSheet
 public interface IConfig { }
 public static class ConfigManager
 {
-    static Dictionary<Type, Dictionary<int, IConfig>> configData = new();
+    static readonly Dictionary<Type, Dictionary<int, IConfig>> configData = new();
 
     public static T Get<T>(int id) where T : IConfig, new()
     {
@@ -158,9 +159,10 @@ public static class ConfigManager
 
     static Dictionary<int, IConfig> ReadConfig<T>() where T : IConfig, new()
     {
-        var configJson = Path.Combine(Application.persistentDataPath, "ConfigJsons", nameof(T));
-        configJson += ".json";
-        var obj = JsonConvert.DeserializeObject<ExcelSheet>(File.ReadAllText(configJson));
+        var configJson = Path.Combine(Application.persistentDataPath, "ConfigBytes", nameof(T));
+        configJson += ".bytes";
+        var bytes = File.ReadAllBytes(configJson);
+        var obj = JsonConvert.DeserializeObject<ExcelSheet>(Encoding.UTF8.GetString(bytes));
         Dictionary<int, IConfig> data = new();
 
         List<string> IDVal = null;
@@ -186,7 +188,7 @@ public static class ConfigManager
                 {
                     var fieldValues = obj.columnsInfo[field.Name].fieldValues;
                     var val = GetFieldVal(fieldValues[i], obj.columnsInfo[field.Name].defaultValue);
-                    Array arr = ParseArrData(fType, val, Regex.Matches(fType.Name, Regex.Escape("[]"), RegexOptions.None).Count);
+                    Array arr = ParseArrData(fType, val, Regex.Matches(fType.Name, Regex.Escape("[]"), RegexOptions.None).Count);   // 正则的作用是匹配[]出现的次数以确定数组维度 Regex.Escape("[]")等价于"\[\]"
                     t.GetType().GetField(field.Name).SetValueDirect(__makeref(t), arr);
                 }
                 else

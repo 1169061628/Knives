@@ -12,7 +12,7 @@ public class ExcelTools : EditorWindow
 {
     static readonly string cfgPath = Directory.GetParent(Application.dataPath).FullName + "/Excels";
     static readonly string definePath = Application.dataPath + "/Scripts/Config/ConfigDefine.cs";
-    static readonly string jsonPath = Application.persistentDataPath + "/ConfigJsons";
+    static readonly string bytePath = Application.persistentDataPath + "/ConfigBytes";
     static readonly StringBuilder sb = new();
 
     //[MenuItem("打表/关进度", false)]
@@ -90,16 +90,16 @@ public class ExcelTools : EditorWindow
         sb.Append("}\n");
 
         var sheetIni = new ExcelSheet(sheet);
-        if (!Directory.Exists(jsonPath)) Directory.CreateDirectory(jsonPath);
+        if (!Directory.Exists(bytePath)) Directory.CreateDirectory(bytePath);
         var jsonStr = JsonConvert.SerializeObject(sheetIni);
-        string jsonName = jsonPath + "/" + name + ".json";
-        //Debug.LogError(jsonName);
-        File.WriteAllText(jsonName, jsonStr, Encoding.UTF8);
+        string byteName = bytePath + "/" + name + ".bytes";
+        var bytes = Encoding.UTF8.GetBytes(jsonStr);
+        File.WriteAllBytes(byteName, bytes);
     }
 
     [MenuItem("打表/打开导出json数据路径", false)]
     static void OpenConfigJsonPath()
     {
-        Process.Start("explorer.exe", jsonPath.Replace("/", "\\"));
+        Process.Start("explorer.exe", bytePath.Replace("/", "\\"));
     }
 }
