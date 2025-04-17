@@ -173,22 +173,22 @@ public class RoleBase : ItemBase
         return collider.gameObject;
     }
 
-    void SetFillPhase(float value, bool upLoad = false)
+    protected void SetFillPhase(float value, bool upLoad = false)
     {
         material.SetFloat(mpb_FillPhase, value);
     }
 
-    void SetFillColor(Color value, bool upLoad)
+    protected void SetFillColor(Color value, bool upLoad = false)
     {
         material.SetColor(mpb_FillColor, value);
     }
 
-    void SetDissolve(float value, bool upLoad = false)
+    protected void SetDissolve(float value, bool upLoad = false)
     {
         material.SetFloat(mpb_DissolveThreshold, value);
     }
 
-    void SetColor(Color value, bool upLoad)
+    protected void SetColor(Color value, bool upLoad = false)
     {
         material.SetColor(mpb_Color, value);
     }
