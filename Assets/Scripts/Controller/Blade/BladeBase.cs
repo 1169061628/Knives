@@ -93,7 +93,7 @@ public class BladeBase : ItemBase
         else autoSpawnFlag = true;
     }
 
-    void SetParentIndex(BladeParent parent, float scaleMulti)
+    public void SetParentIndex(BladeParent parent, float scaleMulti)
     {
         this.parent = parent;
         transform.SetParent(parent.transform);

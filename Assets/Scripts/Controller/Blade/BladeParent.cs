@@ -16,7 +16,7 @@ public class BladeParent : ItemBase
         scene.pauseBind.Add(PauseListener);
     }
 
-    void SetIndex(int index)
+    public void SetIndex(int index)
     {
         this.index = index;
         gameObject.name = index.ToString();

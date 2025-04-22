@@ -119,7 +119,28 @@ public class RolePlayer : RoleBase
     {
         base.InitBlade(bladeType, bladeNum);
         bladeList = new Dictionary<GameObject, BladeBase>();
-        
+        curBladeType = bladeType;
+        bladeNumBind.Send(bladeNum);
+        float rotation = 360 / bladeNum * ManyKnivesDefine.bladeSide;
+        for (int i = 0; i < bladeNum; i++)
+        {
+            float deg = (i - 1) * rotation;
+            var tmpParent = bladeTmpPool.Get();
+            tmpParent.gameObject.SetActive(true);
+            tmpParent.transform.SetParent(bladeTran);
+            tmpParent.transform.localPosition = new Vector3(
+                ManyKnivesDefine.bladeRadius * Mathf.Cos(deg * Mathf.Deg2Rad),
+                ManyKnivesDefine.bladeRadius * Mathf.Sin(deg * Mathf.Deg2Rad), 0);
+            tmpParent.transform.localRotation = Quaternion.Euler(0,0,deg - 90);
+            tmpParent.transform.localScale = Vector3.one;
+            var tmpGO = sceneMgr.BladePoolPopOne(bladeType);
+            tmpGO.Init(sceneMgr, bladeType, this);
+            tmpGO.SetParentIndex(tmpParent, 1);
+            tmpParent.Init(sceneMgr, tmpGO);
+            tmpParent.SetIndex(i);
+            // bladeTmpList[i] = tmpParent;
+            bladeList[tmpGO.gameObject] = tmpGO;
+        }
     }
 
     void CollectTriggerEnter2D(Collider2D collider2D)
